@@ -1,0 +1,359 @@
+$green : #8CC63F;
+$orange:#F7931E;
+$h1: 1.5rem;
+
+body {
+    box-sizing: border-box;
+}
+
+.main-nav {
+    background-color: whitesmoke;
+
+    img{
+        cursor: pointer;
+    }
+
+    .slogan{
+        display: inline;
+        font-size: 1.2rem;
+        color: $green;
+        font-weight: 600;
+        clear: both;
+
+        span {
+            color: $orange;
+        }
+
+    }
+
+    .slogan2 {
+        font-weight: 500;
+        display: block;
+        color: $green;
+       
+    }
+
+    a {
+        color: $orange!important;
+    }
+
+    a:hover {
+        color: $green!important;
+    }
+
+    .contact-phone {
+        
+        border: 2px solid $green;
+        border-radius: 1rem;
+
+        p{
+            color:$green;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+        
+    }
+
+    .phone-btn {
+        width:50px;
+        height: 50px;
+        background-color: $green;
+        border: none;
+
+        i{
+            font-size: 2rem;
+           
+        }
+    }
+
+    .phone-btn:hover{
+        background-color: $orange;
+    }
+}
+
+
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    max-width:200px; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+    border: 2px solid $orange!important;
+
+    .modal-header{
+        border-bottom: 2px solid $orange;
+        
+        h4{
+            color:$green;
+            font-size: 1.2rem;
+        }
+    }
+
+    .modal-body{
+        width:300px;
+
+
+        p{
+            color: $green;
+            display: inline-block;
+
+            a{
+                color: $orange;
+            }
+
+            a:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    
+}
+
+.hero {
+   position: relative;
+   height: 30rem;
+
+    img {
+        position:absolute;
+        margin:0 auto;
+        padding-top: 180px;
+        left:0;
+        right: 0;
+        bottom:0;
+        top:0;
+        -webkit-animation-name: fade;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 16s;
+        animation-name: fade;
+        animation-iteration-count: infinite;
+        animation-duration: 16s;
+    }
+    
+    
+    #i1{
+        animation-delay: -4s;
+    }
+    #i2 {
+        animation-delay: -8s;
+    }
+    #i3 {
+        animation-delay: -12s;
+    }
+    #i4 {
+        animation-delay: -16s;
+    }
+}
+
+.hero2{
+    position: relative;
+    height: 28rem;
+
+    img {
+        position:absolute;
+        padding-top: 180px;
+        margin:0 auto;
+        left:0;
+        right: 0;
+        bottom:0;
+        top:0;
+        -webkit-animation-name: fade;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 16s;
+        animation-name: fade;
+        animation-iteration-count: infinite;
+        animation-duration: 16s;
+    }
+
+
+    #i5 {
+        animation-delay: -4s;
+    }
+    #i6 {
+        animation-delay: -8s;
+    }
+    #i7 {
+        animation-delay: -12s;
+    }
+    #i8{
+        animation-delay: -16s;
+    }
+
+}
+
+.home {
+
+    h1{
+        font-size: $h1;
+        color: $orange;
+    }
+    
+}
+
+.abt-us-page {
+    display: none;
+    padding-top: 180px;
+
+        
+    
+    h1 {
+            color: $orange;
+            font-size: $h1;
+    }
+
+    
+    .vision {
+        @extend .abt-us-page;
+    }
+    
+    .cmt {
+        @extend .abt-us-page;
+    }
+    
+    .mgmt {
+        @extend .abt-us-page;
+    }
+
+    .abt-dynamic{
+        padding-top: 6rem;
+
+        .cmt-dyn{
+
+            li{
+                padding-bottom: 1rem;
+            }
+        }
+
+        .mgmt-dyn{
+            padding-top: 3rem;
+
+        }
+    }
+
+
+
+}
+
+.srv-page {
+    @extend .abt-us-page;
+
+    .hero{
+        height: 20rem;
+
+        img{
+            padding-top: 0;
+        }
+        
+    }
+
+    .hero2{
+        @extend .hero
+    }
+
+    .srv-dyn {
+        
+        button {
+            width: 270px;
+            height: 190px;
+            margin: 1rem;
+            background-color: $green;
+            border: 2px solid black;
+
+            img{
+                width: 200px;
+                border-radius: 0.5rem;
+                border: 2px solid black;
+            }
+        }
+
+        button:hover {
+            background-color: $orange;
+        }
+
+        .hmss-dyn{
+            img{
+                margin-top: 190px;
+                margin-bottom: 2rem;
+                height: 250px;
+                width: 260px;
+                border-radius: 0.5rem;
+            }
+
+            div:nth-child(2) {
+                border: 2px solid $orange;
+                border-radius: 0.5rem;
+                padding: 1rem;
+
+                span{
+                    color: $orange;
+                }
+                
+            }
+        }
+
+        .ncss-dyn{
+            @extend .hmss-dyn;
+
+            h4{
+                font-size:1rem;
+                color: $green;
+            }
+        }
+
+        .pcss-dyn{
+            @extend .hmss-dyn;
+        }
+
+        .gnss-dyn{
+            @extend .hmss-dyn;
+        }
+
+        .crc-dyn {
+            @extend .hmss-dyn;
+        }
+
+        .pvss-dyn{
+            @extend .ncss-dyn;
+        }
+
+        .mcss-dyn{
+            @extend .ncss-dyn;
+        }
+    }
+
+
+}
+
+
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
