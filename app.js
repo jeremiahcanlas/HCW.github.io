@@ -47,6 +47,38 @@ $('#abt-us-btn').on('click',function(){
 
 })
 
+$('#srv-btn').on('click',function(){
+
+    if(current !== $('.srv-page')){
+
+        current.hide()
+        $('.srv-page').fadeIn()
+        $('.srv-nav').fadeIn()
+        $('.srv-dyn-out').hide()
+       
+        
+    }
+
+    current = $('.srv-page')
+
+})
+
+$('#pkg-btn').on('click',function(){
+
+    if(current !== $('.pkg-page')){
+
+        current.hide()
+        $('.pkg-page').fadeIn()
+        $('.pkg-nav').fadeIn()
+        $('.pkg-dyn-out').hide()
+       
+        
+    }
+
+    current = $('.pkg-page')
+
+})
+
 $('.abt-us-page').on('click','.vision-btn',function(){
 
     $('.abt-dynamic').hide().fadeIn().html(
@@ -131,22 +163,6 @@ $('.abt-us-page').on('click','.mgmt-btn',function(){
     $('html, body').animate({
         scrollTop: ($('.abt-btn').first().offset().top)
     },700);
-
-})
-
-$('#srv-btn').on('click',function(){
-
-    if(current !== $('.srv-page')){
-
-        current.hide()
-        $('.srv-page').fadeIn()
-        $('.srv-nav').fadeIn()
-        $('.srv-dyn-out').hide()
-       
-        
-    }
-
-    current = $('.srv-page')
 
 })
 
@@ -508,3 +524,6 @@ $('.srv-nav').on('click','.mcss-btn',function(){
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
 })
+
+
+

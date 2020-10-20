@@ -1,3 +1,13 @@
+html {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
 body {
   box-sizing: border-box;
 }
@@ -98,11 +108,11 @@ body {
   text-decoration: none;
 }
 
-.hero, .srv-page .hero2 {
+.hero, .srv-page .hero2, .pkg-page .hero2 {
   position: relative;
   height: 30rem;
 }
-.hero img, .srv-page .hero2 img {
+.hero img, .srv-page .hero2 img, .pkg-page .hero2 img {
   position: absolute;
   margin: 0 auto;
   padding-top: 180px;
@@ -117,16 +127,16 @@ body {
   animation-iteration-count: infinite;
   animation-duration: 16s;
 }
-.hero #i1, .srv-page .hero2 #i1 {
+.hero #i1, .srv-page .hero2 #i1, .pkg-page .hero2 #i1 {
   animation-delay: -4s;
 }
-.hero #i2, .srv-page .hero2 #i2 {
+.hero #i2, .srv-page .hero2 #i2, .pkg-page .hero2 #i2 {
   animation-delay: -8s;
 }
-.hero #i3, .srv-page .hero2 #i3 {
+.hero #i3, .srv-page .hero2 #i3, .pkg-page .hero2 #i3 {
   animation-delay: -12s;
 }
-.hero #i4, .srv-page .hero2 #i4 {
+.hero #i4, .srv-page .hero2 #i4, .pkg-page .hero2 #i4 {
   animation-delay: -16s;
 }
 
@@ -167,64 +177,88 @@ body {
   color: #F7931E;
 }
 
-.abt-us-page, .srv-page, .srv-page .vision, .srv-page .cmt, .srv-page .mgmt, .abt-us-page .mgmt, .abt-us-page .cmt, .abt-us-page .vision {
+.abt-us-page, .srv-page, .pkg-page, .srv-page .vision, .pkg-page .vision, .srv-page .cmt, .pkg-page .cmt, .srv-page .mgmt, .pkg-page .mgmt, .abt-us-page .mgmt, .abt-us-page .cmt, .abt-us-page .vision {
   display: none;
   padding-top: 180px;
 }
-.abt-us-page h1, .srv-page h1, .srv-page .vision h1, .srv-page .cmt h1, .srv-page .mgmt h1, .abt-us-page .mgmt h1, .abt-us-page .cmt h1, .abt-us-page .vision h1 {
+.abt-us-page h1, .srv-page h1, .pkg-page h1, .srv-page .vision h1, .pkg-page .vision h1, .srv-page .cmt h1, .pkg-page .cmt h1, .srv-page .mgmt h1, .pkg-page .mgmt h1, .abt-us-page .mgmt h1, .abt-us-page .cmt h1, .abt-us-page .vision h1 {
   color: #F7931E;
   font-size: 1.5rem;
 }
-.abt-us-page .abt-dynamic, .srv-page .abt-dynamic {
+.abt-us-page button, .srv-page button, .pkg-page button, .srv-page .vision button, .pkg-page .vision button, .srv-page .cmt button, .pkg-page .cmt button, .srv-page .mgmt button, .pkg-page .mgmt button, .abt-us-page .mgmt button, .abt-us-page .cmt button, .abt-us-page .vision button {
+  background-color: #8CC63F;
+  color: black;
+}
+.abt-us-page button:hover, .srv-page button:hover, .pkg-page button:hover {
+  background-color: #F7931E;
+  color: black;
+}
+.abt-us-page .abt-dynamic, .srv-page .abt-dynamic, .pkg-page .abt-dynamic {
   padding-top: 6rem;
 }
-.abt-us-page .abt-dynamic .cmt-dyn li, .srv-page .abt-dynamic .cmt-dyn li {
+.abt-us-page .abt-dynamic .cmt-dyn li, .srv-page .abt-dynamic .cmt-dyn li, .pkg-page .abt-dynamic .cmt-dyn li {
   padding-bottom: 1rem;
 }
-.abt-us-page .abt-dynamic .mgmt-dyn, .srv-page .abt-dynamic .mgmt-dyn {
+.abt-us-page .abt-dynamic .mgmt-dyn, .srv-page .abt-dynamic .mgmt-dyn, .pkg-page .abt-dynamic .mgmt-dyn {
   padding-top: 3rem;
 }
 
-.srv-page .hero, .srv-page .hero2 {
+.srv-page .hero, .pkg-page .hero, .srv-page .hero2, .pkg-page .hero2 {
   height: 20rem;
 }
-.srv-page .hero img, .srv-page .hero2 img {
+.srv-page .hero img, .pkg-page .hero img, .srv-page .hero2 img, .pkg-page .hero2 img {
   padding-top: 0;
 }
-.srv-page .srv-dyn button {
+.srv-page .srv-dyn button, .pkg-page .srv-dyn button {
   width: 270px;
   height: 190px;
   margin: 1rem;
   background-color: #8CC63F;
   border: 2px solid black;
 }
-.srv-page .srv-dyn button img {
+.srv-page .srv-dyn button img, .pkg-page .srv-dyn button img {
   width: 200px;
   border-radius: 0.5rem;
   border: 2px solid black;
 }
-.srv-page .srv-dyn button:hover {
+.srv-page .srv-dyn button:hover, .pkg-page .srv-dyn button:hover {
   background-color: #F7931E;
 }
-.srv-page .srv-dyn .hmss-dyn img, .srv-page .srv-dyn .crc-dyn img, .srv-page .srv-dyn .gnss-dyn img, .srv-page .srv-dyn .pcss-dyn img, .srv-page .srv-dyn .ncss-dyn img, .srv-page .srv-dyn .mcss-dyn img, .srv-page .srv-dyn .pvss-dyn img {
+.srv-page .srv-dyn .hmss-dyn img, .pkg-page .srv-dyn .hmss-dyn img, .srv-page .srv-dyn .crc-dyn img, .pkg-page .srv-dyn .crc-dyn img, .srv-page .srv-dyn .gnss-dyn img, .pkg-page .srv-dyn .gnss-dyn img, .srv-page .srv-dyn .pcss-dyn img, .pkg-page .srv-dyn .pcss-dyn img, .srv-page .srv-dyn .ncss-dyn img, .pkg-page .srv-dyn .ncss-dyn img, .srv-page .srv-dyn .mcss-dyn img, .pkg-page .srv-dyn .mcss-dyn img, .srv-page .srv-dyn .pvss-dyn img, .pkg-page .srv-dyn .pvss-dyn img {
   margin-top: 190px;
   margin-bottom: 2rem;
   height: 250px;
   width: 260px;
   border-radius: 0.5rem;
 }
-.srv-page .srv-dyn .hmss-dyn div:nth-child(2), .srv-page .srv-dyn .crc-dyn div:nth-child(2), .srv-page .srv-dyn .gnss-dyn div:nth-child(2), .srv-page .srv-dyn .pcss-dyn div:nth-child(2), .srv-page .srv-dyn .ncss-dyn div:nth-child(2), .srv-page .srv-dyn .mcss-dyn div:nth-child(2), .srv-page .srv-dyn .pvss-dyn div:nth-child(2) {
+.srv-page .srv-dyn .hmss-dyn div:nth-child(2), .pkg-page .srv-dyn .hmss-dyn div:nth-child(2), .srv-page .srv-dyn .crc-dyn div:nth-child(2), .pkg-page .srv-dyn .crc-dyn div:nth-child(2), .srv-page .srv-dyn .gnss-dyn div:nth-child(2), .pkg-page .srv-dyn .gnss-dyn div:nth-child(2), .srv-page .srv-dyn .pcss-dyn div:nth-child(2), .pkg-page .srv-dyn .pcss-dyn div:nth-child(2), .srv-page .srv-dyn .ncss-dyn div:nth-child(2), .pkg-page .srv-dyn .ncss-dyn div:nth-child(2), .srv-page .srv-dyn .mcss-dyn div:nth-child(2), .pkg-page .srv-dyn .mcss-dyn div:nth-child(2), .srv-page .srv-dyn .pvss-dyn div:nth-child(2), .pkg-page .srv-dyn .pvss-dyn div:nth-child(2) {
   border: 2px solid #F7931E;
   border-radius: 0.5rem;
   padding: 1rem;
 }
-.srv-page .srv-dyn .hmss-dyn div:nth-child(2) span, .srv-page .srv-dyn .crc-dyn div:nth-child(2) span, .srv-page .srv-dyn .gnss-dyn div:nth-child(2) span, .srv-page .srv-dyn .pcss-dyn div:nth-child(2) span, .srv-page .srv-dyn .ncss-dyn div:nth-child(2) span, .srv-page .srv-dyn .mcss-dyn div:nth-child(2) span, .srv-page .srv-dyn .pvss-dyn div:nth-child(2) span {
+.srv-page .srv-dyn .hmss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .hmss-dyn div:nth-child(2) span, .srv-page .srv-dyn .crc-dyn div:nth-child(2) span, .pkg-page .srv-dyn .crc-dyn div:nth-child(2) span, .srv-page .srv-dyn .gnss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .gnss-dyn div:nth-child(2) span, .srv-page .srv-dyn .pcss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .pcss-dyn div:nth-child(2) span, .srv-page .srv-dyn .ncss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .ncss-dyn div:nth-child(2) span, .srv-page .srv-dyn .mcss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .mcss-dyn div:nth-child(2) span, .srv-page .srv-dyn .pvss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .pvss-dyn div:nth-child(2) span {
   color: #F7931E;
 }
-.srv-page .srv-dyn .ncss-dyn h4, .srv-page .srv-dyn .mcss-dyn h4, .srv-page .srv-dyn .pvss-dyn h4 {
+.srv-page .srv-dyn .ncss-dyn h4, .pkg-page .srv-dyn .ncss-dyn h4, .srv-page .srv-dyn .mcss-dyn h4, .pkg-page .srv-dyn .mcss-dyn h4, .srv-page .srv-dyn .pvss-dyn h4, .pkg-page .srv-dyn .pvss-dyn h4 {
   font-size: 1rem;
   color: #8CC63F;
 }
+.pkg-page button {
+  width: 270px;
+  height: 190px;
+  margin: 1rem;
+  background-color: #F7931E;
+  border: 2px solid black;
+}
+.pkg-page button img {
+  width: 200px;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+}
+.pkg-page button:hover {
+  background-color: #8CC63F;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;

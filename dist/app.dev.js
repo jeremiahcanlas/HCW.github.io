@@ -31,6 +31,26 @@ $('#abt-us-btn').on('click', function () {
 
   current = $('.abt-us-page');
 });
+$('#srv-btn').on('click', function () {
+  if (current !== $('.srv-page')) {
+    current.hide();
+    $('.srv-page').fadeIn();
+    $('.srv-nav').fadeIn();
+    $('.srv-dyn-out').hide();
+  }
+
+  current = $('.srv-page');
+});
+$('#pkg-btn').on('click', function () {
+  if (current !== $('.pkg-page')) {
+    current.hide();
+    $('.pkg-page').fadeIn();
+    $('.pkg-nav').fadeIn();
+    $('.pkg-dyn-out').hide();
+  }
+
+  current = $('.pkg-page');
+});
 $('.abt-us-page').on('click', '.vision-btn', function () {
   $('.abt-dynamic').hide().fadeIn().html("\n        <div class='container vsn-dyn'>\n            <h1>Our Vision</h1>\n            <p>To provide an outstanding personalized professional health care to individuals of all ages within your own home or health care facility.</p>\n            <h1>Our Mission</h1>\n            <p>To support you and your family\u2019s health care when you need us.</p>\n            <h1>Our Goal</h1>\n            <p>To treat you the way we like to be treated with compassion, respect, dignity and confidentiality.</p>\n        </div>\n        ");
   $('html, body').animate({
@@ -48,16 +68,6 @@ $('.abt-us-page').on('click', '.mgmt-btn', function () {
   $('html, body').animate({
     scrollTop: $('.abt-btn').first().offset().top
   }, 700);
-});
-$('#srv-btn').on('click', function () {
-  if (current !== $('.srv-page')) {
-    current.hide();
-    $('.srv-page').fadeIn();
-    $('.srv-nav').fadeIn();
-    $('.srv-dyn-out').hide();
-  }
-
-  current = $('.srv-page');
 });
 $('.srv-nav').on('click', '.hmss-btn', function () {
   $('.srv-nav').hide();

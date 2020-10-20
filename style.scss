@@ -2,6 +2,14 @@ $green : #8CC63F;
 $orange:#F7931E;
 $h1: 1.5rem;
 
+html {
+    overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+  
 body {
     box-sizing: border-box;
 }
@@ -218,6 +226,16 @@ body {
             font-size: $h1;
     }
 
+    button {
+        background-color: $green;
+        color: black;
+    }
+
+    button:hover {
+        background-color: $orange;
+        color: black;
+
+    }
     
     .vision {
         @extend .abt-us-page;
@@ -341,6 +359,27 @@ body {
 
 }
 
+.pkg-page {
+    @extend .srv-page;
+
+    button {
+        width: 270px;
+        height: 190px;
+        margin: 1rem;
+        background-color: $orange;
+        border: 2px solid black;
+
+        img{
+            width: 200px;
+            border-radius: 0.5rem;
+            border: 2px solid black;
+        }
+    }
+
+    button:hover {
+        background-color: $green;
+    }
+}
 
 
 @-webkit-keyframes fade {
