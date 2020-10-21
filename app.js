@@ -577,42 +577,36 @@ $('.pkg-nav').on('click','.hsp-btn',function(){
     },700);
 })
 
-$('.pkg-nav').on('click','.hsp-btn',function(){
+$('.pkg-nav').on('click','.pcs-btn',function(){
   
   
     $('.pkg-nav').hide()
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='hsp-dyn anchor-dyn'>
+        <div class='pcs-dyn anchor-dyn'>
             <div class='text-center'>
-                <img src='/img/hsp-fs.jpg'>
-                <h1>Home Care Support Package</h1>
-                <h4>Sometimes all you NEED is a hand with household chores</h4>
-                <p>Our Home Care Support Staff assist with the daily household tasks that you may not be able to perform anymore due to, 
-                ill health, injury, aging process or busy life. Homecare on Wheels recognizes that there are a variety of ways that one's 
-                home life can be improved significantly by a nurse, a helper or even a companion. </p>
-
-                <p>Whether returning home from the hospital, dealing with illness or simply requiring a little help Homecare on 
-                Wheels home care package is set up for you. Our Home Support
-                Team is committed to maintaining open lines of communication between your requirements and our services.  
-                Our clients can relax knowing their household chores will be taken care of, allowing them to concentrate on other things.</p>
-
-                <h1>Your satisfaction is our goal</h1>
+                <img src='/img/pcp-fs.jpg'>
+                <h1>Personal Care Support Package</h1>
+                <p>Homecare on Wheels' main focus is to help our clients manage their care in a professional and caring way. Performing daily activities can be stressful, whether you are residing in a home, long term facility retirement home, hospital, or some other type of accommodation. Our staff is here to assist you with all the personal care requirements unique to your situation. </p>
+                <p>Our Personal Care services are delivered by trained, dedicated caregivers who believe in providing you with care in a respectful and dignified way while maintaining your privacy and independence.</p>
+                <p>Our Home Support Team is committed to maintaining open lines of communication between your requirements and our services.  Our clients can relax knowing help with their daily personal hygiene will be taken care of, allowing them to concentrate on other things.</p>
             </div>
             <div class='mb-2'>
 
-                <p>Our most popular services in the Home Care Support Package includes:</p>
+                <p>Some of our most popular services in the Personal Care Support Package includes:</p>
                 <ul>
-                    <li>Taking care of laundry</li>
-                    <li>Light housekeeping</li>
-                    <li>Watering plants</li>
-                    <li>Taking out the garbage and recycling</li>
-                    <li>Changing bed linens and making beds</li>
-                    <li>Assist with housekeeping tasks</li>
-                    <li>Help with preparing grocery lists</li>
-                    <li>Preparing light meals</li>
-                    <li>Feed & Assist with the care of household pets</li>
+                    <li>Assist with bathing</li>
+                    <li>Assist with personal hygiene (grooming, dressing, etc.)</li>
+                    <li>Toileting / Catheter Care</li>
+                    <li>Skin care</li>
+                    <li>Medication reminders</li>
+                    <li>Mobility assistance</li>
+                    <li>Assist with prescribed physiotherapy exercises</li>
+                    <li>Escort to Doctor’s or Professional appointment</li>
+                    <li>Companionship, reading</li>
+                    <li>Assist with evening care</li>
+                    <li>Ask your Health Care Coordinator for a complete list of Services</li>
                     <li>Regularly review and supervise the Home Care Support Services you're receiving, and adjust these services as required</li>
                     <li>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care</li>
                 </ul>
@@ -630,6 +624,264 @@ $('.pkg-nav').on('click','.hsp-btn',function(){
 })
 
 
+$('.pkg-nav').on('click','.scs-btn',function(){
+  
+  
+    $('.pkg-nav').hide()
+    $('.pkg-dyn-out').hide().fadeIn().html(
 
+        `
+        <div class='scs-dyn anchor-dyn'>
+            <div class='text-center'>
+                <img src='/img/scs-fs.jpg'>
+                <h1>Senior Care Support Package</h1>
+                <h4>Are you concerned with your loved one needing assistance with their day to day activities?</h4>
+                <p>The Senior Care Support Package is designed to give you the peace of mind in knowing that your loved one(s) 
+                are well taken care of and being assisted by professionals. That’s why Homecare on Wheels offers this basic Home Care and Personal Care support package,
+                 so you can be sure that your loved one is getting the care, attention and assistance they deserve. </p>
+                <p>Don’t get overwhelmed and exhausted, let us give you the rest you deserve, 
+                give you time to recharge your energy level, sign up today and give us a chance to prove to you just how much we care!</p>
+
+           
+             </div>
+            <div class='mb-2'>
+
+                <p>The Senior Care Support Package includes:</p>
+                <ul>
+                    <li>Initial Assessment with our Nurse Health Care Assessment Coordinator</li>
+                    <li>Regular Follow-ups with our Nurse Health Care Assessment Coordinator regarding the care & services being received</li>
+                    <li>Regular Communication with the Family Spokesperson or your Power of Attorney</li>
+                    <li>Home Care Services</li>
+                    <li>Personal Care Services</li>
+                    <li>24 Hour Telephone Support</li>
+                    <li>Health Care System Navigation Support</li>
+                    <li>With your consent, consult with other health care professionals as necessary</li>
+                    <li>Consult with other health care professionals as necessary</li>
+                </ul>
+                <p>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care</p>
+
+            </div>
+        </div>
+        
+        
+        `
+    )
+
+    $('html, body').animate({
+        scrollTop: ($('.anchor-dyn').first().offset().top)
+    },700);
+})
+
+$('.pkg-nav').on('click','.crs-btn',function(){
+  
+  
+    $('.pkg-nav').hide()
+    $('.pkg-dyn-out').hide().fadeIn().html(
+
+        `
+        <div class='crs-dyn anchor-dyn'>
+            <div class='text-center'>
+                <img src='/img/crs-fs.jpg'>
+                <h1>Caregiver & Respite-Care Support Package</h1>
+                <h4>Caring for a loved one can be overwhelming, we understand!</h4>
+                <p>We give you the permission to allow us to shoulder some of the caregiver burden. 
+                Our staff are trained and caring individuals who are dedicated to providing efficient and effective care so you don't
+                 need to feel like your loved one is getting less than they deserve. Our Caregiver & Respite Care Services allow you to recharge your batteries, 
+                 resting comfortably in the knowledge that your loved one is being cared for by compassionate professionals. Knowing the person caring for your 
+                 loved one provides comfortable, respectful, safe and professional care.  We strive to match personalities and continuity of care with every client 
+                 and will work tirelessly to ensure that all of our clients are satisfied with our performance.</p>
+
+           
+             </div>
+            <div class='mb-2'>
+
+                <p>Caregiver & Respite Care Package includes:</p>
+                <ul>
+                    <li>Temporary relief for the caregiver</li>
+                    <li>Companionship</li>
+                    <li>Mobility Assistance</li>
+                    <li>Support for Light Recreational Activities (participate in crafts, playing cards, etc.)</li>
+                    <li>Emotional Support</li>
+                    <li>*Access to our Support Group</li>
+                    <li>Assist with Medication Reminders</li>
+                    <li>*Escort Client to Professional or Group Appointment</li>
+                    <li>Any other services required, such as Personal Support or Nursing can be addressed with our Health Care Coordinator during the initial Home Care Assessment visit.</li>
+                    <li>With you and your loved one's consent, consult with other health care professionals as necessary</li>
+                </ul>
+                <p>Remain available to you and your loved one 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your loved one's care</p>
+
+            </div>
+        </div>
+        
+        
+        `
+    )
+
+    $('html, body').animate({
+        scrollTop: ($('.anchor-dyn').first().offset().top)
+    },700);
+})
+
+$('.pkg-nav').on('click','.rhs-btn',function(){
+  
+  
+    $('.pkg-nav').hide()
+    $('.pkg-dyn-out').hide().fadeIn().html(
+
+        `
+        <div class='rhs-dyn anchor-dyn'>
+            <div class='text-center'>
+                <img src='/img/rhs-fs.jpg'>
+                <h1>Returning Home Support Service</h1>
+                <h4>Return Home Stress-Free!</h4>
+                <p>Returning home following a short or extended hospital or rehabilitation stay can be scary, and stressful. 
+                Coordinating transportation, setting up and attending appointments, picking up medication and making sense of instructions, 
+                tips and directions can be enough to confuse a person, and all of these can be a detriment to your recovery time and your family’s reunion.</p>
+                <p>At Homecare on Wheels, we offer a package that can help ease all of these burdens and let you concentrate on your recovery and your wellbeing.</p>
+                <h3>Getting your health back!</h3>
+                <p>All of our Health Care Assessment Coordinator are Nurses who are well prepared to meet with you, 
+                your family spokesperson and the appropriate health care personnel before you are discharged to get things in order for your return and become 
+                acquainted with the specifics of your situation. Our Health Care team will also ensure that everything is prepared for your return home and the 
+                transition from health care facility to home goes smoothly.</p>
+
+           
+             </div>
+            <div class='mb-2'>
+
+                <p>Return Home Package includes:</p>
+            <ul>
+                    <li>Initial Assessment by Health Care Assessment Coordinator</li>
+                    <li>Discharge & Health Care Needs Assessment of the client</li>
+                    <li>Home Visit (Prior to discharge, to ensure preparation)</li>
+                    <li>Coordination of Medical Supply/Equipment Orders & Delivery</li>
+                    <li>Arrange Transportation Home</li>
+                    <li>24 Hour Telephone Support</li>
+                    <li>Home Care and / or Personal Support Services*</li>
+                    <li>Health Care System Navigation Support</li>
+                    <li>With you and your loved one's consent, consult with other health care professionals as necessary</li>
+              </ul>
+                <p>Remain available to you and your loved one 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your loved one's care</p>
+
+            </div>
+        </div>
+        
+        
+        `
+    )
+
+    $('html, body').animate({
+        scrollTop: ($('.anchor-dyn').first().offset().top)
+    },700);
+})
+
+$('.pkg-nav').on('click','.nhs-btn',function(){
+  
+  
+    $('.pkg-nav').hide()
+    $('.pkg-dyn-out').hide().fadeIn().html(
+
+        `
+        <div class='nhs-dyn anchor-dyn'>
+            <div class='text-center'>
+                <img src='/img/nhs-fs.jpg'>
+                <h1>Navigating the Health Care Support Package</h1>
+                <h4>Navigating Canada’s Health Care system on your own can cause frustration and confusion</h4>
+                <p>Trying to navigate Canada’s Health Care system on your own may cause frustration and confusion. 
+                Don’t get bogged down in all the messy details and technical mumbo-jumbo, just give us a call and let us guide you.
+                Years of experience in the field has made our Health Care Assessment Coordinators experts in the health care system, 
+                what works, and just as importantly, what doesn’t work.</p>
+                <p>At times, it is beneficial to have the processes, procedures and technical explanations given in layman’s terms and repeated 
+                in a quiet relaxed environment where you can process the information. Our compassionate, knowledgeable Health Care Coordinators let 
+                them guide you through the processes, meanings and importance of the things happening in your health care.</p>
+
+           
+             </div>
+            <div class='mb-2'>
+
+                <p>Navigating Health Care Support Package includes:</p>
+            <ul>
+                    <li>Initial Assessment with our Nurse Health Care Assessment Coordinator</li>
+                    <li>Development of a Customized Health Care Plan</li>
+                    <li>Guidance and Advice (what to expect, how to move forward)</li>
+                    <li>Regular Communication with the Family Spokesperson and /or Client</li>
+                    <li>Coordination of Health Care Appointments</li>
+                    <li>Coordination of Transportation (as needed)</li>
+                    <li>Accompany the Client to Appointments (if requested)</li>
+                    <li>Consultation with other Health Care Professionals (with Client’s/Family Spokesperson’s consent)</li>
+                    <li>24 Hour Telephone Support</li>
+                    <li>Health Care System Navigation Support</li>
+                    <li>All packages are customized to individual health care needs, and can be tailored to short- or long-term periods, depending on the requirements.</li>
+
+              </ul>
+
+            </div>
+        </div>
+        
+        
+        `
+    )
+
+    $('html, body').animate({
+        scrollTop: ($('.anchor-dyn').first().offset().top)
+    },700);
+})
+
+$('.pkg-nav').on('click','.gcs-btn',function(){
+  
+  
+    $('.pkg-nav').hide()
+    $('.pkg-dyn-out').hide().fadeIn().html(
+
+        `
+        <div class='gcs-dyn anchor-dyn'>
+            <div class='text-center'>
+                <img src='/img/gcs-fs.jpg'>
+                <h1>Geriatric Clinical Specialist Package</h1>
+                <h4>Our elderly population require specialized care</h4>
+                <p>The aging process often leaves the elderly population more susceptible to certain illnesses and chronic diseases. 
+                The increased number of medications can lead to Polypharmacy taking several medications at times for the same treatment. 
+                While some medications can interact adversely or react differently in the elderly population. 
+                Too many seniors are under the care of several health care professionals at different and separate levels who don't always communicate with each other, 
+                each treating and prescribing for the illness. Homecare on Wheels has the unique advantage of engaging the services of a geriatric nursing consultant. 
+                Our consultant can review ALL of your health care considerations, including health care management, services 
+                and medications prescribed by various health care professionals. Our specialist can navigate the healthcare system on your behalf, or that of a loved one. </p>
+                <p>This consultation can streamline your health care and ensure that there is no duplication of services or medications.</p>
+
+           
+             </div>
+            <div class='mb-2'>
+
+                <p>This consultation is 2½ hours long and can include any of the following:</p>
+            <ul>
+                    <li>Advanced Comprehensive Health Care Assessment</li>
+                    <li>Advance Pain Assessment & Management</li>
+                    <li>Fall Risk Assessment</li>
+                    <li>Diabetic Assessment</li>
+                    <li>Wound Care Assessment</li>
+                    <li>Cognitive Capacity Assessment</li>
+                    <li>Senior Behavioural Assessment</li>
+                    <li>Senior Functional Assessment</li>
+                    <li>Caregiver Stress Assessment</li>
+                    <li>Geriatric Health Consultation</li>
+                    <li>Palliative Care Consultation</li>
+                    <li>Chronic Disease Management</li>
+                    <li>Set up a consultation at your convenience.</li>
+                    <li>Set up a Homecare on Wheels Package or Services to provide you or your loved one with professional care.</li>
+                    <li>Review our recommendations with you and your family spokesperson</li>
+                    <li>Accompany you or your loved one during a consultation with a healthcare professional.</li>
+                    <li>Remain available 24 hours a day, 7 days a week to answer any questions or solve any issues that you may have regarding your care.</li>
+              </ul>
+
+            </div>
+        </div>
+        
+        
+        `
+    )
+
+    $('html, body').animate({
+        scrollTop: ($('.anchor-dyn').first().offset().top)
+    },700);
+})
 
 

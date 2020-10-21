@@ -258,22 +258,25 @@ body {
 .pkg-page button:hover {
   background-color: #8CC63F;
 }
-.pkg-page .hsp-dyn img {
+.pkg-page .hsp-dyn img, .pkg-page .pcs-dyn img, .pkg-page .scs-dyn img, .pkg-page .crs-dyn img, .pkg-page .rhs-dyn img, .pkg-page .nhs-dyn img, .pkg-page .gcs-dyn img {
   margin-top: 190px;
   margin-bottom: 2rem;
   height: 250px;
   width: 260px;
   border-radius: 0.5rem;
 }
-.pkg-page .hsp-dyn div:nth-child(2) {
+.pkg-page .hsp-dyn h4, .pkg-page .pcs-dyn h4, .pkg-page .scs-dyn h4, .pkg-page .crs-dyn h4, .pkg-page .rhs-dyn h4, .pkg-page .nhs-dyn h4, .pkg-page .gcs-dyn h4 {
+  font-size: 1rem;
+  color: #8CC63F;
+}
+.pkg-page .hsp-dyn div:nth-child(2), .pkg-page .pcs-dyn div:nth-child(2), .pkg-page .scs-dyn div:nth-child(2), .pkg-page .crs-dyn div:nth-child(2), .pkg-page .rhs-dyn div:nth-child(2), .pkg-page .nhs-dyn div:nth-child(2), .pkg-page .gcs-dyn div:nth-child(2) {
   border: 2px solid #F7931E;
   border-radius: 0.5rem;
   padding: 1rem;
 }
-.pkg-page .hsp-dyn div:nth-child(2) span {
+.pkg-page .hsp-dyn div:nth-child(2) span, .pkg-page .pcs-dyn div:nth-child(2) span, .pkg-page .scs-dyn div:nth-child(2) span, .pkg-page .crs-dyn div:nth-child(2) span, .pkg-page .rhs-dyn div:nth-child(2) span, .pkg-page .nhs-dyn div:nth-child(2) span, .pkg-page .gcs-dyn div:nth-child(2) span {
   color: #F7931E;
 }
-
 @-webkit-keyframes fade {
   0% {
     opacity: 0;

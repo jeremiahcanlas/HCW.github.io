@@ -389,6 +389,11 @@ body {
             border-radius: 0.5rem;
         }
 
+        h4 {
+            font-size:1rem;
+            color: $green;
+        }
+
         div:nth-child(2) {
             border: 2px solid $orange;
             border-radius: 0.5rem;
@@ -400,6 +405,12 @@ body {
             
         }
     }
+
+    .pcs-dyn, .scs-dyn, .crs-dyn, .rhs-dyn, .nhs-dyn, .gcs-dyn {
+        @extend .hsp-dyn;
+    }
+
+
 }
 
 
