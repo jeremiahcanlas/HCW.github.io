@@ -525,5 +525,111 @@ $('.srv-nav').on('click','.mcss-btn',function(){
     },700);
 })
 
+$('.pkg-nav').on('click','.hsp-btn',function(){
+  
+  
+    $('.pkg-nav').hide()
+    $('.pkg-dyn-out').hide().fadeIn().html(
+
+        `
+        <div class='hsp-dyn anchor-dyn'>
+            <div class='text-center'>
+                <img src='/img/hsp-fs.jpg'>
+                <h1>Home Care Support Package</h1>
+                <h4>Sometimes all you NEED is a hand with household chores</h4>
+                <p>Our Home Care Support Staff assist with the daily household tasks that you may not be able to perform anymore due to, 
+                ill health, injury, aging process or busy life. Homecare on Wheels recognizes that there are a variety of ways that one's 
+                home life can be improved significantly by a nurse, a helper or even a companion. </p>
+
+                <p>Whether returning home from the hospital, dealing with illness or simply requiring a little help Homecare on 
+                Wheels home care package is set up for you. Our Home Support
+                Team is committed to maintaining open lines of communication between your requirements and our services.  
+                Our clients can relax knowing their household chores will be taken care of, allowing them to concentrate on other things.</p>
+
+                <h1>Your satisfaction is our goal</h1>
+            </div>
+            <div class='mb-2'>
+
+                <p>Our most popular services in the Home Care Support Package includes:</p>
+                <ul>
+                    <li>Taking care of laundry</li>
+                    <li>Light housekeeping</li>
+                    <li>Watering plants</li>
+                    <li>Taking out the garbage and recycling</li>
+                    <li>Changing bed linens and making beds</li>
+                    <li>Assist with housekeeping tasks</li>
+                    <li>Help with preparing grocery lists</li>
+                    <li>Preparing light meals</li>
+                    <li>Feed & Assist with the care of household pets</li>
+                    <li>Regularly review and supervise the Home Care Support Services you're receiving, and adjust these services as required</li>
+                    <li>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care</li>
+                </ul>
+
+            </div>
+        </div>
+        
+        
+        `
+    )
+
+    $('html, body').animate({
+        scrollTop: ($('.anchor-dyn').first().offset().top)
+    },700);
+})
+
+$('.pkg-nav').on('click','.hsp-btn',function(){
+  
+  
+    $('.pkg-nav').hide()
+    $('.pkg-dyn-out').hide().fadeIn().html(
+
+        `
+        <div class='hsp-dyn anchor-dyn'>
+            <div class='text-center'>
+                <img src='/img/hsp-fs.jpg'>
+                <h1>Home Care Support Package</h1>
+                <h4>Sometimes all you NEED is a hand with household chores</h4>
+                <p>Our Home Care Support Staff assist with the daily household tasks that you may not be able to perform anymore due to, 
+                ill health, injury, aging process or busy life. Homecare on Wheels recognizes that there are a variety of ways that one's 
+                home life can be improved significantly by a nurse, a helper or even a companion. </p>
+
+                <p>Whether returning home from the hospital, dealing with illness or simply requiring a little help Homecare on 
+                Wheels home care package is set up for you. Our Home Support
+                Team is committed to maintaining open lines of communication between your requirements and our services.  
+                Our clients can relax knowing their household chores will be taken care of, allowing them to concentrate on other things.</p>
+
+                <h1>Your satisfaction is our goal</h1>
+            </div>
+            <div class='mb-2'>
+
+                <p>Our most popular services in the Home Care Support Package includes:</p>
+                <ul>
+                    <li>Taking care of laundry</li>
+                    <li>Light housekeeping</li>
+                    <li>Watering plants</li>
+                    <li>Taking out the garbage and recycling</li>
+                    <li>Changing bed linens and making beds</li>
+                    <li>Assist with housekeeping tasks</li>
+                    <li>Help with preparing grocery lists</li>
+                    <li>Preparing light meals</li>
+                    <li>Feed & Assist with the care of household pets</li>
+                    <li>Regularly review and supervise the Home Care Support Services you're receiving, and adjust these services as required</li>
+                    <li>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care</li>
+                </ul>
+
+            </div>
+        </div>
+        
+        
+        `
+    )
+
+    $('html, body').animate({
+        scrollTop: ($('.anchor-dyn').first().offset().top)
+    },700);
+})
+
+
+
 
 

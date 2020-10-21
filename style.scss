@@ -379,6 +379,27 @@ body {
     button:hover {
         background-color: $green;
     }
+
+    .hsp-dyn{
+        img{
+            margin-top: 190px;
+            margin-bottom: 2rem;
+            height: 250px;
+            width: 260px;
+            border-radius: 0.5rem;
+        }
+
+        div:nth-child(2) {
+            border: 2px solid $orange;
+            border-radius: 0.5rem;
+            padding: 1rem;
+
+            span{
+                color: $orange;
+            }
+            
+        }
+    }
 }
 
 
