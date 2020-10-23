@@ -413,7 +413,69 @@ body {
 
 }
 
+.stf-page {
+    @extend .abt-us-page;
 
+    h2 {
+        font-size: 1.2rem;
+        color: $green;
+    }
+}
+
+.contact-page {
+    @extend .stf-page;
+
+    .address {
+        width:30%;
+    }
+
+    .phone{
+        width: 40%;
+    }
+}
+
+.faq-page {
+    @extend .contact-page;
+
+    h3 {
+        cursor: pointer;
+        display:block;
+        color: $green;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    h3:hover {
+        color: $orange;
+    }
+
+    #questions {
+
+        p{  
+            display: none;
+        }
+        
+    }
+
+    .p-show{
+        display:block!important;
+        opacity: 1;
+        animation-name: fadeIn;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+  
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 @-webkit-keyframes fade {
     0% {opacity: 0;}
     20% {opacity: 1;}

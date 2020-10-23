@@ -177,29 +177,29 @@ body {
   color: #F7931E;
 }
 
-.abt-us-page, .srv-page, .pkg-page, .srv-page .vision, .pkg-page .vision, .srv-page .cmt, .pkg-page .cmt, .srv-page .mgmt, .pkg-page .mgmt, .abt-us-page .mgmt, .abt-us-page .cmt, .abt-us-page .vision {
+.abt-us-page, .stf-page, .contact-page, .faq-page, .stf-page .vision, .contact-page .vision, .faq-page .vision, .stf-page .cmt, .contact-page .cmt, .faq-page .cmt, .stf-page .mgmt, .contact-page .mgmt, .faq-page .mgmt, .srv-page, .pkg-page, .srv-page .vision, .pkg-page .vision, .srv-page .cmt, .pkg-page .cmt, .srv-page .mgmt, .pkg-page .mgmt, .abt-us-page .mgmt, .abt-us-page .cmt, .abt-us-page .vision {
   display: none;
   padding-top: 180px;
 }
-.abt-us-page h1, .srv-page h1, .pkg-page h1, .srv-page .vision h1, .pkg-page .vision h1, .srv-page .cmt h1, .pkg-page .cmt h1, .srv-page .mgmt h1, .pkg-page .mgmt h1, .abt-us-page .mgmt h1, .abt-us-page .cmt h1, .abt-us-page .vision h1 {
+.abt-us-page h1, .stf-page h1, .contact-page h1, .faq-page h1, .stf-page .vision h1, .contact-page .vision h1, .faq-page .vision h1, .stf-page .cmt h1, .contact-page .cmt h1, .faq-page .cmt h1, .stf-page .mgmt h1, .contact-page .mgmt h1, .faq-page .mgmt h1, .srv-page h1, .pkg-page h1, .srv-page .vision h1, .pkg-page .vision h1, .srv-page .cmt h1, .pkg-page .cmt h1, .srv-page .mgmt h1, .pkg-page .mgmt h1, .abt-us-page .mgmt h1, .abt-us-page .cmt h1, .abt-us-page .vision h1 {
   color: #F7931E;
   font-size: 1.5rem;
 }
-.abt-us-page button, .srv-page button, .pkg-page button, .srv-page .vision button, .pkg-page .vision button, .srv-page .cmt button, .pkg-page .cmt button, .srv-page .mgmt button, .pkg-page .mgmt button, .abt-us-page .mgmt button, .abt-us-page .cmt button, .abt-us-page .vision button {
+.abt-us-page button, .stf-page button, .contact-page button, .faq-page button, .stf-page .vision button, .contact-page .vision button, .faq-page .vision button, .stf-page .cmt button, .contact-page .cmt button, .faq-page .cmt button, .stf-page .mgmt button, .contact-page .mgmt button, .faq-page .mgmt button, .srv-page button, .pkg-page button, .srv-page .vision button, .pkg-page .vision button, .srv-page .cmt button, .pkg-page .cmt button, .srv-page .mgmt button, .pkg-page .mgmt button, .abt-us-page .mgmt button, .abt-us-page .cmt button, .abt-us-page .vision button {
   background-color: #8CC63F;
   color: black;
 }
-.abt-us-page button:hover, .srv-page button:hover, .pkg-page button:hover {
+.abt-us-page button:hover, .stf-page button:hover, .contact-page button:hover, .faq-page button:hover, .srv-page button:hover, .pkg-page button:hover {
   background-color: #F7931E;
   color: black;
 }
-.abt-us-page .abt-dynamic, .srv-page .abt-dynamic, .pkg-page .abt-dynamic {
+.abt-us-page .abt-dynamic, .stf-page .abt-dynamic, .contact-page .abt-dynamic, .faq-page .abt-dynamic, .srv-page .abt-dynamic, .pkg-page .abt-dynamic {
   padding-top: 6rem;
 }
-.abt-us-page .abt-dynamic .cmt-dyn li, .srv-page .abt-dynamic .cmt-dyn li, .pkg-page .abt-dynamic .cmt-dyn li {
+.abt-us-page .abt-dynamic .cmt-dyn li, .stf-page .abt-dynamic .cmt-dyn li, .contact-page .abt-dynamic .cmt-dyn li, .faq-page .abt-dynamic .cmt-dyn li, .srv-page .abt-dynamic .cmt-dyn li, .pkg-page .abt-dynamic .cmt-dyn li {
   padding-bottom: 1rem;
 }
-.abt-us-page .abt-dynamic .mgmt-dyn, .srv-page .abt-dynamic .mgmt-dyn, .pkg-page .abt-dynamic .mgmt-dyn {
+.abt-us-page .abt-dynamic .mgmt-dyn, .stf-page .abt-dynamic .mgmt-dyn, .contact-page .abt-dynamic .mgmt-dyn, .faq-page .abt-dynamic .mgmt-dyn, .srv-page .abt-dynamic .mgmt-dyn, .pkg-page .abt-dynamic .mgmt-dyn {
   padding-top: 3rem;
 }
 
@@ -276,6 +276,48 @@ body {
 }
 .pkg-page .hsp-dyn div:nth-child(2) span, .pkg-page .pcs-dyn div:nth-child(2) span, .pkg-page .scs-dyn div:nth-child(2) span, .pkg-page .crs-dyn div:nth-child(2) span, .pkg-page .rhs-dyn div:nth-child(2) span, .pkg-page .nhs-dyn div:nth-child(2) span, .pkg-page .gcs-dyn div:nth-child(2) span {
   color: #F7931E;
+}
+.stf-page h2, .contact-page h2, .faq-page h2 {
+  font-size: 1.2rem;
+  color: #8CC63F;
+}
+
+.contact-page .address, .faq-page .address {
+  width: 30%;
+}
+.contact-page .phone, .faq-page .phone {
+  width: 40%;
+}
+
+.faq-page h3 {
+  cursor: pointer;
+  display: block;
+  color: #8CC63F;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.faq-page h3:hover {
+  color: #F7931E;
+}
+.faq-page #questions p {
+  display: none;
+}
+.faq-page .p-show {
+  display: block !important;
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-webkit-keyframes fade {
   0% {

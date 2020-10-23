@@ -51,6 +51,30 @@ $('#pkg-btn').on('click', function () {
 
   current = $('.pkg-page');
 });
+$('#stf-btn').on('click', function () {
+  if (current !== $('.stf-page')) {
+    current.hide();
+    $('.stf-page').fadeIn();
+  }
+
+  current = $('.stf-page');
+});
+$('#ct-btn').on('click', function () {
+  if (current !== $('.contact-page')) {
+    current.hide();
+    $('.contact-page').fadeIn();
+  }
+
+  current = $('.contact-page');
+});
+$('#faq-btn').on('click', function () {
+  if (current !== $('.faq-page')) {
+    current.hide();
+    $('.faq-page').fadeIn();
+  }
+
+  current = $('.faq-page');
+});
 $('.abt-us-page').on('click', '.vision-btn', function () {
   $('.abt-dynamic').hide().fadeIn().html("\n        <div class='container vsn-dyn'>\n            <h1>Our Vision</h1>\n            <p>To provide an outstanding personalized professional health care to individuals of all ages within your own home or health care facility.</p>\n            <h1>Our Mission</h1>\n            <p>To support you and your family\u2019s health care when you need us.</p>\n            <h1>Our Goal</h1>\n            <p>To treat you the way we like to be treated with compassion, respect, dignity and confidentiality.</p>\n        </div>\n        ");
   $('html, body').animate({
@@ -166,4 +190,25 @@ $('.pkg-nav').on('click', '.gcs-btn', function () {
   $('html, body').animate({
     scrollTop: $('.anchor-dyn').first().offset().top
   }, 700);
+});
+$('.map-nav').on('click', '.map1', function () {
+  $('.map-dyn').hide().fadeIn().html("\n        <div class='map'>\n        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.0310209464856!2d-81.1837072845349!3d42.9776201791503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef2bc8b17772b%3A0x967cf6d74206ca2!2s27%20Hamber%20Ct%2C%20London%2C%20ON%20N5W%201R4!5e0!3m2!1sen!2sca!4v1603320797659!5m2!1sen!2sca\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>\n        </div>\n        \n        ");
+  $('html, body').animate({
+    scrollTop: $('.map-dyn').first().offset().top
+  }, 700);
+});
+$('.map-nav').on('click', '.map2', function () {
+  $('.map-dyn').hide().fadeIn().html("\n        <div class='map'>\n        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.5942681299875!2d-81.98728178455566!3d42.329851879189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882fe397fcae890f%3A0x5c9cc32f67869cf9!2s277%20Chatham%20St%20S%2C%20Blenheim%2C%20ON%20N0P%201A0!5e0!3m2!1sen!2sca!4v1603321006348!5m2!1sen!2sca\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>        \n        </div>\n        ");
+  $('html, body').animate({
+    scrollTop: $('.map-dyn').first().offset().top
+  }, 700);
+});
+$('#questions').on('click', function (event) {
+  var target = $(event.target);
+
+  for (var i = 1; i <= 10; i++) {
+    if (target.hasClass("q".concat(i))) {
+      $(".a".concat(i)).toggleClass('p-show');
+    }
+  }
 });
