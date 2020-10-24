@@ -288,6 +288,20 @@ body {
 .contact-page .phone, .faq-page .phone {
   width: 40%;
 }
+.contact-page .map, .faq-page .map {
+  overflow: hidden;
+  padding-bottom: 33.25%;
+  position: relative;
+  height: 0;
+}
+.contact-page .map iframe, .faq-page .map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  max-height: 300px !important;
+  width: 100%;
+  position: absolute;
+}
 
 .faq-page h3 {
   cursor: pointer;
