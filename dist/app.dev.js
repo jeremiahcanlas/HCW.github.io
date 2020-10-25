@@ -62,6 +62,7 @@ $('#stf-btn').on('click', function () {
 $('#ct-btn').on('click', function () {
   if (current !== $('.contact-page')) {
     current.hide();
+    $('.map-dyn').hide();
     $('.contact-page').fadeIn();
   }
 
@@ -70,7 +71,7 @@ $('#ct-btn').on('click', function () {
 $('#faq-btn').on('click', function () {
   if (current !== $('.faq-page')) {
     current.hide();
-    $('.promotions p').hide();
+    $('.answer').removeClass('p-show');
     $('.faq-page').fadeIn();
   }
 

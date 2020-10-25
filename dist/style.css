@@ -285,12 +285,26 @@ body {
 .contact-page .address, .faq-page .address {
   width: 30%;
 }
-.contact-page .phone, .faq-page .phone {
-  width: 40%;
+.contact-page .phone a, .faq-page .phone a {
+  color: #F7931E;
+  text-decoration: none;
+}
+.contact-page .phone a:hover, .faq-page .phone a:hover {
+  color: #8CC63F;
+}
+.contact-page .map-nav .map1, .faq-page .map-nav .map1 {
+  border-right: 10px solid #F7931E;
+}
+.contact-page .map-nav p, .faq-page .map-nav p {
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact-page .map-nav p:hover, .faq-page .map-nav p:hover {
+  color: #F7931E;
 }
 .contact-page .map, .faq-page .map {
   overflow: hidden;
-  padding-bottom: 33.25%;
+  padding-bottom: 300px;
   position: relative;
   height: 0;
 }

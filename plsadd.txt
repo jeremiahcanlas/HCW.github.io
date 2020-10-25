@@ -6,10 +6,3 @@ allowing users to go back after navigating through services and package menus
 
 fix services positioning
 
-fix google map on contact page on mobile version
-
-fix a element color in contact page
-
-fix button layout in contact page
-
-fix responsiveness on contact page

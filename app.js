@@ -98,6 +98,7 @@ $('#ct-btn').on('click',function(){
     if(current !== $('.contact-page')){
 
         current.hide()
+        $('.map-dyn').hide()
         $('.contact-page').fadeIn()
        
         
@@ -112,7 +113,7 @@ $('#faq-btn').on('click',function(){
     if(current !== $('.faq-page')){
 
         current.hide()
-        $('.promotions p').hide()
+        $('.answer').removeClass('p-show')
         $('.faq-page').fadeIn()
        
         

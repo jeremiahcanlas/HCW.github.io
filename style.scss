@@ -429,16 +429,47 @@ body {
         width:30%;
     }
 
-    .phone{
-        width: 40%;
+    .phone {
+
+        a{
+            color: $orange;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $green;
+        }
     }
+
+
+    .map-nav {
+
+        .map1 {
+            border-right: 10px solid $orange;
+        }
+
+        p{
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        p:hover {
+            color: $orange;
+
+            
+        }
+    }
+
+
 
     .map {
         overflow:hidden;
-        padding-bottom:33.25%;
+        padding-bottom:300px;
         position:relative;
         height:0;
         
+
+
 
         iframe{
             left:0;
