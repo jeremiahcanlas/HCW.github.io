@@ -212,6 +212,11 @@ body {
 .srv-page .scroll-container, .pkg-page .scroll-container {
   height: 1rem;
 }
+.srv-page .scroll-container .scroll-below, .pkg-page .scroll-container .scroll-below {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #8CC63F;
+}
 .srv-page .srv-dyn button, .pkg-page .srv-dyn button {
   width: 270px;
   height: 190px;

@@ -287,6 +287,12 @@ body {
 
     .scroll-container {
         height: 1rem;
+
+        .scroll-below {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: $green;
+        }
     }
 
     .srv-dyn {
@@ -338,25 +344,6 @@ body {
             }
         }
 
-        // .pcss-dyn{
-        //     @extend .hmss-dyn;
-        // }
-
-        // .gnss-dyn{
-        //     @extend .hmss-dyn;
-        // }
-
-        // .crc-dyn {
-        //     @extend .hmss-dyn;
-        // }
-
-        // .pvss-dyn{
-        //     @extend .ncss-dyn;
-        // }
-
-        // .mcss-dyn{
-        //     @extend .ncss-dyn;
-        // }
     }
 
     .go-back {
