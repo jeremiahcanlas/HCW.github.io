@@ -57,16 +57,13 @@ $('#srv-btn').on('click',function(){
         $('.srv-page').fadeIn()
         $('.srv-nav').fadeIn()
         $('.srv-dyn-out').hide()
-        $('.go-back').hide()
-
-       
-        
+        $('.go-back').hide()      
     }
-    onDisplay = false
-
+  
+     onDisplay = false
     current = $('.srv-page')
 
-})
+ })
 
 $('#pkg-btn').on('click',function(){
 
@@ -255,11 +252,14 @@ $('.abt-us-page').on('click','.mgmt-btn',function(){
 
 })
 
-$('.srv-nav').on('click','.hmss-btn',function(){
-  
-        onDisplay = true
+$('.srv-nav').on('click',function(event){
+    var target = $(event.target)
+    onDisplay = true
 
-        $('.srv-nav').hide()
+
+    if(target.hasClass('hmss-btn') || target.parent().hasClass('hmss-btn')) {
+
+        
         $('.srv-dyn-out').hide().fadeIn().html(
     
             `
@@ -298,7 +298,282 @@ $('.srv-nav').on('click','.hmss-btn',function(){
             
             `
         )
+    } else if (target.hasClass('ncss-btn') || target.parent().hasClass('ncss-btn')) {
 
+        
+        
+        $('.srv-dyn-out').hide().fadeIn().html(
+
+            `
+            <div class='ncss-dyn anchor-dyn'>
+                <div class='text-center'>
+                    <img src='/img/ncss-fs.jpg'>
+                    <h1>Nursing Care Support Services</h1>
+                    <h4>Delivering Professional Nursing Care is our Promise to you!</h4>
+                    <p>During your initial consultation, our Assessment Care Coordinator will help you determine the best 
+                    combination of services for you, based on your individual circumstances. We strive to match personalities and continuity 
+                    of care with every client and will work tirelessly to ensure that all of our clients are satisfied with our performance.</p>
+
+                </div>
+                <div class='mb-2'>
+
+                    <p>Our most <span><strong>popular Nursing Care Services</strong></span> includes:</p>
+
+                    <ul>
+                        <li>Admission Assessment</li>
+                        <li>Monitoring vital signs as required</li>
+                        <li>Wound Care/Dressings Management</li>
+                        <li>Medication Management and Reconciliation</li>
+                        <li>Designing Individualized Care Plans</li>
+                        <li>Coordination with other Health Professionals (e.g. dentists, vision care, dietician, pharmacists, etc.)</li>
+                        <li>Referrals made as appropriate</li>
+                        <li>Health Maintenance (education regarding health/illness needs)</li>
+                        <li>Catheterization & Catheter Care</li>
+                        <li>Ostomy care</li>
+                        <li>Injection Administration</li>
+                        <li>Diabetic care and education</li>
+                        <li>Pain Assessment & Management</li>
+                        <li>Regular documentation</li>
+                        <li>Convalescent care</li>
+                        <li>Palliative care</li>
+                    </ul>
+
+                </div>
+            </div>
+            
+            
+            `
+        )
+    } else if (target.hasClass('pcss-btn') || target.parent().hasClass('pcss-btn')) {
+        
+        
+        $('.srv-dyn-out').hide().fadeIn().html(
+    
+            `
+            <div class='pcss-dyn anchor-dyn'>
+                <div class='text-center'>
+                    <img src='/img/pcss-fs.jpg'>
+                    <h1>Personal Care Support Services</h1>
+                    <p>Homecare on Wheels' main focus is to help our clients manage their care in a professional and caring way. 
+                    Performing daily activities of living can be stressful when you are feeling unwell. 
+                    Whether you are residing in a home, long term facility retirement home, hospital, or some other type of accommodation. 
+                    Our staff is here to assist you with all the personal care requirements unique to your situation.</p>
+                    <p>During your initial consultation, our Nurse Assessment Care Coordinators will help you determine 
+                    the best combination of services for you based upon your individual circumstances and budget. We strive to
+                     match personalities and continuity of care with every client and will work tirelessly to ensure that all of our 
+                     clients are satisfied with our performance.</p>
+    
+                </div>
+                <div class='mb-2'>
+    
+                    <p>Our most <span><strong>popular Personal Care Services</strong></span> are listed below. 
+                    Your Health Care Coordinator can provide you with a complete 
+                    list of our Personal Care Services during your initial consultation.</p>
+    
+                    <ul>
+                        <li>Assist with bathing</li>
+                        <li>Assist with personal hygiene (grooming, dressing, etc.)</li>
+                        <li>Toileting</li>
+                        <li>Catheter care</li>
+                        <li>Skin care</li>
+                        <li>Medication reminders</li>
+                        <li>Mobility assistance</li>
+                        <li>Assist with prescribed physiotherapy exercises</li>
+                        <li>Escort to Doctor’s or Professional appointment</li>
+                        <li>Companionship, reading</li>
+                        <li>Assist with evening care</li>
+                    </ul>
+    
+                    <p>We are available to you 24 hours a day, 7 days a week, to answer any questions, 
+                    or solve any issues that you may have regarding your care.</p>
+    
+                </div>
+            </div>
+            
+            
+            `
+        )
+    } else if (target.hasClass('gnss-btn') || target.parent().hasClass('gnss-btn')) {
+
+       
+        $('.srv-dyn-out').hide().fadeIn().html(
+    
+            `
+            <div class='gnss-dyn anchor-dyn'>
+                <div class='text-center'>
+                    <img src='/img/gnss-fs.jpg'>
+                    <h1>Geriatric Clinical Nurse Specialists Services</h1>
+                    <p>Let’s face it, aging process requires specialized care from age related illness to medication management. 
+                    It is a fact that the elderly population are more susceptible to certain illnesses and diseases. </p>
+                    <p>Homecare on Wheels Inc has unique advantage of engaging the services of a geriatric nursing consultant, 
+                    Dr. Georgina Njoku who is a delegated professional trained Nurse whose life time passion is caring for 
+                    the elderly population. Specializing in Geriatric clinical nurse practice, she takes pleasure and passion 
+                    in caring for seniors and she trains her team to do the same.</p>
+                    <p>Our specialist will help you to navigate the health care system will give you the full advantage of 
+                    their experience and advice in approaching your specific circumstances. 
+                    This consultation can streamline your health care and ensure that there is no duplication of services or medications.</p>
+    
+                </div>
+                <div class='mb-2'>
+    
+                    <h1>This consultation is at least 2½ hours long and may include any of the following:</h1>
+    
+                    <ul>
+                        <li>Advanced Comprehensive Health Care Assessment</li>
+                        <li>Advance Pain Assessment & Management</li>
+                        <li>Fall Risk Assessment</li>
+                        <li>Diabetic Assessment</li>
+                        <li>Wound Care Assessment</li>
+                        <li>Cognitive Capacity Assessment</li>
+                        <li>Senior Behavioural Assessment</li>
+                        <li>Senior Functional Assessment</li>
+                        <li>Caregiver Stress Assessment</li>
+                        <li>Geriatric Health Consultation</li>
+                        <li>Palliative Care Consultation</li>
+                        <li>Chronic Disease Management</li>
+                    </ul>
+    
+                    <p>Remain available 24 hours a day, 7 days a week to answer any questions or solve any issues 
+                    that you may have regarding your care.</p>
+    
+                </div>
+            </div>
+            
+            
+            `
+        )
+    } else if (target.hasClass('crc-btn') || target.parent().hasClass('crc-btn')) {
+
+       
+        $('.srv-dyn-out').hide().fadeIn().html(
+    
+            `
+            <div class='crc-dyn anchor-dyn'>
+                <div class='text-center'>
+                    <img src='/img/crc-fs.jpg'>
+                    <h1>Caregiver & Respite Care Support Services</h1>
+                    <p>Caregiver burnout is a reality. Caregivers often neglect their own health in caring for their love ones. 
+                    Over time a caregiver will continue to shoulder increasing care burden to a point that it becomes overwhelming 
+                    and affects your own health. Our Caregiver & Respite Care Services allow you to recharge your batteries, 
+                    resting comfortably in the knowledge that your loved one is being cared for by compassionate professionals. 
+                    Taking time for yourself does more than just renew energy and relieve stress, it also gives your loved one a chance 
+                    to interact with someone new, which is often a welcome distraction.</p>
+    
+                    <p>During your initial consultation, our Nurse Assessment Coordinator will help you 
+                    determine the best combination of services for both you and the one you're caring for. 
+                    At Homecare on wheels Inc, we are committed to maintaining open lines of communication to allow our clients to take 
+                    full advantage of the services we provide and customize their care as, and when, they see fit. 
+                    We strive to match personalities and continuity of care with every client and will work tirelessly 
+                    to ensure that all of our clients are satisfied with our performance.</p>
+    
+                </div>
+                <div class='mb-2'>
+    
+                    <p>Our most <span>popular Caregiver & Respite Care Services</span> are listed below.</p>
+                    <ul>
+                        <li>Temporary relief for the caregiver</li>
+                        <li>Companionship</li>
+                        <li>Mobility Assistance</li>
+                        <li>Support for Light Recreational Activities (participate in crafts, playing cards, etc.)</li>
+                        <li>Emotional Support</li>
+                        <li>Assist with Medication Reminders</li>
+                        <li>Escort Client to Professional or Group Appointment</li>
+                        <li>Any other services required, such as Personal Support or Nursing, 
+                        will be addressed with your Homecare on Wheels Case Manager during the initial Home Care Assessment visit.</li>
+                        <li>Regularly review and supervise the Homecare Support Services you're receiving, and adjust these services as required.</li>
+                        <li>With your consent, consult with other health care professionals as necessary.</li>
+                    </ul>
+    
+                    <p>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care.</p>
+                    <p>With your consent, consult with other health care professionals as necessary.</p>
+    
+                </div>
+            </div>
+            
+            
+            `
+        )
+    
+    } else if (target.hasClass('pvss-btn') || target.parent().hasClass('pvss-btn')) {
+
+       
+        $('.srv-dyn-out').hide().fadeIn().html(
+    
+            `
+            <div class='pvss-dyn anchor-dyn'>
+                <div class='text-center'>
+                    <img src='/img/pvss-fs.jpg'>
+                    <h1>In-Home Virtual Physician/Nurse Practitioner Visits & Assessments</h1>
+                    <h4>Are you finding it difficult to get to a Doctor’s Appointment?</h4>
+                    <p>When dealing with an illness, it can be difficult to travel to visit a physician, whether that be due to problems in 
+                    arranging transportation, finding the energy to travel or taking time off work for the occasion. 
+                    That's why Homecare on Wheels offers physician/ Nurse Practitioner house/Virtual calls. 
+                    The doctor's office is no further than your living room, so you don’t have to leave the comfort of your home, 
+                    especially if you have mobility or health care concerns that make it inconvenient to travel to see a physician.</p>
+    
+                    <p>The health care services delivered by our Physicians or Nurse Practitioner are covered under OHIP. 
+                    The Administration and Transportation fee will be billed to the client.</p>
+    
+                    <p>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care.</p>
+    
+                </div>
+    
+            </div>
+            
+            
+            `
+        )
+    
+    } else if (target.hasClass('mcss-btn') || target.parent().hasClass('mcss-btn')) {
+
+       
+        $('.srv-dyn-out').hide().fadeIn().html(
+    
+            `
+            <div class='mcss-dyn anchor-dyn'>
+                <div class='text-center'>
+                    <img src='/img/mcss-fs.jpg'>
+                    <h1>Management Care Services</h1>
+                    <h4>Let us take the stress off of your shoulders</h4>
+                    <p>We want to put your mind at ease about the Homecare Services that you are receiving by providing you with professional and open care. 
+                    We are always open and respectful of your opinions and your concerns and will do our best to accommodate any needs that you have, 
+                    be they medical, privacy or financial concerns.</p>
+    
+                    <p>With the help of our knowledgeable staff, your health care services will be coordinated by trained, 
+                    competent individuals who will communicate any relevant information to the proper health care professionals, 
+                    to avoid costly, and sometimes harmful, duplication of services.</p>
+    
+                </div>
+                <div class='mb-2'>
+    
+                    <p>We encourage you to try our services which includes:</p>
+                    <ul>
+                        <li>We will coordinate your care</li>
+                        <li>Arrange any assistive devices, home safety equipment or monitoring services</li>
+                        <li>Set-up your appointments and arrange transportation to these appointments</li>
+                        <li>Accompany you to your appointments if required</li>
+                        <li>Arrange interpreter if required</li>
+                        <li>Contact and arrange delivery of your medical supplies, prescriptions, etc.</li>
+                        <li>Help you navigate the health care system for your individual health needs</li>
+                        <li>Contact other health care professionals as required with your prior consent</li>
+                        <li>Arrange consultations as required</li>
+                        <li>Keep your family up-to-date with your medical journey, with your consent</li>
+                    </ul>
+    
+                    <p>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care.</p>
+                    <p>With your consent, consult with other health care professionals as necessary.</p>
+    
+                </div>
+            </div>
+            
+            
+            `
+        )
+    
+    }
+
+
+        $('.srv-nav').hide()
         $('.go-back').fadeIn()
 
 
@@ -307,334 +582,6 @@ $('.srv-nav').on('click','.hmss-btn',function(){
         },700);
 })
 
-$('.srv-nav').on('click','.ncss-btn',function(){
-  
-  
-    $('.srv-nav').hide()
-    $('.srv-dyn-out').hide().fadeIn().html(
-
-        `
-        <div class='ncss-dyn anchor-dyn'>
-            <div class='text-center'>
-                <img src='/img/ncss-fs.jpg'>
-                <h1>Nursing Care Support Services</h1>
-                <h4>Delivering Professional Nursing Care is our Promise to you!</h4>
-                <p>During your initial consultation, our Assessment Care Coordinator will help you determine the best 
-                combination of services for you, based on your individual circumstances. We strive to match personalities and continuity 
-                of care with every client and will work tirelessly to ensure that all of our clients are satisfied with our performance.</p>
-
-            </div>
-            <div class='mb-2'>
-
-                <p>Our most <span><strong>popular Nursing Care Services</strong></span> includes:</p>
-
-                <ul>
-                    <li>Admission Assessment</li>
-                    <li>Monitoring vital signs as required</li>
-                    <li>Wound Care/Dressings Management</li>
-                    <li>Medication Management and Reconciliation</li>
-                    <li>Designing Individualized Care Plans</li>
-                    <li>Coordination with other Health Professionals (e.g. dentists, vision care, dietician, pharmacists, etc.)</li>
-                    <li>Referrals made as appropriate</li>
-                    <li>Health Maintenance (education regarding health/illness needs)</li>
-                    <li>Catheterization & Catheter Care</li>
-                    <li>Ostomy care</li>
-                    <li>Injection Administration</li>
-                    <li>Diabetic care and education</li>
-                    <li>Pain Assessment & Management</li>
-                    <li>Regular documentation</li>
-                    <li>Convalescent care</li>
-                    <li>Palliative care</li>
-                </ul>
-
-            </div>
-        </div>
-        
-        
-        `
-    )
-
-    $('.go-back').fadeIn()
-
-
-    $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
-    },700);
-})
-
-$('.srv-nav').on('click','.pcss-btn',function(){
-  
-  
-    $('.srv-nav').hide()
-    $('.srv-dyn-out').hide().fadeIn().html(
-
-        `
-        <div class='pcss-dyn anchor-dyn'>
-            <div class='text-center'>
-                <img src='/img/pcss-fs.jpg'>
-                <h1>Personal Care Support Services</h1>
-                <p>Homecare on Wheels' main focus is to help our clients manage their care in a professional and caring way. 
-                Performing daily activities of living can be stressful when you are feeling unwell. 
-                Whether you are residing in a home, long term facility retirement home, hospital, or some other type of accommodation. 
-                Our staff is here to assist you with all the personal care requirements unique to your situation.</p>
-                <p>During your initial consultation, our Nurse Assessment Care Coordinators will help you determine 
-                the best combination of services for you based upon your individual circumstances and budget. We strive to
-                 match personalities and continuity of care with every client and will work tirelessly to ensure that all of our 
-                 clients are satisfied with our performance.</p>
-
-            </div>
-            <div class='mb-2'>
-
-                <p>Our most <span><strong>popular Personal Care Services</strong></span> are listed below. 
-                Your Health Care Coordinator can provide you with a complete 
-                list of our Personal Care Services during your initial consultation.</p>
-
-                <ul>
-                    <li>Assist with bathing</li>
-                    <li>Assist with personal hygiene (grooming, dressing, etc.)</li>
-                    <li>Toileting</li>
-                    <li>Catheter care</li>
-                    <li>Skin care</li>
-                    <li>Medication reminders</li>
-                    <li>Mobility assistance</li>
-                    <li>Assist with prescribed physiotherapy exercises</li>
-                    <li>Escort to Doctor’s or Professional appointment</li>
-                    <li>Companionship, reading</li>
-                    <li>Assist with evening care</li>
-                </ul>
-
-                <p>We are available to you 24 hours a day, 7 days a week, to answer any questions, 
-                or solve any issues that you may have regarding your care.</p>
-
-            </div>
-        </div>
-        
-        
-        `
-    )
-
-    $('.go-back').fadeIn()
-
-
-    $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
-    },700);
-})
-
-
-$('.srv-nav').on('click','.gnss-btn',function(){
-  
-  
-    $('.srv-nav').hide()
-    $('.srv-dyn-out').hide().fadeIn().html(
-
-        `
-        <div class='gnss-dyn anchor-dyn'>
-            <div class='text-center'>
-                <img src='/img/gnss-fs.jpg'>
-                <h1>Geriatric Clinical Nurse Specialists Services</h1>
-                <p>Let’s face it, aging process requires specialized care from age related illness to medication management. 
-                It is a fact that the elderly population are more susceptible to certain illnesses and diseases. </p>
-                <p>Homecare on Wheels Inc has unique advantage of engaging the services of a geriatric nursing consultant, 
-                Dr. Georgina Njoku who is a delegated professional trained Nurse whose life time passion is caring for 
-                the elderly population. Specializing in Geriatric clinical nurse practice, she takes pleasure and passion 
-                in caring for seniors and she trains her team to do the same.</p>
-                <p>Our specialist will help you to navigate the health care system will give you the full advantage of 
-                their experience and advice in approaching your specific circumstances. 
-                This consultation can streamline your health care and ensure that there is no duplication of services or medications.</p>
-
-            </div>
-            <div class='mb-2'>
-
-                <h1>This consultation is at least 2½ hours long and may include any of the following:</h1>
-
-                <ul>
-                    <li>Advanced Comprehensive Health Care Assessment</li>
-                    <li>Advance Pain Assessment & Management</li>
-                    <li>Fall Risk Assessment</li>
-                    <li>Diabetic Assessment</li>
-                    <li>Wound Care Assessment</li>
-                    <li>Cognitive Capacity Assessment</li>
-                    <li>Senior Behavioural Assessment</li>
-                    <li>Senior Functional Assessment</li>
-                    <li>Caregiver Stress Assessment</li>
-                    <li>Geriatric Health Consultation</li>
-                    <li>Palliative Care Consultation</li>
-                    <li>Chronic Disease Management</li>
-                </ul>
-
-                <p>Remain available 24 hours a day, 7 days a week to answer any questions or solve any issues 
-                that you may have regarding your care.</p>
-
-            </div>
-        </div>
-        
-        
-        `
-    )
-
-    $('.go-back').fadeIn()
-
-
-    $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
-    },700);
-})
-
-$('.srv-nav').on('click','.crc-btn',function(){
-  
-  
-    $('.srv-nav').hide()
-    $('.srv-dyn-out').hide().fadeIn().html(
-
-        `
-        <div class='crc-dyn anchor-dyn'>
-            <div class='text-center'>
-                <img src='/img/crc-fs.jpg'>
-                <h1>Caregiver & Respite Care Support Services</h1>
-                <p>Caregiver burnout is a reality. Caregivers often neglect their own health in caring for their love ones. 
-                Over time a caregiver will continue to shoulder increasing care burden to a point that it becomes overwhelming 
-                and affects your own health. Our Caregiver & Respite Care Services allow you to recharge your batteries, 
-                resting comfortably in the knowledge that your loved one is being cared for by compassionate professionals. 
-                Taking time for yourself does more than just renew energy and relieve stress, it also gives your loved one a chance 
-                to interact with someone new, which is often a welcome distraction.</p>
-
-                <p>During your initial consultation, our Nurse Assessment Coordinator will help you 
-                determine the best combination of services for both you and the one you're caring for. 
-                At Homecare on wheels Inc, we are committed to maintaining open lines of communication to allow our clients to take 
-                full advantage of the services we provide and customize their care as, and when, they see fit. 
-                We strive to match personalities and continuity of care with every client and will work tirelessly 
-                to ensure that all of our clients are satisfied with our performance.</p>
-
-            </div>
-            <div class='mb-2'>
-
-                <p>Our most <span>popular Caregiver & Respite Care Services</span> are listed below.</p>
-                <ul>
-                    <li>Temporary relief for the caregiver</li>
-                    <li>Companionship</li>
-                    <li>Mobility Assistance</li>
-                    <li>Support for Light Recreational Activities (participate in crafts, playing cards, etc.)</li>
-                    <li>Emotional Support</li>
-                    <li>Assist with Medication Reminders</li>
-                    <li>Escort Client to Professional or Group Appointment</li>
-                    <li>Any other services required, such as Personal Support or Nursing, 
-                    will be addressed with your Homecare on Wheels Case Manager during the initial Home Care Assessment visit.</li>
-                    <li>Regularly review and supervise the Homecare Support Services you're receiving, and adjust these services as required.</li>
-                    <li>With your consent, consult with other health care professionals as necessary.</li>
-                </ul>
-
-                <p>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care.</p>
-                <p>With your consent, consult with other health care professionals as necessary.</p>
-
-            </div>
-        </div>
-        
-        
-        `
-    )
-
-    $('.go-back').fadeIn()
-
-
-    $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
-    },700);
-})
-
-$('.srv-nav').on('click','.pvss-btn',function(){
-  
-  
-    $('.srv-nav').hide()
-    $('.srv-dyn-out').hide().fadeIn().html(
-
-        `
-        <div class='pvss-dyn anchor-dyn'>
-            <div class='text-center'>
-                <img src='/img/pvss-fs.jpg'>
-                <h1>In-Home Virtual Physician/Nurse Practitioner Visits & Assessments</h1>
-                <h4>Are you finding it difficult to get to a Doctor’s Appointment?</h4>
-                <p>When dealing with an illness, it can be difficult to travel to visit a physician, whether that be due to problems in 
-                arranging transportation, finding the energy to travel or taking time off work for the occasion. 
-                That's why Homecare on Wheels offers physician/ Nurse Practitioner house/Virtual calls. 
-                The doctor's office is no further than your living room, so you don’t have to leave the comfort of your home, 
-                especially if you have mobility or health care concerns that make it inconvenient to travel to see a physician.</p>
-
-                <p>The health care services delivered by our Physicians or Nurse Practitioner are covered under OHIP. 
-                The Administration and Transportation fee will be billed to the client.</p>
-
-                <p>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care.</p>
-
-            </div>
-
-        </div>
-        
-        
-        `
-    )
-
-    $('.go-back').fadeIn()
-
-
-    $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
-    },700);
-})
-
-$('.srv-nav').on('click','.mcss-btn',function(){
-  
-  
-    $('.srv-nav').hide()
-    $('.srv-dyn-out').hide().fadeIn().html(
-
-        `
-        <div class='mcss-dyn anchor-dyn'>
-            <div class='text-center'>
-                <img src='/img/mcss-fs.jpg'>
-                <h1>Management Care Services</h1>
-                <h4>Let us take the stress off of your shoulders</h4>
-                <p>We want to put your mind at ease about the Homecare Services that you are receiving by providing you with professional and open care. 
-                We are always open and respectful of your opinions and your concerns and will do our best to accommodate any needs that you have, 
-                be they medical, privacy or financial concerns.</p>
-
-                <p>With the help of our knowledgeable staff, your health care services will be coordinated by trained, 
-                competent individuals who will communicate any relevant information to the proper health care professionals, 
-                to avoid costly, and sometimes harmful, duplication of services.</p>
-
-            </div>
-            <div class='mb-2'>
-
-                <p>We encourage you to try our services which includes:</p>
-                <ul>
-                    <li>We will coordinate your care</li>
-                    <li>Arrange any assistive devices, home safety equipment or monitoring services</li>
-                    <li>Set-up your appointments and arrange transportation to these appointments</li>
-                    <li>Accompany you to your appointments if required</li>
-                    <li>Arrange interpreter if required</li>
-                    <li>Contact and arrange delivery of your medical supplies, prescriptions, etc.</li>
-                    <li>Help you navigate the health care system for your individual health needs</li>
-                    <li>Contact other health care professionals as required with your prior consent</li>
-                    <li>Arrange consultations as required</li>
-                    <li>Keep your family up-to-date with your medical journey, with your consent</li>
-                </ul>
-
-                <p>Remain available to you 24 hours a day, 7 days a week, to answer any questions, or solve any issues that you may have regarding your care.</p>
-                <p>With your consent, consult with other health care professionals as necessary.</p>
-
-            </div>
-        </div>
-        
-        
-        `
-    )
-
-    $('.go-back').fadeIn()
-
-
-    $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
-    },700);
-})
 
 $('.pkg-nav').on('click','.hsp-btn',function(){
   
@@ -1023,7 +970,9 @@ $('.map-nav').on('click',function(event){
 
             `
             <div class='map'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.0310209464856!2d-81.1837072845349!3d42.9776201791503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef2bc8b17772b%3A0x967cf6d74206ca2!2s27%20Hamber%20Ct%2C%20London%2C%20ON%20N5W%201R4!5e0!3m2!1sen!2sca!4v1603320797659!5m2!1sen!2sca" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.0310209464856!2d-81.1837072845349!3d42.9776201791503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x882ef2bc8b17772b%3A0x967cf6d74206ca2!2s27%20Hamber%20Ct%2C%20London%2C%20ON%20N5W%201R4!5e0!3m2!1sen!2sca!4v1603320797659!5m2!1sen!2sca" 
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             
             `
@@ -1034,7 +983,9 @@ $('.map-nav').on('click',function(event){
 
             `
             <div class='map'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.5942681299875!2d-81.98728178455566!3d42.329851879189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882fe397fcae890f%3A0x5c9cc32f67869cf9!2s277%20Chatham%20St%20S%2C%20Blenheim%2C%20ON%20N0P%201A0!5e0!3m2!1sen!2sca!4v1603321006348!5m2!1sen!2sca" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.5942681299875!2d-81.98728178455566!3d42.329851879189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x882fe397fcae890f%3A0x5c9cc32f67869cf9!2s277%20Chatham%20St%20S%2C%20Blenheim%2C%20ON%20N0P%201A0!5e0!3m2!1sen!2sca!4v1603321006348!5m2!1sen!2sca" 
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
             </div>
             `
         )
