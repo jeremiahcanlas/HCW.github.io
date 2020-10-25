@@ -1,4 +1,6 @@
-var current = $('.home');
+var current = $('.home'),
+onDisplay = false
+
 
 
 $("[data-toggle=popover]").popover();
@@ -60,6 +62,7 @@ $('#srv-btn').on('click',function(){
        
         
     }
+    onDisplay = false
 
     current = $('.srv-page')
 
@@ -106,7 +109,7 @@ $('.go-back').on('click',function(event){
 
     }
 
-
+    onDisplay = false
     $('.go-back').hide()
 
   
@@ -254,7 +257,8 @@ $('.abt-us-page').on('click','.mgmt-btn',function(){
 
 $('.srv-nav').on('click','.hmss-btn',function(){
   
-  
+        onDisplay = true
+
         $('.srv-nav').hide()
         $('.srv-dyn-out').hide().fadeIn().html(
     
@@ -1057,10 +1061,16 @@ $('#questions').on('click',function(event){
 })
 
 $(window).on('scroll',function(){
+
+    
     if($(this).scrollTop()>0){
         $('.scroll-below').fadeOut()
     }else {
-        $('.scroll-below').fadeIn()
+        if(!onDisplay){
+            $('.scroll-below').fadeIn()
+        }else  {
+            $('.scroll-below').hide()
+        }
 
     }
 })

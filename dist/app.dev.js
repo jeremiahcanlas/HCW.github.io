@@ -1,6 +1,7 @@
 "use strict";
 
-var current = $('.home');
+var current = $('.home'),
+    onDisplay = false;
 $("[data-toggle=popover]").popover(); // navbar collapses when user clicks on nav options
 
 $('.navbar-collapse a').on('click', function () {
@@ -40,6 +41,7 @@ $('#srv-btn').on('click', function () {
     $('.go-back').hide();
   }
 
+  onDisplay = false;
   current = $('.srv-page');
 });
 $('#pkg-btn').on('click', function () {
@@ -72,6 +74,7 @@ $('.go-back').on('click', function (event) {
     }, 700);
   }
 
+  onDisplay = false;
   $('.go-back').hide();
 });
 $('#stf-btn').on('click', function () {
@@ -122,6 +125,7 @@ $('.abt-us-page').on('click', '.mgmt-btn', function () {
   }, 700);
 });
 $('.srv-nav').on('click', '.hmss-btn', function () {
+  onDisplay = true;
   $('.srv-nav').hide();
   $('.srv-dyn-out').hide().fadeIn().html("\n            <div class='hmss-dyn anchor-dyn'>\n                <div class='text-center'>\n                    <img src='/img/hscc-fs.jpg'>\n                    <h1>Home Making Support Services</h1>\n                    <p>We will assist you with your household chores. Our Home Making Support Services assist with daily household tasks.  \n                    Your home life can be improved significantly by a nurse, a helper or a companion. \n                    We offer a wide range of services to accommodate both short- and long-term needs that best suits your need.</p>\n                    \n                    <p>Whether returning home from the hospital, dealing with illness or simply requiring a little help as you age, \n                    our assessment Nurse Coordinator will assess your situation and help you to determine the best combination of services \n                    for you based on your individual circumstances and budget.</p>\n\n                </div>\n                <div class='mb-2'>\n\n                    <p>Our most\xA0<span><strong>popular Home Making Support Services</strong></span>\xA0includes:</p>\n\n                    <ul>\n                        <li>Taking care of laundry</li>\n                        <li>Light housekeeping</li>\n                        <li>Watering plants</li>\n                        <li>Taking out the garbage and recycling</li>\n                        <li>Changing bed linens and making beds</li>\n                        <li>Assist with housekeeping tasks</li>\n                        <li>Help with preparing grocery lists</li>\n                        <li>Preparing light meals</li>\n                        <li>Feed & Assist with the care of household pets</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n            \n            ");
   $('.go-back').fadeIn();
@@ -259,6 +263,10 @@ $(window).on('scroll', function () {
   if ($(this).scrollTop() > 0) {
     $('.scroll-below').fadeOut();
   } else {
-    $('.scroll-below').fadeIn();
+    if (!onDisplay) {
+      $('.scroll-below').fadeIn();
+    } else {
+      $('.scroll-below').hide();
+    }
   }
 });
