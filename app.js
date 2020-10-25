@@ -299,7 +299,7 @@ $('.srv-nav').on('click','.hmss-btn',function(){
 
 
         $('html, body').animate({
-            scrollTop: ($('.anchor-dyn').first().offset().top)
+            scrollTop: ($('.anchor-dyn').first().offset().top - 190)
         },700);
 })
 
@@ -354,7 +354,7 @@ $('.srv-nav').on('click','.ncss-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
     },700);
 })
 
@@ -413,7 +413,7 @@ $('.srv-nav').on('click','.pcss-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
     },700);
 })
 
@@ -473,7 +473,7 @@ $('.srv-nav').on('click','.gnss-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
     },700);
 })
 
@@ -534,7 +534,7 @@ $('.srv-nav').on('click','.crc-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
     },700);
 })
 
@@ -573,7 +573,7 @@ $('.srv-nav').on('click','.pvss-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
     },700);
 })
 
@@ -628,7 +628,7 @@ $('.srv-nav').on('click','.mcss-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn').first().offset().top - 190)
     },700);
 })
 

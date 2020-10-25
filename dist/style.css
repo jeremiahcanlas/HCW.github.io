@@ -228,7 +228,6 @@ body {
   background-color: #F7931E;
 }
 .srv-page .srv-dyn .hmss-dyn img, .pkg-page .srv-dyn .hmss-dyn img, .srv-page .srv-dyn .ncss-dyn img, .pkg-page .srv-dyn .ncss-dyn img, .srv-page .srv-dyn .pcss-dyn img, .pkg-page .srv-dyn .pcss-dyn img, .srv-page .srv-dyn .gnss-dyn img, .pkg-page .srv-dyn .gnss-dyn img, .srv-page .srv-dyn .crc-dyn img, .pkg-page .srv-dyn .crc-dyn img, .srv-page .srv-dyn .pvss-dyn img, .pkg-page .srv-dyn .pvss-dyn img, .srv-page .srv-dyn .mcss-dyn img, .pkg-page .srv-dyn .mcss-dyn img {
-  margin-top: 190px;
   margin-bottom: 2rem;
   height: 250px;
   width: 260px;
