@@ -85,21 +85,31 @@ $('.go-back').on('click',function(event){
     var target = $(event.target)
 
     if(target.hasClass('pkg-b')){
+
         $('.pkg-page').fadeIn()
         $('.pkg-nav').fadeIn()
         $('.pkg-dyn-out').hide()
+
+        $('html, body').animate({
+            scrollTop: ($('.main-back').first().offset().top)
+        },700);
+        
     } else if (target.hasClass('srv-b')){
+
         $('.srv-page').fadeIn()
         $('.srv-nav').fadeIn()
         $('.srv-dyn-out').hide()
+
+        $('html, body').animate({
+            scrollTop: ($('.main-back2').first().offset().top)
+        },700);
+
     }
 
 
     $('.go-back').hide()
 
-    $('html, body').animate({
-        scrollTop: ($('.main-back').first().offset().top)
-    },700);
+  
 })
 
 $('#stf-btn').on('click',function(){
@@ -629,7 +639,7 @@ $('.pkg-nav').on('click','.hsp-btn',function(){
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='hsp-dyn anchor-dyn'>
+        <div class='hsp-dyn anchor-dyn2'>
             <div class='text-center'>
                 <img src='/img/hsp-fs.jpg'>
                 <h1>Home Care Support Package</h1>
@@ -672,7 +682,7 @@ $('.pkg-nav').on('click','.hsp-btn',function(){
     $('.go-back').fadeIn()
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn2').first().offset().top)
     },700);
 })
 
@@ -683,7 +693,7 @@ $('.pkg-nav').on('click','.pcs-btn',function(){
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='pcs-dyn anchor-dyn'>
+        <div class='pcs-dyn anchor-dyn2'>
             <div class='text-center'>
                 <img src='/img/pcp-fs.jpg'>
                 <h1>Personal Care Support Package</h1>
@@ -720,7 +730,7 @@ $('.pkg-nav').on('click','.pcs-btn',function(){
     $('.go-back').fadeIn()
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn2').first().offset().top)
     },700);
 })
 
@@ -732,7 +742,7 @@ $('.pkg-nav').on('click','.scs-btn',function(){
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='scs-dyn anchor-dyn'>
+        <div class='scs-dyn anchor-dyn2'>
             <div class='text-center'>
                 <img src='/img/scs-fs.jpg'>
                 <h1>Senior Care Support Package</h1>
@@ -771,7 +781,7 @@ $('.pkg-nav').on('click','.scs-btn',function(){
     $('.go-back').fadeIn()
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn2').first().offset().top)
     },700);
 })
 
@@ -782,7 +792,7 @@ $('.pkg-nav').on('click','.crs-btn',function(){
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='crs-dyn anchor-dyn'>
+        <div class='crs-dyn anchor-dyn2'>
             <div class='text-center'>
                 <img src='/img/crs-fs.jpg'>
                 <h1>Caregiver & Respite-Care Support Package</h1>
@@ -824,7 +834,7 @@ $('.pkg-nav').on('click','.crs-btn',function(){
 
         
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn2').first().offset().top)
     },700);
 })
 
@@ -835,7 +845,7 @@ $('.pkg-nav').on('click','.rhs-btn',function(){
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='rhs-dyn anchor-dyn'>
+        <div class='rhs-dyn anchor-dyn2'>
             <div class='text-center'>
                 <img src='/img/rhs-fs.jpg'>
                 <h1>Returning Home Support Service</h1>
@@ -879,7 +889,7 @@ $('.pkg-nav').on('click','.rhs-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn2').first().offset().top)
     },700);
 })
 
@@ -890,7 +900,7 @@ $('.pkg-nav').on('click','.nhs-btn',function(){
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='nhs-dyn anchor-dyn'>
+        <div class='nhs-dyn anchor-dyn2'>
             <div class='text-center'>
                 <img src='/img/nhs-fs.jpg'>
                 <h1>Navigating the Health Care Support Package</h1>
@@ -933,7 +943,7 @@ $('.pkg-nav').on('click','.nhs-btn',function(){
     $('.go-back').fadeIn()
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn2').first().offset().top)
     },700);
 })
 
@@ -944,7 +954,7 @@ $('.pkg-nav').on('click','.gcs-btn',function(){
     $('.pkg-dyn-out').hide().fadeIn().html(
 
         `
-        <div class='gcs-dyn anchor-dyn'>
+        <div class='gcs-dyn anchor-dyn2'>
             <div class='text-center'>
                 <img src='/img/gcs-fs.jpg'>
                 <h1>Geriatric Clinical Specialist Package</h1>
@@ -994,7 +1004,7 @@ $('.pkg-nav').on('click','.gcs-btn',function(){
 
 
     $('html, body').animate({
-        scrollTop: ($('.anchor-dyn').first().offset().top)
+        scrollTop: ($('.anchor-dyn2').first().offset().top)
     },700);
 })
 

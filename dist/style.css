@@ -227,33 +227,34 @@ body {
 .srv-page .srv-dyn button:hover, .pkg-page .srv-dyn button:hover {
   background-color: #F7931E;
 }
-.srv-page .srv-dyn .hmss-dyn img, .pkg-page .srv-dyn .hmss-dyn img, .srv-page .srv-dyn .crc-dyn img, .pkg-page .srv-dyn .crc-dyn img, .srv-page .srv-dyn .gnss-dyn img, .pkg-page .srv-dyn .gnss-dyn img, .srv-page .srv-dyn .pcss-dyn img, .pkg-page .srv-dyn .pcss-dyn img, .srv-page .srv-dyn .ncss-dyn img, .pkg-page .srv-dyn .ncss-dyn img, .srv-page .srv-dyn .mcss-dyn img, .pkg-page .srv-dyn .mcss-dyn img, .srv-page .srv-dyn .pvss-dyn img, .pkg-page .srv-dyn .pvss-dyn img {
+.srv-page .srv-dyn .hmss-dyn img, .pkg-page .srv-dyn .hmss-dyn img, .srv-page .srv-dyn .ncss-dyn img, .pkg-page .srv-dyn .ncss-dyn img, .srv-page .srv-dyn .pcss-dyn img, .pkg-page .srv-dyn .pcss-dyn img, .srv-page .srv-dyn .gnss-dyn img, .pkg-page .srv-dyn .gnss-dyn img, .srv-page .srv-dyn .crc-dyn img, .pkg-page .srv-dyn .crc-dyn img, .srv-page .srv-dyn .pvss-dyn img, .pkg-page .srv-dyn .pvss-dyn img, .srv-page .srv-dyn .mcss-dyn img, .pkg-page .srv-dyn .mcss-dyn img {
   margin-top: 190px;
   margin-bottom: 2rem;
   height: 250px;
   width: 260px;
   border-radius: 0.5rem;
 }
-.srv-page .srv-dyn .hmss-dyn div:nth-child(2), .pkg-page .srv-dyn .hmss-dyn div:nth-child(2), .srv-page .srv-dyn .crc-dyn div:nth-child(2), .pkg-page .srv-dyn .crc-dyn div:nth-child(2), .srv-page .srv-dyn .gnss-dyn div:nth-child(2), .pkg-page .srv-dyn .gnss-dyn div:nth-child(2), .srv-page .srv-dyn .pcss-dyn div:nth-child(2), .pkg-page .srv-dyn .pcss-dyn div:nth-child(2), .srv-page .srv-dyn .ncss-dyn div:nth-child(2), .pkg-page .srv-dyn .ncss-dyn div:nth-child(2), .srv-page .srv-dyn .mcss-dyn div:nth-child(2), .pkg-page .srv-dyn .mcss-dyn div:nth-child(2), .srv-page .srv-dyn .pvss-dyn div:nth-child(2), .pkg-page .srv-dyn .pvss-dyn div:nth-child(2) {
+.srv-page .srv-dyn .hmss-dyn div:nth-child(2), .pkg-page .srv-dyn .hmss-dyn div:nth-child(2), .srv-page .srv-dyn .ncss-dyn div:nth-child(2), .pkg-page .srv-dyn .ncss-dyn div:nth-child(2), .srv-page .srv-dyn .pcss-dyn div:nth-child(2), .pkg-page .srv-dyn .pcss-dyn div:nth-child(2), .srv-page .srv-dyn .gnss-dyn div:nth-child(2), .pkg-page .srv-dyn .gnss-dyn div:nth-child(2), .srv-page .srv-dyn .crc-dyn div:nth-child(2), .pkg-page .srv-dyn .crc-dyn div:nth-child(2), .srv-page .srv-dyn .pvss-dyn div:nth-child(2), .pkg-page .srv-dyn .pvss-dyn div:nth-child(2), .srv-page .srv-dyn .mcss-dyn div:nth-child(2), .pkg-page .srv-dyn .mcss-dyn div:nth-child(2) {
   border: 2px solid #F7931E;
   border-radius: 0.5rem;
   padding: 1rem;
 }
-.srv-page .srv-dyn .hmss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .hmss-dyn div:nth-child(2) span, .srv-page .srv-dyn .crc-dyn div:nth-child(2) span, .pkg-page .srv-dyn .crc-dyn div:nth-child(2) span, .srv-page .srv-dyn .gnss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .gnss-dyn div:nth-child(2) span, .srv-page .srv-dyn .pcss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .pcss-dyn div:nth-child(2) span, .srv-page .srv-dyn .ncss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .ncss-dyn div:nth-child(2) span, .srv-page .srv-dyn .mcss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .mcss-dyn div:nth-child(2) span, .srv-page .srv-dyn .pvss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .pvss-dyn div:nth-child(2) span {
+.srv-page .srv-dyn .hmss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .hmss-dyn div:nth-child(2) span, .srv-page .srv-dyn .ncss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .ncss-dyn div:nth-child(2) span, .srv-page .srv-dyn .pcss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .pcss-dyn div:nth-child(2) span, .srv-page .srv-dyn .gnss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .gnss-dyn div:nth-child(2) span, .srv-page .srv-dyn .crc-dyn div:nth-child(2) span, .pkg-page .srv-dyn .crc-dyn div:nth-child(2) span, .srv-page .srv-dyn .pvss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .pvss-dyn div:nth-child(2) span, .srv-page .srv-dyn .mcss-dyn div:nth-child(2) span, .pkg-page .srv-dyn .mcss-dyn div:nth-child(2) span {
   color: #F7931E;
 }
-.srv-page .srv-dyn .ncss-dyn h4, .pkg-page .srv-dyn .ncss-dyn h4, .srv-page .srv-dyn .mcss-dyn h4, .pkg-page .srv-dyn .mcss-dyn h4, .srv-page .srv-dyn .pvss-dyn h4, .pkg-page .srv-dyn .pvss-dyn h4 {
+.srv-page .srv-dyn .ncss-dyn h4, .pkg-page .srv-dyn .ncss-dyn h4, .srv-page .srv-dyn .pcss-dyn h4, .pkg-page .srv-dyn .pcss-dyn h4, .srv-page .srv-dyn .gnss-dyn h4, .pkg-page .srv-dyn .gnss-dyn h4, .srv-page .srv-dyn .crc-dyn h4, .pkg-page .srv-dyn .crc-dyn h4, .srv-page .srv-dyn .pvss-dyn h4, .pkg-page .srv-dyn .pvss-dyn h4, .srv-page .srv-dyn .mcss-dyn h4, .pkg-page .srv-dyn .mcss-dyn h4 {
   font-size: 1rem;
   color: #8CC63F;
 }
 .srv-page .go-back, .pkg-page .go-back {
   display: none;
   font-weight: 600;
-  color: #F7931E;
+  color: #8CC63F;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .srv-page .go-back:hover, .pkg-page .go-back:hover {
-  color: #8CC63F;
+  color: #F7931E;
 }
 
 .pkg-page button {
@@ -293,11 +294,12 @@ body {
 .pkg-page .go-back {
   display: none;
   font-weight: 600;
-  color: #F7931E;
+  color: #8CC63F;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .pkg-page .go-back:hover {
-  color: #8CC63F;
+  color: #F7931E;
 }
 
 .stf-page h2, .contact-page h2, .faq-page h2 {
