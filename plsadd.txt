@@ -2,7 +2,6 @@ still needs to add:
 
 footer with contact info and location
 
-allowing users to go back after navigating through services and package menus
 
-fix services positioning
+
 

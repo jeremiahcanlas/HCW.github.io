@@ -55,6 +55,8 @@ $('#srv-btn').on('click',function(){
         $('.srv-page').fadeIn()
         $('.srv-nav').fadeIn()
         $('.srv-dyn-out').hide()
+        $('.go-back').hide()
+
        
         
     }
@@ -71,12 +73,33 @@ $('#pkg-btn').on('click',function(){
         $('.pkg-page').fadeIn()
         $('.pkg-nav').fadeIn()
         $('.pkg-dyn-out').hide()
-       
-        
+        $('.go-back').hide()
+
     }
 
     current = $('.pkg-page')
 
+})
+
+$('.go-back').on('click',function(event){
+    var target = $(event.target)
+
+    if(target.hasClass('pkg-b')){
+        $('.pkg-page').fadeIn()
+        $('.pkg-nav').fadeIn()
+        $('.pkg-dyn-out').hide()
+    } else if (target.hasClass('srv-b')){
+        $('.srv-page').fadeIn()
+        $('.srv-nav').fadeIn()
+        $('.srv-dyn-out').hide()
+    }
+
+
+    $('.go-back').hide()
+
+    $('html, body').animate({
+        scrollTop: ($('.main-back').first().offset().top)
+    },700);
 })
 
 $('#stf-btn').on('click',function(){
@@ -138,6 +161,9 @@ $('.abt-us-page').on('click','.vision-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
+
     $('html, body').animate({
         scrollTop: ($('.abt-btn').first().offset().top)
     },700);
@@ -166,6 +192,9 @@ $('.abt-us-page').on('click','.cmt-btn',function(){
         </div>        
         `
     )
+
+    $('.go-back').fadeIn()
+
 
     $('html, body').animate({
         scrollTop: ($('.abt-btn').first().offset().top)
@@ -203,6 +232,9 @@ $('.abt-us-page').on('click','.mgmt-btn',function(){
         </div>
         `
     )
+
+    $('.go-back').fadeIn()
+
 
     $('html, body').animate({
         scrollTop: ($('.abt-btn').first().offset().top)
@@ -252,6 +284,9 @@ $('.srv-nav').on('click','.hmss-btn',function(){
             
             `
         )
+
+        $('.go-back').fadeIn()
+
 
         $('html, body').animate({
             scrollTop: ($('.anchor-dyn').first().offset().top)
@@ -304,6 +339,9 @@ $('.srv-nav').on('click','.ncss-btn',function(){
         
         `
     )
+
+    $('.go-back').fadeIn()
+
 
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
@@ -361,6 +399,9 @@ $('.srv-nav').on('click','.pcss-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
+
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
@@ -417,6 +458,9 @@ $('.srv-nav').on('click','.gnss-btn',function(){
         
         `
     )
+
+    $('.go-back').fadeIn()
+
 
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
@@ -476,6 +520,9 @@ $('.srv-nav').on('click','.crc-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
+
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
@@ -511,6 +558,9 @@ $('.srv-nav').on('click','.pvss-btn',function(){
         
         `
     )
+
+    $('.go-back').fadeIn()
+
 
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
@@ -564,6 +614,9 @@ $('.srv-nav').on('click','.mcss-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
+
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
@@ -616,6 +669,8 @@ $('.pkg-nav').on('click','.hsp-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
@@ -661,6 +716,8 @@ $('.pkg-nav').on('click','.pcs-btn',function(){
         
         `
     )
+
+    $('.go-back').fadeIn()
 
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
@@ -710,6 +767,8 @@ $('.pkg-nav').on('click','.scs-btn',function(){
         
         `
     )
+
+    $('.go-back').fadeIn()
 
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
@@ -761,6 +820,9 @@ $('.pkg-nav').on('click','.crs-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
+        
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
@@ -813,6 +875,9 @@ $('.pkg-nav').on('click','.rhs-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
+
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
@@ -864,6 +929,8 @@ $('.pkg-nav').on('click','.nhs-btn',function(){
         
         `
     )
+
+    $('.go-back').fadeIn()
 
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
@@ -923,6 +990,9 @@ $('.pkg-nav').on('click','.gcs-btn',function(){
         `
     )
 
+    $('.go-back').fadeIn()
+
+
     $('html, body').animate({
         scrollTop: ($('.anchor-dyn').first().offset().top)
     },700);
@@ -974,4 +1044,13 @@ $('#questions').on('click',function(event){
 
   }
 
+})
+
+$(window).on('scroll',function(){
+    if($(this).scrollTop()>0){
+        $('.scroll-below').fadeOut()
+    }else {
+        $('.scroll-below').fadeIn()
+
+    }
 })

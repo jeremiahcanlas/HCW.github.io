@@ -209,6 +209,9 @@ body {
 .srv-page .hero img, .pkg-page .hero img, .srv-page .hero2 img, .pkg-page .hero2 img {
   padding-top: 0;
 }
+.srv-page .scroll-container, .pkg-page .scroll-container {
+  height: 1rem;
+}
 .srv-page .srv-dyn button, .pkg-page .srv-dyn button {
   width: 270px;
   height: 190px;
@@ -243,6 +246,16 @@ body {
   font-size: 1rem;
   color: #8CC63F;
 }
+.srv-page .go-back, .pkg-page .go-back {
+  display: none;
+  font-weight: 600;
+  color: #F7931E;
+  cursor: pointer;
+}
+.srv-page .go-back:hover, .pkg-page .go-back:hover {
+  color: #8CC63F;
+}
+
 .pkg-page button {
   width: 270px;
   height: 190px;
@@ -277,6 +290,16 @@ body {
 .pkg-page .hsp-dyn div:nth-child(2) span, .pkg-page .pcs-dyn div:nth-child(2) span, .pkg-page .scs-dyn div:nth-child(2) span, .pkg-page .crs-dyn div:nth-child(2) span, .pkg-page .rhs-dyn div:nth-child(2) span, .pkg-page .nhs-dyn div:nth-child(2) span, .pkg-page .gcs-dyn div:nth-child(2) span {
   color: #F7931E;
 }
+.pkg-page .go-back {
+  display: none;
+  font-weight: 600;
+  color: #F7931E;
+  cursor: pointer;
+}
+.pkg-page .go-back:hover {
+  color: #8CC63F;
+}
+
 .stf-page h2, .contact-page h2, .faq-page h2 {
   font-size: 1.2rem;
   color: #8CC63F;

@@ -285,6 +285,9 @@ body {
         @extend .hero
     }
 
+    .scroll-container {
+        height: 1rem;
+    }
     .srv-dyn {
         
         button {
@@ -356,6 +359,17 @@ body {
         }
     }
 
+    .go-back {
+        display: none;
+        font-weight: 600;
+        color: $orange;
+        cursor: pointer;
+    }
+
+    .go-back:hover {
+        color: $green;
+    }
+
 
 }
 
@@ -408,6 +422,17 @@ body {
 
     .pcs-dyn, .scs-dyn, .crs-dyn, .rhs-dyn, .nhs-dyn, .gcs-dyn {
         @extend .hsp-dyn;
+    }
+
+    .go-back {
+        display: none;
+        font-weight: 600;
+        color: $orange;
+        cursor: pointer;
+    }
+
+    .go-back:hover {
+        color: $green;
     }
 
 
