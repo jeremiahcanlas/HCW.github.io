@@ -206,7 +206,7 @@ body {
 
 }
 
-.home {
+.home-page {
 
     h1{
         font-size: $h1;
@@ -215,7 +215,7 @@ body {
     
 }
 
-.abt-us-page {
+.abt-page {
     display: none;
     padding-top: 180px;
 
@@ -238,18 +238,18 @@ body {
     }
     
     .vision {
-        @extend .abt-us-page;
+        @extend .abt-page;
     }
     
     .cmt {
-        @extend .abt-us-page;
+        @extend .abt-page;
     }
     
     .mgmt {
-        @extend .abt-us-page;
+        @extend .abt-page;
     }
 
-    .abt-dynamic{
+    .abt-dyn-out{
         padding-top: 6rem;
 
         .cmt-dyn{
@@ -270,7 +270,7 @@ body {
 }
 
 .srv-page {
-    @extend .abt-us-page;
+    @extend .abt-page;
 
     .hero{
         height: 20rem;
@@ -428,7 +428,7 @@ body {
 }
 
 .stf-page {
-    @extend .abt-us-page;
+    @extend .abt-page;
 
     h2 {
         font-size: 1.2rem;
@@ -436,7 +436,7 @@ body {
     }
 }
 
-.contact-page {
+.ct-page {
     @extend .stf-page;
 
     .address {
@@ -498,7 +498,7 @@ body {
 }
 
 .faq-page {
-    @extend .contact-page;
+    @extend .ct-page;
 
     h3 {
         cursor: pointer;
