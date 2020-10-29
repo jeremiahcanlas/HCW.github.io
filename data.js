@@ -53,7 +53,7 @@ const aboutUsBtn = [
                 care need is critical to your healing and recovering. The two other partners are business professionals with a 
                 proven record.</p>
                 <br>
-                <img class='img-fluid mb-2' src='/img/georgina.jpg'>
+                <img class='img-fluid mb-2' src='./img/georgina.jpg'>
                 <h4>Nurse Consultant</h4>
                 <p class='mb-0'><em>Georgina Njoku, BScN, MScN, DNP, RN, GNC&copy</em></p>
                 <p><em>Geriatrics Clinical Nurse Specialist</em></p>
@@ -77,7 +77,7 @@ const servicesBtn = [
         html:`
                 <div class='hmss-dyn anchor-dyn'>
                     <div class='text-center'>
-                        <img src='/img/hscc-fs.jpg'>
+                        <img sr./img/hscc-fs.jpg'>
                         <h1>Home Making Support Services</h1>
                         <p>We will assist you with your household chores. Our Home Making Support Services assist with daily household tasks.  
                         Your home life can be improved significantly by a nurse, a helper or a companion. 
@@ -113,7 +113,7 @@ const servicesBtn = [
         html:`
             <div class='ncss-dyn anchor-dyn'>
                 <div class='text-center'>
-                    <img src='/img/ncss-fs.jpg'>
+                    <img sr./img/ncss-fs.jpg'>
                     <h1>Nursing Care Support Services</h1>
                     <h4>Delivering Professional Nursing Care is our Promise to you!</h4>
                     <p>During your initial consultation, our Assessment Care Coordinator will help you determine the best 
@@ -154,7 +154,7 @@ const servicesBtn = [
         html:`
         <div class='pcss-dyn anchor-dyn'>
             <div class='text-center'>
-                <img src='/img/pcss-fs.jpg'>
+                <img sr./img/pcss-fs.jpg'>
                 <h1>Personal Care Support Services</h1>
                 <p>Homecare on Wheels' main focus is to help our clients manage their care in a professional and caring way. 
                 Performing daily activities of living can be stressful when you are feeling unwell. 
@@ -199,7 +199,7 @@ const servicesBtn = [
         html:`
         <div class='gnss-dyn anchor-dyn'>
         <div class='text-center'>
-            <img src='/img/gnss-fs.jpg'>
+            <img sr./img/gnss-fs.jpg'>
             <h1>Geriatric Clinical Nurse Specialists Services</h1>
             <p>Let’s face it, aging process requires specialized care from age related illness to medication management. 
             It is a fact that the elderly population are more susceptible to certain illnesses and diseases. </p>
@@ -244,7 +244,7 @@ const servicesBtn = [
         html:`
         <div class='crc-dyn anchor-dyn'>
         <div class='text-center'>
-            <img src='/img/crc-fs.jpg'>
+            <img sr./img/crc-fs.jpg'>
             <h1>Caregiver & Respite Care Support Services</h1>
             <p>Caregiver burnout is a reality. Caregivers often neglect their own health in caring for their love ones. 
             Over time a caregiver will continue to shoulder increasing care burden to a point that it becomes overwhelming 
@@ -291,7 +291,7 @@ const servicesBtn = [
         html:`
         <div class='pvss-dyn anchor-dyn'>
         <div class='text-center'>
-            <img src='/img/pvss-fs.jpg'>
+            <img sr./img/pvss-fs.jpg'>
             <h1>In-Home Virtual Physician/Nurse Practitioner Visits & Assessments</h1>
             <h4>Are you finding it difficult to get to a Doctor’s Appointment?</h4>
             <p>When dealing with an illness, it can be difficult to travel to visit a physician, whether that be due to problems in 
@@ -316,7 +316,7 @@ const servicesBtn = [
         html:`
         <div class='mcss-dyn anchor-dyn'>
         <div class='text-center'>
-            <img src='/img/mcss-fs.jpg'>
+            <img sr./img/mcss-fs.jpg'>
             <h1>Management Care Services</h1>
             <h4>Let us take the stress off of your shoulders</h4>
             <p>We want to put your mind at ease about the Homecare Services that you are receiving by providing you with professional and open care. 
@@ -362,7 +362,7 @@ const pkgBtn = [
         html:`
         <div class='hsp-dyn anchor-dyn2'>
         <div class='text-center'>
-            <img src='/img/hsp-fs.jpg'>
+            <img sr./img/hsp-fs.jpg'>
             <h1>Home Care Support Package</h1>
             <h4>Sometimes all you NEED is a hand with household chores</h4>
             <p>Our Home Care Support Staff assist with the daily household tasks that you may not be able to perform anymore due to, 
@@ -403,7 +403,7 @@ const pkgBtn = [
         html:`
         <div class='pcs-dyn anchor-dyn2'>
         <div class='text-center'>
-            <img src='/img/pcp-fs.jpg'>
+            <img sr./img/pcp-fs.jpg'>
             <h1>Personal Care Support Package</h1>
             <p>Homecare on Wheels' main focus is to help our clients manage their care in a professional and caring way. Performing daily activities can be stressful, whether you are residing in a home, long term facility retirement home, hospital, or some other type of accommodation. Our staff is here to assist you with all the personal care requirements unique to your situation. </p>
             <p>Our Personal Care services are delivered by trained, dedicated caregivers who believe in providing you with care in a respectful and dignified way while maintaining your privacy and independence.</p>
@@ -438,7 +438,7 @@ const pkgBtn = [
         html:`
         <div class='scs-dyn anchor-dyn2'>
         <div class='text-center'>
-            <img src='/img/scs-fs.jpg'>
+            <img sr./img/scs-fs.jpg'>
             <h1>Senior Care Support Package</h1>
             <h4>Are you concerned with your loved one needing assistance with their day to day activities?</h4>
             <p>The Senior Care Support Package is designed to give you the peace of mind in knowing that your loved one(s) 
@@ -475,7 +475,7 @@ const pkgBtn = [
         html:`
         <div class='crs-dyn anchor-dyn2'>
         <div class='text-center'>
-            <img src='/img/crs-fs.jpg'>
+            <img sr./img/crs-fs.jpg'>
             <h1>Caregiver & Respite-Care Support Package</h1>
             <h4>Caring for a loved one can be overwhelming, we understand!</h4>
             <p>We give you the permission to allow us to shoulder some of the caregiver burden. 
@@ -514,7 +514,7 @@ const pkgBtn = [
         html:`
         <div class='rhs-dyn anchor-dyn2'>
         <div class='text-center'>
-            <img src='/img/rhs-fs.jpg'>
+            <img sr./img/rhs-fs.jpg'>
             <h1>Returning Home Support Service</h1>
             <h4>Return Home Stress-Free!</h4>
             <p>Returning home following a short or extended hospital or rehabilitation stay can be scary, and stressful. 
@@ -555,7 +555,7 @@ const pkgBtn = [
         html:`
         <div class='nhs-dyn anchor-dyn2'>
         <div class='text-center'>
-            <img src='/img/nhs-fs.jpg'>
+            <img sr./img/nhs-fs.jpg'>
             <h1>Navigating the Health Care Support Package</h1>
             <h4>Navigating Canada’s Health Care system on your own can cause frustration and confusion</h4>
             <p>Trying to navigate Canada’s Health Care system on your own may cause frustration and confusion. 
@@ -596,7 +596,7 @@ const pkgBtn = [
         html:`
         <div class='gcs-dyn anchor-dyn2'>
         <div class='text-center'>
-            <img src='/img/gcs-fs.jpg'>
+            <img sr./img/gcs-fs.jpg'>
             <h1>Geriatric Clinical Specialist Package</h1>
             <h4>Our elderly population require specialized care</h4>
             <p>The aging process often leaves the elderly population more susceptible to certain illnesses and chronic diseases. 
