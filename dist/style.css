@@ -1,5 +1,6 @@
 html {
-  overflow: scroll;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -10,6 +11,8 @@ html {
 
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav {
@@ -172,6 +175,9 @@ body {
   animation-delay: -16s;
 }
 
+.home-page {
+  padding-bottom: 10rem;
+}
 .home-page h1 {
   font-size: 1.5rem;
   color: #F7931E;
@@ -180,6 +186,7 @@ body {
 .abt-page, .stf-page, .ct-page, .faq-page, .stf-page .vision, .ct-page .vision, .faq-page .vision, .stf-page .cmt, .ct-page .cmt, .faq-page .cmt, .stf-page .mgmt, .ct-page .mgmt, .faq-page .mgmt, .srv-page, .pkg-page, .srv-page .vision, .pkg-page .vision, .srv-page .cmt, .pkg-page .cmt, .srv-page .mgmt, .pkg-page .mgmt, .abt-page .mgmt, .abt-page .cmt, .abt-page .vision {
   display: none;
   padding-top: 180px;
+  margin-bottom: 20rem;
 }
 .abt-page h1, .stf-page h1, .ct-page h1, .faq-page h1, .stf-page .vision h1, .ct-page .vision h1, .faq-page .vision h1, .stf-page .cmt h1, .ct-page .cmt h1, .faq-page .cmt h1, .stf-page .mgmt h1, .ct-page .mgmt h1, .faq-page .mgmt h1, .srv-page h1, .pkg-page h1, .srv-page .vision h1, .pkg-page .vision h1, .srv-page .cmt h1, .pkg-page .cmt h1, .srv-page .mgmt h1, .pkg-page .mgmt h1, .abt-page .mgmt h1, .abt-page .cmt h1, .abt-page .vision h1 {
   color: #F7931E;
@@ -194,13 +201,10 @@ body {
   color: black;
 }
 .abt-page .abt-dyn-out, .stf-page .abt-dyn-out, .ct-page .abt-dyn-out, .faq-page .abt-dyn-out, .srv-page .abt-dyn-out, .pkg-page .abt-dyn-out {
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 .abt-page .abt-dyn-out .cmt-dyn li, .stf-page .abt-dyn-out .cmt-dyn li, .ct-page .abt-dyn-out .cmt-dyn li, .faq-page .abt-dyn-out .cmt-dyn li, .srv-page .abt-dyn-out .cmt-dyn li, .pkg-page .abt-dyn-out .cmt-dyn li {
   padding-bottom: 1rem;
-}
-.abt-page .abt-dyn-out .mgmt-dyn, .stf-page .abt-dyn-out .mgmt-dyn, .ct-page .abt-dyn-out .mgmt-dyn, .faq-page .abt-dyn-out .mgmt-dyn, .srv-page .abt-dyn-out .mgmt-dyn, .pkg-page .abt-dyn-out .mgmt-dyn {
-  padding-top: 3rem;
 }
 
 .srv-page .hero, .pkg-page .hero, .srv-page .hero2, .pkg-page .hero2 {
@@ -306,11 +310,18 @@ body {
   color: #F7931E;
 }
 
+.stf-page, .ct-page, .faq-page {
+  padding-bottom: 20rem;
+}
 .stf-page h2, .ct-page h2, .faq-page h2 {
   font-size: 1.2rem;
   color: #8CC63F;
 }
 
+.ct-page, .faq-page {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
 .ct-page .address, .faq-page .address {
   width: 30%;
 }
@@ -346,6 +357,9 @@ body {
   position: absolute;
 }
 
+.faq-page {
+  margin-bottom: 10rem !important;
+}
 .faq-page h3 {
   cursor: pointer;
   display: block;
@@ -366,6 +380,54 @@ body {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 1s;
+}
+
+.footer-contact .contactme {
+  text-align: center;
+}
+.footer-contact .contactme .address-row {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.footer-contact .contactme .contact h1 {
+  color: #F7931E;
+  font-size: 1rem;
+}
+.footer-contact .contactme .contact h1 a {
+  color: #8CC63F;
+  text-decoration: none;
+}
+.footer-contact .contactme .contact h1 a:hover {
+  color: #F7931E;
+}
+.footer-contact .contactme .questions {
+  font-size: 1rem;
+  color: #8CC63F;
+}
+.footer-contact .contactme .questions h1 {
+  font-size: 1rem;
+}
+.footer-contact .contactme .questions a {
+  color: #F7931E;
+  text-decoration: none;
+}
+.footer-contact .contactme .questions a:hover {
+  color: #8CC63F;
+}
+
+footer {
+  border-top: 2px solid #F7931E;
+}
+footer p {
+  color: #8CC63F;
+}
+footer p a {
+  color: #8CC63F;
+  text-decoration: none;
+}
+footer p a:hover {
+  color: #F7931E;
+  text-decoration: none;
 }
 
 @keyframes fadeIn {

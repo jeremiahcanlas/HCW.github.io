@@ -26,7 +26,8 @@ for(let data of mainNav) {
 
     $(`#${data}-btn`).on('click',function(){
 
-        if(current !== $(`.${data}`)){
+        if(current !== $(`.${data}-page`)){
+
             current.hide()
             $(`.${data}`).fadeIn()
             $(`.${data}-page`).fadeIn()
@@ -35,13 +36,20 @@ for(let data of mainNav) {
             $(`.${data}-dyn-out`).hide()
             $('.go-back').hide()
             $('.map-dyn').hide()
-            $('.answer').removeClass('p-show')      
+            $('.answer').removeClass('p-show')
+            $('.footer-contact').fadeIn() 
+
+            
 
         }
 
         current = $(`.${data}-page`)
     })
 }
+
+$('#ct-btn').on('click',function(){
+    $('.footer-contact').hide()
+})
 
 
 
@@ -79,7 +87,7 @@ $('.abt-page').on('click',function(event){
             )
 
             $('html, body').animate({
-                scrollTop: ($('.abt-btn').first().offset().top)
+                scrollTop: ($('.abt-btn').first().offset().top) - 90
             },700);
             
         }

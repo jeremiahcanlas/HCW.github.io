@@ -3,7 +3,9 @@ $orange:#F7931E;
 $h1: 1.5rem;
 
 html {
-    overflow:   scroll;
+    
+    margin: 0;
+    padding: 0;
   }
   ::-webkit-scrollbar {
       width: 0px;
@@ -12,6 +14,8 @@ html {
   
 body {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .main-nav {
@@ -207,6 +211,7 @@ body {
 }
 
 .home-page {
+    padding-bottom: 10rem;
 
     h1{
         font-size: $h1;
@@ -218,6 +223,7 @@ body {
 .abt-page {
     display: none;
     padding-top: 180px;
+    margin-bottom: 20rem;
 
         
     
@@ -250,7 +256,8 @@ body {
     }
 
     .abt-dyn-out{
-        padding-top: 6rem;
+        padding-top: 5rem;
+        
 
         .cmt-dyn{
 
@@ -259,10 +266,7 @@ body {
             }
         }
 
-        .mgmt-dyn{
-            padding-top: 3rem;
 
-        }
     }
 
 
@@ -429,6 +433,7 @@ body {
 
 .stf-page {
     @extend .abt-page;
+    padding-bottom: 20rem;
 
     h2 {
         font-size: 1.2rem;
@@ -438,6 +443,8 @@ body {
 
 .ct-page {
     @extend .stf-page;
+    padding-bottom: 0!important;
+    margin-bottom: 0!important;
 
     .address {
         width:30%;
@@ -499,6 +506,7 @@ body {
 
 .faq-page {
     @extend .ct-page;
+    margin-bottom: 10rem!important;
 
     h3 {
         cursor: pointer;
@@ -530,6 +538,85 @@ body {
     }
   
 }
+.footer-contact {
+   
+
+    .contactme {
+        text-align: center;
+
+        .address-row {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        .contact{
+            h1 {
+                color: $orange;
+                font-size: 1rem;
+    
+                a {
+                    color: $green;
+                    text-decoration: none;
+                    
+                }
+    
+                a:hover {
+                    color: $orange;
+                }
+            };
+        }
+
+     
+
+        .questions {
+            font-size: 1rem;
+            color: $green;
+
+            h1{
+                font-size: 1rem;
+            }
+
+            a {
+                color:$orange;
+                text-decoration: none;
+            }
+    
+            a:hover {
+                color: $green;
+            }
+        }
+
+
+
+
+     
+    }
+
+
+}
+
+
+
+
+
+footer {
+    border-top: 2px solid $orange;
+
+    p{
+        color: $green;
+
+        a {
+            color: $green;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+}
 
 @keyframes fadeIn {
 	0% {
@@ -539,6 +626,7 @@ body {
 		opacity: 1;
 	}
 }
+
 @-webkit-keyframes fade {
     0% {opacity: 0;}
     20% {opacity: 1;}

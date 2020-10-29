@@ -12,8 +12,8 @@ const aboutUsBtn = [
             <p>To treat you the way we like to be treated with compassion, respect, dignity and confidentiality.</p>
         </div>
         `
-    },
-
+    }
+,
     {
         btn: 'cmt-btn',
 
@@ -23,7 +23,7 @@ const aboutUsBtn = [
             <ul>
                 <li>Homecare on Wheels incorporated are committed to be:
                 <br>
-                Professional ♥ Knowledgeable ♥ Respectful ♥ Dedicated ♥ Integrity.</li>
+                ♥ Professional ♥ Knowledgeable ♥ Respectful ♥ Dedicated ♥ Integrity.</li>
                 <li>Homecare on Wheels believe in treating all clients with the respect and dignity they deserve.</li>
                 <li>Clients and their family members will be an important partner in setting up the home health care plans.</li>
                 <li>Homecare on Wheels professional nurses will assess and advise what healthcare services available we respect your health care decision as a priority and work in collaboration with our clients to make it happen.</li>

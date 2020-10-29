@@ -24,7 +24,7 @@ try {
   var _loop = function _loop() {
     var data = _step.value;
     $("#".concat(data, "-btn")).on('click', function () {
-      if (current !== $(".".concat(data))) {
+      if (current !== $(".".concat(data, "-page"))) {
         current.hide();
         $(".".concat(data)).fadeIn();
         $(".".concat(data, "-page")).fadeIn();
@@ -34,6 +34,7 @@ try {
         $('.go-back').hide();
         $('.map-dyn').hide();
         $('.answer').removeClass('p-show');
+        $('.footer-contact').fadeIn();
       }
 
       current = $(".".concat(data, "-page"));
@@ -58,6 +59,9 @@ try {
   }
 }
 
+$('#ct-btn').on('click', function () {
+  $('.footer-contact').hide();
+});
 $('.go-back').on('click', function (event) {
   var target = $(event.target);
   var _iteratorNormalCompletion2 = true;
@@ -108,7 +112,7 @@ $('.abt-page').on('click', function (event) {
       if (target.hasClass(data.btn)) {
         $('.abt-dyn-out').hide().fadeIn().html(data.html);
         $('html, body').animate({
-          scrollTop: $('.abt-btn').first().offset().top
+          scrollTop: $('.abt-btn').first().offset().top - 90
         }, 700);
       }
     }
