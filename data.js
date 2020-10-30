@@ -71,11 +71,11 @@ const aboutUsBtn = [
     }
 ]
 
-const servicesBtn = [
+const srvBtn = [
     {   
         btn:'hmss-btn',
         html:`
-                <div class='hmss-dyn anchor-dyn'>
+                <div class='hmss-dyn anchor-dyn1'>
                     <div class='text-center'>
                         <img src='./img/hscc-fs.jpg'>
                         <h1>Home Making Support Services</h1>
@@ -111,7 +111,7 @@ const servicesBtn = [
     {   
         btn:'ncss-btn',
         html:`
-            <div class='ncss-dyn anchor-dyn'>
+            <div class='ncss-dyn anchor-dyn1'>
                 <div class='text-center'>
                     <img src='./img/ncss-fs.jpg'>
                     <h1>Nursing Care Support Services</h1>
@@ -152,7 +152,7 @@ const servicesBtn = [
     {   
         btn:'pcss-btn',
         html:`
-        <div class='pcss-dyn anchor-dyn'>
+        <div class='pcss-dyn anchor-dyn1'>
             <div class='text-center'>
                 <img src='./img/pcss-fs.jpg'>
                 <h1>Personal Care Support Services</h1>
@@ -197,7 +197,7 @@ const servicesBtn = [
     {   
         btn:'gnss-btn',
         html:`
-        <div class='gnss-dyn anchor-dyn'>
+        <div class='gnss-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/gnss-fs.jpg'>
             <h1>Geriatric Clinical Nurse Specialists Services</h1>
@@ -242,7 +242,7 @@ const servicesBtn = [
     {   
         btn:'crc-btn',
         html:`
-        <div class='crc-dyn anchor-dyn'>
+        <div class='crc-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/crc-fs.jpg'>
             <h1>Caregiver & Respite Care Support Services</h1>
@@ -289,7 +289,7 @@ const servicesBtn = [
     {   
         btn:'pvss-btn',
         html:`
-        <div class='pvss-dyn anchor-dyn'>
+        <div class='pvss-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/pvss-fs.jpg'>
             <h1>In-Home Virtual Physician/Nurse Practitioner Visits & Assessments</h1>
@@ -314,7 +314,7 @@ const servicesBtn = [
     {   
         btn:'mcss-btn',
         html:`
-        <div class='mcss-dyn anchor-dyn'>
+        <div class='mcss-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/mcss-fs.jpg'>
             <h1>Management Care Services</h1>
@@ -697,3 +697,6 @@ const backDyn = [
 const mainNav = [
     'home','abt','srv','pkg','stf','ct','faq'
 ]
+
+const dynamic = ['srv','pkg']
+

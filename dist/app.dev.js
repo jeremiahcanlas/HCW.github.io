@@ -139,7 +139,7 @@ $('.srv-nav').on('click', function (event) {
   var _iteratorError4 = undefined;
 
   try {
-    for (var _iterator4 = servicesBtn[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+    for (var _iterator4 = srvBtn[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
       var data = _step4.value;
 
       if (target.hasClass(data.btn) || target.parent().hasClass(data.btn)) {
@@ -147,7 +147,7 @@ $('.srv-nav').on('click', function (event) {
         $('.srv-nav').hide();
         $('.go-back').fadeIn();
         $('html, body').animate({
-          scrollTop: $('.anchor-dyn').first().offset().top - 190
+          scrollTop: $('.anchor-dyn1').first().offset().top - 190
         }, 700);
       }
     }
@@ -200,7 +200,26 @@ $('.pkg-nav').on('click', function (event) {
       }
     }
   }
-});
+}); // var start;
+// for(let data of dynamic){
+//     start = function(){
+//     $(`${data}-nav`).on('click',function(event){
+//         var target2 = $(event.target)
+//         onDisplay = true
+//         for(let sub of `${data}Btn`){
+//             if(target2.hasClass(sub.btn) || target2.parent().hasClass(sub.btn)){
+//                 $(`.${sub}-dyn-out`).hide().fadeIn().html(data.html)
+//                 $(`${sub}-nav`).hide()
+//                 $('.go-back').fadeIn()
+//                 $('html, body').animate({
+//                     scrollTop: ($(`.anchor-dyn${sub.indexOf()}`).first().offset().top)
+//                 },700);
+//             }
+//         }
+//     })
+//    }         
+// }
+
 $('.map-nav').on('click', function (event) {
   var target = $(event.target);
   var _iteratorNormalCompletion6 = true;

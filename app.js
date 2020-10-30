@@ -103,9 +103,11 @@ $('.srv-nav').on('click',function(event){
     var target = $(event.target)
     onDisplay = true
 
-    for(let data of servicesBtn){
+    for(let data of srvBtn){
 
         if(target.hasClass(data.btn) || target.parent().hasClass(data.btn)){
+
+
             $('.srv-dyn-out').hide().fadeIn().html(data.html)
 
             $('.srv-nav').hide()
@@ -114,7 +116,7 @@ $('.srv-nav').on('click',function(event){
     
     
             $('html, body').animate({
-                scrollTop: ($('.anchor-dyn').first().offset().top - 190)
+                scrollTop: ($('.anchor-dyn1').first().offset().top - 190)
             },700);
         }
     }
@@ -141,6 +143,44 @@ $('.pkg-nav').on('click',function(event){
 
 
 })
+
+
+
+    // var start;
+
+    // for(let data of dynamic){
+
+
+    //     start = function(){
+
+    //     $(`${data}-nav`).on('click',function(event){
+    //         var target2 = $(event.target)
+    //         onDisplay = true
+
+    //         for(let sub of `${data}Btn`){
+
+    //             if(target2.hasClass(sub.btn) || target2.parent().hasClass(sub.btn)){
+    //                 $(`.${sub}-dyn-out`).hide().fadeIn().html(data.html)
+    //                 $(`${sub}-nav`).hide()
+    //                 $('.go-back').fadeIn()
+    
+    //                 $('html, body').animate({
+    //                     scrollTop: ($(`.anchor-dyn${sub.indexOf()}`).first().offset().top)
+    //                 },700);
+    //             }
+
+    //         }
+    //     })
+    //    }         
+
+    // }
+
+
+    
+ 
+
+
+
 
 $('.map-nav').on('click',function(event){
     var target = $(event.target)
