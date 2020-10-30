@@ -116,7 +116,7 @@ $('.srv-nav').on('click',function(event){
     
     
             $('html, body').animate({
-                scrollTop: ($('.anchor-dyn1').first().offset().top - 190)
+                scrollTop: ($('.anchor-dyn1').first().offset().top - 200)
             },700);
         }
     }
@@ -136,48 +136,13 @@ $('.pkg-nav').on('click',function(event){
         $('.go-back').fadeIn()
 
         $('html, body').animate({
-            scrollTop: ($('.anchor-dyn2').first().offset().top)
+            scrollTop: ($('.anchor-dyn2').first().offset().top - 200)
         },700);
     } 
   }
 
 
 })
-
-
-
-    // var start;
-
-    // for(let data of dynamic){
-
-
-    //     start = function(){
-
-    //     $(`${data}-nav`).on('click',function(event){
-    //         var target2 = $(event.target)
-    //         onDisplay = true
-
-    //         for(let sub of `${data}Btn`){
-
-    //             if(target2.hasClass(sub.btn) || target2.parent().hasClass(sub.btn)){
-    //                 $(`.${sub}-dyn-out`).hide().fadeIn().html(data.html)
-    //                 $(`${sub}-nav`).hide()
-    //                 $('.go-back').fadeIn()
-    
-    //                 $('html, body').animate({
-    //                     scrollTop: ($(`.anchor-dyn${sub.indexOf()}`).first().offset().top)
-    //                 },700);
-    //             }
-
-    //         }
-    //     })
-    //    }         
-
-    // }
-
-
-    
- 
 
 
 

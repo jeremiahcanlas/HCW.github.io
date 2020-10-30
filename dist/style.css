@@ -207,6 +207,9 @@ body {
   padding-bottom: 1rem;
 }
 
+.srv-page, .pkg-page {
+  margin-bottom: 10rem;
+}
 .srv-page .hero, .pkg-page .hero, .srv-page .hero2, .pkg-page .hero2 {
   height: 18rem;
 }
@@ -288,7 +291,6 @@ body {
   border-radius: 0.5rem;
 }
 .pkg-page .hsp-dyn img, .pkg-page .pcs-dyn img, .pkg-page .scs-dyn img, .pkg-page .crs-dyn img, .pkg-page .rhs-dyn img, .pkg-page .nhs-dyn img, .pkg-page .gcs-dyn img {
-  margin-top: 190px;
   margin-bottom: 2rem;
   height: 250px;
   width: 260px;

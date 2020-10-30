@@ -276,6 +276,7 @@ body {
 
 .srv-page {
     @extend .abt-page;
+    margin-bottom: 10rem;
 
     .hero{
         height: 18rem;
@@ -404,7 +405,6 @@ body {
 
     .hsp-dyn{
         img{
-            margin-top: 190px;
             margin-bottom: 2rem;
             height: 250px;
             width: 260px;
