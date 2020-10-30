@@ -201,6 +201,15 @@ $('.pkg-nav').on('click', function (event) {
     }
   }
 });
+$('.contact-us').on('click', function () {
+  if (current !== $('.ct-page')) {
+    current.fadeOut();
+    $('.ct-page').fadeIn();
+    $('.footer-contact').fadeOut();
+  }
+
+  current = $('.ct-page');
+});
 $('.map-nav').on('click', function (event) {
   var target = $(event.target);
   var _iteratorNormalCompletion6 = true;

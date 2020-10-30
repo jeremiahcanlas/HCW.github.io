@@ -334,6 +334,15 @@ body {
   font-size: 1.2rem;
   color: #8CC63F;
 }
+.stf-page a, .ct-page a, .faq-page a {
+  color: #F7931E;
+  text-decoration: none;
+  font-weight: 600;
+}
+.stf-page a:hover, .ct-page a:hover, .faq-page a:hover {
+  text-decoration: none;
+  color: #8CC63F;
+}
 
 .ct-page, .faq-page {
   padding-bottom: 0 !important;
