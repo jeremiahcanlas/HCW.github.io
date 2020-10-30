@@ -194,11 +194,11 @@ body {
 }
 .abt-page button, .stf-page button, .ct-page button, .faq-page button, .stf-page .vision button, .ct-page .vision button, .faq-page .vision button, .stf-page .cmt button, .ct-page .cmt button, .faq-page .cmt button, .stf-page .mgmt button, .ct-page .mgmt button, .faq-page .mgmt button, .srv-page button, .pkg-page button, .srv-page .vision button, .pkg-page .vision button, .srv-page .cmt button, .pkg-page .cmt button, .srv-page .mgmt button, .pkg-page .mgmt button, .abt-page .mgmt button, .abt-page .cmt button, .abt-page .vision button {
   background-color: #8CC63F;
-  color: black;
+  color: whitesmoke;
+  border: none;
 }
 .abt-page button:hover, .stf-page button:hover, .ct-page button:hover, .faq-page button:hover, .srv-page button:hover, .pkg-page button:hover {
   background-color: #F7931E;
-  color: black;
 }
 .abt-page .abt-dyn-out, .stf-page .abt-dyn-out, .ct-page .abt-dyn-out, .faq-page .abt-dyn-out, .srv-page .abt-dyn-out, .pkg-page .abt-dyn-out {
   padding-top: 5rem;
@@ -208,7 +208,7 @@ body {
 }
 
 .srv-page .hero, .pkg-page .hero, .srv-page .hero2, .pkg-page .hero2 {
-  height: 20rem;
+  height: 18rem;
 }
 .srv-page .hero img, .pkg-page .hero img, .srv-page .hero2 img, .pkg-page .hero2 img {
   padding-top: 0;
@@ -221,20 +221,33 @@ body {
   font-size: 1.2rem;
   color: #8CC63F;
 }
+.srv-page button, .pkg-page button {
+  background-color: white;
+  border: none;
+  margin: 0 0.5rem !important;
+  padding: 0 !important;
+}
+.srv-page button img, .pkg-page button img {
+  margin-bottom: 0.7rem;
+}
+.srv-page button span, .pkg-page button span {
+  color: black;
+  font-weight: 400;
+}
+.srv-page button:hover, .pkg-page button:hover {
+  background-color: white;
+}
+.srv-page button:hover span, .pkg-page button:hover span {
+  color: #F7931E;
+}
 .srv-page .srv-dyn button, .pkg-page .srv-dyn button {
   width: 270px;
   height: 190px;
   margin: 1rem;
-  background-color: #8CC63F;
-  border: 2px solid black;
 }
 .srv-page .srv-dyn button img, .pkg-page .srv-dyn button img {
   width: 200px;
   border-radius: 0.5rem;
-  border: 2px solid black;
-}
-.srv-page .srv-dyn button:hover, .pkg-page .srv-dyn button:hover {
-  background-color: #F7931E;
 }
 .srv-page .srv-dyn .hmss-dyn img, .pkg-page .srv-dyn .hmss-dyn img, .srv-page .srv-dyn .ncss-dyn img, .pkg-page .srv-dyn .ncss-dyn img, .srv-page .srv-dyn .pcss-dyn img, .pkg-page .srv-dyn .pcss-dyn img, .srv-page .srv-dyn .gnss-dyn img, .pkg-page .srv-dyn .gnss-dyn img, .srv-page .srv-dyn .crc-dyn img, .pkg-page .srv-dyn .crc-dyn img, .srv-page .srv-dyn .pvss-dyn img, .pkg-page .srv-dyn .pvss-dyn img, .srv-page .srv-dyn .mcss-dyn img, .pkg-page .srv-dyn .mcss-dyn img {
   margin-bottom: 2rem;
@@ -269,16 +282,10 @@ body {
   width: 270px;
   height: 190px;
   margin: 1rem;
-  background-color: #F7931E;
-  border: 2px solid black;
 }
 .pkg-page button img {
   width: 200px;
   border-radius: 0.5rem;
-  border: 2px solid black;
-}
-.pkg-page button:hover {
-  background-color: #8CC63F;
 }
 .pkg-page .hsp-dyn img, .pkg-page .pcs-dyn img, .pkg-page .scs-dyn img, .pkg-page .crs-dyn img, .pkg-page .rhs-dyn img, .pkg-page .nhs-dyn img, .pkg-page .gcs-dyn img {
   margin-top: 190px;
@@ -299,6 +306,10 @@ body {
 .pkg-page .hsp-dyn div:nth-child(2) span, .pkg-page .pcs-dyn div:nth-child(2) span, .pkg-page .scs-dyn div:nth-child(2) span, .pkg-page .crs-dyn div:nth-child(2) span, .pkg-page .rhs-dyn div:nth-child(2) span, .pkg-page .nhs-dyn div:nth-child(2) span, .pkg-page .gcs-dyn div:nth-child(2) span {
   color: #F7931E;
 }
+.pkg-page .rhs-dyn h3 {
+  font-size: 1rem;
+  color: #8CC63F;
+}
 .pkg-page .go-back {
   display: none;
   font-weight: 600;
@@ -313,6 +324,9 @@ body {
 .stf-page, .ct-page, .faq-page {
   padding-bottom: 20rem;
 }
+.stf-page img, .ct-page img, .faq-page img {
+  height: 15rem;
+}
 .stf-page h2, .ct-page h2, .faq-page h2 {
   font-size: 1.2rem;
   color: #8CC63F;
@@ -325,21 +339,30 @@ body {
 .ct-page .address, .faq-page .address {
   width: 30%;
 }
+.ct-page .phone p, .faq-page .phone p {
+  font-weight: 500;
+}
 .ct-page .phone a, .faq-page .phone a {
   color: #F7931E;
+  font-weight: 300;
   text-decoration: none;
 }
 .ct-page .phone a:hover, .faq-page .phone a:hover {
   color: #8CC63F;
 }
-.ct-page .map-nav .map1, .faq-page .map-nav .map1 {
+.ct-page .our-locations .callout, .faq-page .our-locations .callout {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.ct-page .our-locations .map-nav .map1, .faq-page .our-locations .map-nav .map1 {
   border-right: 10px solid #F7931E;
 }
-.ct-page .map-nav p, .faq-page .map-nav p {
+.ct-page .our-locations .map-nav p, .faq-page .our-locations .map-nav p {
   font-weight: 600;
   cursor: pointer;
 }
-.ct-page .map-nav p:hover, .faq-page .map-nav p:hover {
+.ct-page .our-locations .map-nav p:hover, .faq-page .our-locations .map-nav p:hover {
   color: #F7931E;
 }
 .ct-page .map, .faq-page .map {
@@ -410,6 +433,7 @@ body {
 .footer-contact .contactme .questions a {
   color: #F7931E;
   text-decoration: none;
+  font-weight: 500;
 }
 .footer-contact .contactme .questions a:hover {
   color: #8CC63F;

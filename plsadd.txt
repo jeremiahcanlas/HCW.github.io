@@ -1,8 +1,8 @@
 still needs to add:
 
-fix returning home support service headers
 
-fix top spacing about us & packages dynamic content
+maybe an image in about us page 
+
 
 
 

@@ -234,14 +234,15 @@ body {
 
     button {
         background-color: $green;
-        color: black;
+        color: whitesmoke;
+        border: none;
     }
 
     button:hover {
         background-color: $orange;
-        color: black;
-
     }
+
+   
     
     .vision {
         @extend .abt-page;
@@ -277,7 +278,7 @@ body {
     @extend .abt-page;
 
     .hero{
-        height: 20rem;
+        height: 18rem;
 
         img{
             padding-top: 0;
@@ -299,25 +300,44 @@ body {
         }
     }
 
+    button {
+        background-color: white;
+        border: none;
+        margin: 0 0.5rem!important;
+        padding: 0!important;
+
+        img{
+            margin-bottom: 0.7rem;
+        }
+
+        span {
+            color: black;
+            font-weight: 400;
+        }
+        
+    }
+
+    button:hover {
+        background-color: white;
+
+        span {
+            color: $orange;
+        }
+    }
+
     .srv-dyn {
         
         button {
             width: 270px;
             height: 190px;
             margin: 1rem;
-            background-color: $green;
-            border: 2px solid black;
 
             img{
                 width: 200px;
                 border-radius: 0.5rem;
-                border: 2px solid black;
             }
         }
 
-        button:hover {
-            background-color: $orange;
-        }
 
         .hmss-dyn{
             img{
@@ -372,19 +392,15 @@ body {
         width: 270px;
         height: 190px;
         margin: 1rem;
-        background-color: $orange;
-        border: 2px solid black;
+
 
         img{
             width: 200px;
             border-radius: 0.5rem;
-            border: 2px solid black;
         }
     }
 
-    button:hover {
-        background-color: $green;
-    }
+
 
     .hsp-dyn{
         img{
@@ -416,6 +432,13 @@ body {
         @extend .hsp-dyn;
     }
 
+    .rhs-dyn {
+        h3 {
+            font-size:1rem;
+            color: $green;
+        }
+    }
+
     .go-back {
         display: none;
         font-weight: 600;
@@ -435,6 +458,10 @@ body {
     @extend .abt-page;
     padding-bottom: 20rem;
 
+    img {  
+        height: 15rem;
+    }
+
     h2 {
         font-size: 1.2rem;
         color: $green;
@@ -452,8 +479,14 @@ body {
 
     .phone {
 
+        p{
+            font-weight: 500;
+        }
+
+
         a{
             color: $orange;
+            font-weight: 300;
             text-decoration: none;
         }
 
@@ -462,24 +495,35 @@ body {
         }
     }
 
+    .our-locations {
 
-    .map-nav {
-
-        .map1 {
-            border-right: 10px solid $orange;
-        }
-
-        p{
+        .callout {
+            font-size: 0.75rem;
             font-weight: 600;
-            cursor: pointer;
+            margin-bottom: 1.5rem;
         }
 
-        p:hover {
-            color: $orange;
+        .map-nav {
 
-            
+            .map1 {
+                border-right: 10px solid $orange;
+            }
+    
+            p{
+                font-weight: 600;
+                cursor: pointer;
+            }
+    
+            p:hover {
+                color: $orange;
+    
+                
+            }
         }
+    
+
     }
+
 
 
 
@@ -579,6 +623,7 @@ body {
             a {
                 color:$orange;
                 text-decoration: none;
+                font-weight: 500;
             }
     
             a:hover {
