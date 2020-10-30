@@ -199,6 +199,7 @@ body {
 }
 .abt-page button:hover, .stf-page button:hover, .ct-page button:hover, .faq-page button:hover, .srv-page button:hover, .pkg-page button:hover {
   background-color: #F7931E;
+  color: whitesmoke;
 }
 .abt-page .abt-dyn-out, .stf-page .abt-dyn-out, .ct-page .abt-dyn-out, .faq-page .abt-dyn-out, .srv-page .abt-dyn-out, .pkg-page .abt-dyn-out {
   padding-top: 5rem;
