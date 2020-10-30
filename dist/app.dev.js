@@ -143,8 +143,8 @@ $('.srv-nav').on('click', function (event) {
       var data = _step4.value;
 
       if (target.hasClass(data.btn) || target.parent().hasClass(data.btn)) {
-        $('.srv-dyn-out').hide().fadeIn().html(data.html);
-        $('.srv-nav').hide();
+        $('.srv-dyn-out').hide().fadeIn(1500).html(data.html);
+        $('.srv-nav').fadeOut(1000);
         $('.go-back').fadeIn();
         $('html, body').animate({
           scrollTop: $('.anchor-dyn1').first().offset().top - 190
@@ -178,8 +178,8 @@ $('.pkg-nav').on('click', function (event) {
       var data = _step5.value;
 
       if (target.hasClass(data.btn) || target.parent().hasClass(data.btn)) {
-        $('.pkg-dyn-out').hide().fadeIn().html(data.html);
-        $('.pkg-nav').hide();
+        $('.pkg-dyn-out').hide().fadeIn(1500).html(data.html);
+        $('.pkg-nav').fadeOut(1000);
         $('.go-back').fadeIn();
         $('html, body').animate({
           scrollTop: $('.anchor-dyn2').first().offset().top
