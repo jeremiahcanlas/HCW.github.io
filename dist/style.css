@@ -408,6 +408,13 @@ body {
 .faq-page #questions p {
   display: none;
 }
+.faq-page #questions p a {
+  color: #F7931E;
+}
+.faq-page #questions p a:hover {
+  color: #8CC63F;
+  text-decoration: none;
+}
 .faq-page .p-show {
   display: block !important;
   opacity: 1;

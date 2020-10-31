@@ -582,6 +582,15 @@ body {
 
         p{  
             display: none;
+
+            a {
+                color: $orange;
+            }
+
+            a:hover {
+                color: $green;
+                text-decoration: none;
+            }
         }
         
     }
