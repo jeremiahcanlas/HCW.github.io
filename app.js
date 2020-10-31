@@ -15,6 +15,10 @@ $('.main-logo').on('click',function(e){
         current.hide()
         $('.home-page').fadeIn()
         $(".navbar-collapse").collapse('hide')
+
+        $('html, body').animate({
+            scrollTop: ($('.home-page').first().offset().top)
+        },700);
     }
 
     current = $('.home-page')
