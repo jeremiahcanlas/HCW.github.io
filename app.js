@@ -43,6 +43,7 @@ for(let data of mainNav) {
             $('.answer').removeClass('p-show')
             $('.footer-contact').fadeIn() 
 
+
             
 
         }
