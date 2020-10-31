@@ -17,7 +17,7 @@ $('.main-logo').on('click',function(e){
         $(".navbar-collapse").collapse('hide')
 
         $('html, body').animate({
-            scrollTop: ($('.home-page').first().offset().top)
+            scrollTop: ($('.home-page').first().offset().top - 100)
         },700);
     }
 
@@ -42,10 +42,6 @@ for(let data of mainNav) {
             $('.map-dyn').hide()
             $('.answer').removeClass('p-show')
             $('.footer-contact').fadeIn() 
-
-
-            
-
         }
 
         current = $(`.${data}-page`)

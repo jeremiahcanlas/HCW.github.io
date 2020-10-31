@@ -13,7 +13,7 @@ $('.main-logo').on('click', function (e) {
     $('.home-page').fadeIn();
     $(".navbar-collapse").collapse('hide');
     $('html, body').animate({
-      scrollTop: $('.home-page').first().offset().top
+      scrollTop: $('.home-page').first().offset().top - 100
     }, 700);
   }
 
