@@ -55,7 +55,7 @@ const aboutUsBtn = [
                 <br>
                 <img class='img-fluid mb-2' src='./img/georgina.jpg'>
                 <h4>Nurse Consultant</h4>
-                <p class='mb-0'><em>Georgina Njoku, BScN, MScN, DNP, RN, GNC&copy</em></p>
+                <p class='mb-0'><em>Dr. Georgina Njoku, BScN, MScN, DNP, RN, GNC&copy</em></p>
                 <p><em>Geriatrics Clinical Nurse Specialist</em></p>
                 <p>Georgina has had extensive health care industry: over 10 years of Long-term Care experience, 
                 5 years in Acute care hospitals, 8 years in Community care as a Care Coordinator for Community care Access Center 
