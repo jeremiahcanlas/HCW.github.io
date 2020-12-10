@@ -39,4 +39,4 @@ Standards: HTML5, CSS3, JS
 Components: jQuery, SASS
 
                             
-Software: VSCode
+Software: Visual Studio Code
