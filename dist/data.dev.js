@@ -68,5 +68,9 @@ var backDyn = [{
   btn: 'srv',
   code: "\n        $('.srv-page').fadeIn()\n        $('.srv-nav').fadeIn()\n        $('.srv-dyn-out').hide()\n\n        $('html, body').animate({\n            scrollTop: ($('.main-back2').first().offset().top)\n        },700);\n        "
 }];
-var mainNav = ['home', 'abt', 'srv', 'pkg', 'stf', 'ct', 'faq'];
-var dynamic = ['srv', 'pkg'];
+var mainNav = ['home', 'abt', 'srv', 'pkg', 'stf', 'ct', 'faq']; // exports.aboutUsBtn = aboutUsBtn;
+// exports.srvBtn = srvBtn;
+// exports.pkgBtn = pkgBtn;
+// exports.mapBtn = mapBtn;
+// exports.backDyn = backDyn;
+// exports.mainNav = mainNav;

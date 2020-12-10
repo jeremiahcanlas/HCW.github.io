@@ -698,5 +698,5 @@ const mainNav = [
     'home','abt','srv','pkg','stf','ct','faq'
 ]
 
-const dynamic = ['srv','pkg']
+
 

@@ -1,5 +1,6 @@
 "use strict";
 
+// const dynamic = require('./data')
 var current = $('.home-page'),
     onDisplay = false;
 $("[data-toggle=popover]").popover(); // navbar collapses when user clicks on nav options

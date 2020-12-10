@@ -1,3 +1,6 @@
+
+
+
 var current = $('.home-page'),
 onDisplay = false
 
