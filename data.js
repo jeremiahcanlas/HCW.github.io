@@ -1,8 +1,7 @@
 const aboutUsBtn = [
-
-   {
-        btn: 'vision-btn',
-        html:             `
+  {
+    btn: "vision-btn",
+    html: `
         <div class='container vsn-dyn'>
             <h1>Our Vision</h1>
             <p>To provide an outstanding personalized professional health care to individuals of all ages within your own home or health care facility.</p>
@@ -11,13 +10,12 @@ const aboutUsBtn = [
             <h1>Our Goal</h1>
             <p>To treat you the way we like to be treated with compassion, respect, dignity and confidentiality.</p>
         </div>
-        `
-    }
-,
-    {
-        btn: 'cmt-btn',
+        `,
+  },
+  {
+    btn: "cmt-btn",
 
-        html:             `
+    html: `
         <div class='container cmt-dyn'>
             <h1>Our Commitments</h1>
             <ul>
@@ -34,13 +32,13 @@ const aboutUsBtn = [
                 <li>Homecare on Wheels is committed to improving its services and welcome feedback from clients, staff, agencies and the community at large at any time.</li>
             </ul>
         </div>        
-        `
-    },
+        `,
+  },
 
-   {
-        btn:'mgmt-btn',
+  {
+    btn: "mgmt-btn",
 
-        html:`
+    html: `
             <div class='container mgmt-dyn'>
                 <h1>Our Management</h1>
                 <p>Homecare on Wheels Inc. was founded by group of four persons, among whom are Georgina Njoku and Bonnie Garba, 
@@ -66,15 +64,14 @@ const aboutUsBtn = [
                 2018 and OLTC Leadership Clinical Practice award for 2019.</p>
             </div>
 
-        `
-        
-    }
-]
+        `,
+  },
+];
 
 const srvBtn = [
-    {   
-        btn:'hmss-btn',
-        html:`
+  {
+    btn: "hmss-btn",
+    html: `
                 <div class='hmss-dyn anchor-dyn1'>
                     <div class='text-center'>
                         <img src='./img/hscc-fs.jpg'>
@@ -106,11 +103,11 @@ const srvBtn = [
 
                     </div>
                     </div>
-        `
-    },
-    {   
-        btn:'ncss-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "ncss-btn",
+    html: `
             <div class='ncss-dyn anchor-dyn1'>
                 <div class='text-center'>
                     <img src='./img/ncss-fs.jpg'>
@@ -147,11 +144,11 @@ const srvBtn = [
                 </div>
             </div>
 
-        `
-    },
-    {   
-        btn:'pcss-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "pcss-btn",
+    html: `
         <div class='pcss-dyn anchor-dyn1'>
             <div class='text-center'>
                 <img src='./img/pcss-fs.jpg'>
@@ -192,11 +189,11 @@ const srvBtn = [
             </div>
         </div>
 
-        `
-    },
-    {   
-        btn:'gnss-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "gnss-btn",
+    html: `
         <div class='gnss-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/gnss-fs.jpg'>
@@ -237,11 +234,11 @@ const srvBtn = [
         </div>
     </div>
 
-        `
-    },
-    {   
-        btn:'crc-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "crc-btn",
+    html: `
         <div class='crc-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/crc-fs.jpg'>
@@ -284,11 +281,11 @@ const srvBtn = [
         </div>
     </div>
 
-        `
-    },
-    {   
-        btn:'pvss-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "pvss-btn",
+    html: `
         <div class='pvss-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/pvss-fs.jpg'>
@@ -309,11 +306,11 @@ const srvBtn = [
 
     </div>
 
-        `
-    },
-    {   
-        btn:'mcss-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "mcss-btn",
+    html: `
         <div class='mcss-dyn anchor-dyn1'>
         <div class='text-center'>
             <img src='./img/mcss-fs.jpg'>
@@ -351,15 +348,287 @@ const srvBtn = [
     </div>
 
         
-        `
-    }
+        `,
+  },
+];
 
-]
+const mmcBtn = [
+  {
+    btn: "story-btn",
+    html: `
+    <div class='container mt-5 anchor-dyn3 mmc-story-section'>
+    <div>
+        <div class="mmc-story-header">
+            <h1>My Story</h1>
+        </div>
+        <div class="mmc-story-body">
+            <img class="img-fluid" src="./img/gina.jpeg" alt="">
+            <div class="story-para container">
+                <p><i>Dr. Georgina Njoku, BScN, MScN, DNP, RN, GNC©</i></p>
+                <p>As Clinical Nurse Specialist Georgina has had extensive health care industry: over 10 years
+                    of
+                    Long-term Care experience, 5 years in Acute care hospitals, 8 years in Community care as a
+                    Care
+                    Coordinator for Community care Access Center and over 5 years of senior Nursing leadership
+                    experience including 3 years as an outstanding Director of Care role for Sienna Senior
+                    living
+                    home with 238 beds in Toronto, Ontario. During her time with Sienna Senior living, Georgina
+                    cleared this home’s MOH orders, restructured nursing department and built capacity on the
+                    nursing leadership team and frontline staff as a result, Georgina and her team won the OLTCA
+                    Quality Innovative award in 2018 and OLTC Leadership Clinical Practice award for 2019.
+                    Georgina
+                    was trained by the Responsive Health Management Group and became Clinical Nurse Consultant
+                    for
+                    Sharon Village Care homes for 16 months before Georgina answered the call to become a
+                    Miracle
+                    Minded Coaching trained by Marianne Williamson and her team. My goal is to help my clients
+                    to
+                    transform their lives with self love.</p>
+            </div>
+
+        </div>
+        <div class="mmc-story-footer">
+            <div class="footer-item">
+                <img class="img-fluid" src="./img/mmc-cert.png" alt="">
+                <p>Certification for Miracle Minded Coaching</p>
+            </div>
+            <div class="footer-item">
+                <img class='img-fluid' src='./img/mmc-mentor.jpeg'>
+                <p>My mentor and trainer: <br> Marianne Williamson</p>
+            </div>
+        </div>
+        <div class='mmc-contact'>
+
+            <div class='container contact-container text-left'>
+                <p><b>Free 30 minutes intake call:</b><a href="tel:519-854-1355"> (519)
+                        854-1355</a></p>
+                <br>
+                <p><b>Email:</b> <a href="mailto:georgina@homecareonwheels.ca">georgina@homecareonwheels.ca</a>
+                </p>
+                <br>
+                <button href="#" class="register-btn btn">REGISTER NOW</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+          `,
+  },
+  {
+    btn: "reachUs-btn",
+    html: `
+    <div class='container mt-5 anchor-dyn3 mmc-reach-us'>
+    <div class='container'>
+        <h1>Reach Us</h1>
+        <div class='container mmc-reachus-body'>
+            <img class="img-fluid" src="./img/mmc-room.jpeg" alt="">
+            <div class='mmc-body-section'>
+                <h1>Accepting new Clients on:</h1>
+                <p>Life issues, Job stress, Health issues, Relationship issues, Job stresses, Addiction
+                    issues(Food, Alcohol, drugs etc),
+                    marriage issues, Loneliness and Isolation issues, Mental health issues (Anxiety,
+                    Depression), Self love as you age.
+                </p>
+                <div>
+                    <h1>We schedule and platform:</h1>
+                    <ul>
+                        <li>Individual Clients</li>
+                        <li>Group reatreats</li>
+                        <li>Online Coaching via Zoom</li>
+                    </ul>
+                    <h1>What Platform best suits you: Individual, Group one on-one zoom coaching?</h1>
+                    <!-- <div class='mmc-reachus-contact'>
+                        <h1>Fill out your request to be Coached by Dr. Georgina:</h1>
+                        <ul>
+                            <li>Name</li>
+                            <li>Phone Number</li>
+                            <li>Email address</li>
+                            <li>Best time to call you</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class='mmc-contact'>
+            <div class='container contact-container text-left'>
+                <p><b>Free 30 minutes intake call:</b><br><a href="tel:519-854-1355"> (519)
+                        854-1355</a></p>
+                <br>
+                <p><b>Email:</b> <a href="mailto:georgina@homecareonwheels.ca">georgina@homecareonwheels.ca</a>
+                </p>
+                <br>
+                <button href="#" class="register-btn btn">REGISTER NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+          `,
+  },
+  {
+    btn: "register-btn",
+    html: `
+    <div class="register-page anchor-dyn3">
+    <div class="container">
+        <h1>ONLINE COACHING/COUNSELLING
+            PROGRAM – SELF LOVE AS YOU WORK
+            FOR PROFESSIONALS</h1>
+        <div class="container register-body">
+            <p>This Coaching is running on the following dates from 10:00 am to 12:00 pm</p>
+            <h1>Date:</h1>
+            <p>The purpose of this online coaching/counselling is to make a difference in the lives of men and
+                women
+                around the world by transforming Self love as you age, as you work or engage in a relationship.
+                This
+                coaching plan will not only benefit men and women in their personal lives, it will benefit you
+                in
+                your professional lives. It will help women or men to do soul searching, find your voice and
+                learn
+                how to self love by knowing that you are good enough. The vision of this evolutionary miracle
+                minded
+                coaching technique of self love as you age, as work, as you engage in a relationship is to train
+                men
+                and women to grow in their spirit of love and health. In general, women are seen as a beautiful
+                flower that blooms and fades as they age, this puts a great deal of stress on women to always
+                stay
+                beautiful and stress over getting older. Men are thought to be strong, “macho” not to show
+                emotions,
+                showing emotions for men is looked down upon. Yet, men and women face all determinants of health
+                such as:</p>
+            <p>
+                <b>Psychosocial risks include:</b> Low self-esteem, self blame (not good enough), lack of social
+                support, poor social network, low perceived power and isolation
+            </p>
+            <p><b>Economic status risks include:</b> poverty, stressful work environments, lower education
+                levels, stressful employment and working conditions discrimination related to sexism, racism,
+                ageism, based on income, sex, race, culture, unaffordable housing, low political and economic
+                power etc.</p>
+            <p><b>Behavioural risks:</b> Men and women then develop the tendency to take out their stress and
+                frustrations on themselves resulting in behaviours such as taking up smoking, alcohol, drugs,
+                poor nutrition and physical inactivity resulting in excessive weight gain or obesity, as well as
+                poor health and relationships. </p>
+            <p><b>Physiologically/Health:</b> Men and women both are likely to suffer from Stress, Depression,
+                Anxiety, eating disorder, other mental health issues, Hypertension, high cholesterol, Chronic
+                pain, diabetes, congestive heart failures, and other genetic factors chronic diseases that keep
+                women down and withdrawn.</p>
+            <p><b>Environmental Risks:</b> Women and men are likely to be predisposed to poor living conditions
+                such as poor housing situations resulting in contaminated air quality living arrangement, poor
+                water quality which negatively affects health, cancer, gastrointestinal problems and
+                unaffordable housing issues. Both have the right to demand for affordable and adequate housing,
+                refused homelessness, and other substandard living arrangements. </p>
+            <p><b>Culture:</b> Cultural and ethnic influences affect how women interact in the healthcare
+                system. It also affects the belief some women have that taking care of others comes first before
+                they can care for themselves or self love.</p>
+            <p><b>Language</b> differences and religion of some women can lead to isolation and decrease social
+                support networks. Harassment and Prejudice can deny women opportunities for education,
+                employment access to safe and affordable housing. </p>
+            <p><b>Gender:</b> Evidence has shown that gender does influence women’s health status, behaviours,
+                and health self care and self love. Women are more likely to suffer the negative impact of lower
+                levels of income, education, social support network because women are tasked with taking care of
+                the kids, household, family and being a caregiver but these essential 24 hours jobs are
+                discredited and taken for granted in our society.</p>
+            <p><b>Relationship Risk:</b> Relationship explains the role other people play in our path to God.
+                Every relationship a person encounters is an assignment. We get out of a relationship what we
+                put in it because all minds are joined. The concept of forgiveness plays a critical role in
+                relationships we encounter. It is important for women to experience the innocence in others and
+                in themselves. Our coaching technique will demonstrate the shift in perception from fear to love
+                in every relationship. For example, forgiveness of others who offended us and send them love
+                instead of anger. This willingness to see the oneness in every relationship encounter is the key
+                to self love. Relationships can be healthy or unhealthy. Relationships should not be
+                detrimental.</p>
+        </div>
+        <!-- THIS IS WHERE THE FORM IS, GOODLUCK BACK END -->
+        <div class="register-form-container container">
+            <p>This online coaching/counselling is being held online via one on one, group sessions and
+                participants need to commit to attending all sessions. Registrants need access to phone laptop
+                with a webcam and audio in order to participate. </p>
+            <p>Homecare on wheels Inc is hosting this workshop series in partnership with the Miracle minded
+                coaching/counselling Collaboration, Motivation and Healing. <b>After registration is completed,
+                    participants will receive an email with links to the meeting invite and access to Coaching
+                    materials for you to download.</b></p>
+            <p><b>Pre-registration is required and spaces are limited.</b></p>
+            <form action="" class='px-lg-5'>
+                <p>* Required fields</p>
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                </div>
+                <div class="form-group">
+                    <label for="organization">Organization *</label>
+                    <input type="text" class="form-control" id="organization">
+                </div>
+                <div class="form-group">
+                    <label for="profession">Profession *</label>
+                    <input type="text" class="form-control" id="profession">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address *</label>
+                    <input type="text" class="form-control" id="address">
+                </div>
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Postal Code *</label>
+                    <input type="text" class="form-control" id="postalCode">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="number" class="form-control" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="hear">Where did you hear about the program/retreat? *</label>
+                    <textarea name="hear" class="form-control" id="hear" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea name="comments" class="form-control" id="comments" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        I would like to receive the Self-Love as you age or work Self Management Newsletter
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        I agree to the terms and conditions listed below * </label>
+                    <small class="form-text text-muted">By checking this box, you agree to have
+                        your personal information pursuant to this form collected by the Homecare on wheels Inc
+                        Self- love as you age or work management program.
+                        This information is collected in compliance with section 38(2) of the Freedom of
+                        Information and Protection of Privacy Act. The information will be stored Homecare on
+                        wheels Inc used for program information, program evaluation, and program follow-up and
+                        for no other purpose. If you have any questions or concerns, please contact Homecare on
+                        wheels office <a href='tel:519-852-6134'>(519)-854-1355</a>
+                        You can also email us at <a href='mailto:info@homecareonwheels.ca'>info@homecareonwheels.ca</a> or <a href='mailto:georgina@homecareonwheels.ca'>georgina@homecareonwheels.ca</a></small>
+
+                </div>
+                <button class="btn mt-5" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+      `,
+  },
+];
 
 const pkgBtn = [
-    {
-        btn:'hsp-btn',
-        html:`
+  {
+    btn: "hsp-btn",
+    html: `
         <div class='hsp-dyn anchor-dyn2'>
         <div class='text-center'>
             <img src='./img/hsp-fs.jpg'>
@@ -396,11 +665,11 @@ const pkgBtn = [
         </div>
     </div>
 
-        `
-    },
-    {
-        btn:'pcs-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "pcs-btn",
+    html: `
         <div class='pcs-dyn anchor-dyn2'>
         <div class='text-center'>
             <img src='./img/pcp-fs.jpg'>
@@ -431,11 +700,11 @@ const pkgBtn = [
         </div>
     </div>
 
-        `
-    },
-    {
-        btn:'scs-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "scs-btn",
+    html: `
         <div class='scs-dyn anchor-dyn2'>
         <div class='text-center'>
             <img src='./img/scs-fs.jpg'>
@@ -468,11 +737,11 @@ const pkgBtn = [
         </div>
     </div>
 
-        `
-    },
-    {
-        btn:'crs-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "crs-btn",
+    html: `
         <div class='crs-dyn anchor-dyn2'>
         <div class='text-center'>
             <img src='./img/crs-fs.jpg'>
@@ -507,11 +776,11 @@ const pkgBtn = [
         </div>
     </div>
 
-        `
-    },
-    {
-        btn:'rhs-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "rhs-btn",
+    html: `
         <div class='rhs-dyn anchor-dyn2'>
         <div class='text-center'>
             <img src='./img/rhs-fs.jpg'>
@@ -548,11 +817,11 @@ const pkgBtn = [
         </div>
     </div>
 
-        `
-    },
-    {
-        btn:'nhs-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "nhs-btn",
+    html: `
         <div class='nhs-dyn anchor-dyn2'>
         <div class='text-center'>
             <img src='./img/nhs-fs.jpg'>
@@ -589,11 +858,11 @@ const pkgBtn = [
         </div>
     </div>
 
-        `
-    },
-    {
-        btn:'gcs-btn',
-        html:`
+        `,
+  },
+  {
+    btn: "gcs-btn",
+    html: `
         <div class='gcs-dyn anchor-dyn2'>
         <div class='text-center'>
             <img src='./img/gcs-fs.jpg'>
@@ -636,41 +905,39 @@ const pkgBtn = [
         </div>
     </div>
 
-        `
-    }
-
-]
+        `,
+  },
+];
 
 const mapBtn = [
-    {
-        btn:'map1',
-        html:`
+  {
+    btn: "map1",
+    html: `
         <div class='map'>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.0310209464856!2d-81.1837072845349!3d42.9776201791503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
         1!3m3!1m2!1s0x882ef2bc8b17772b%3A0x967cf6d74206ca2!2s27%20Hamber%20Ct%2C%20London%2C%20ON%20N5W%201R4!5e0!3m2!1sen!2sca!4v1603320797659!5m2!1sen!2sca" 
         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
-        `
-    },
-    {
-        btn:'map2',
-        html:`
+        `,
+  },
+  {
+    btn: "map2",
+    html: `
         <div class='map'>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.5942681299875!2d-81.98728178455566!3d42.329851879189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
         1!3m3!1m2!1s0x882fe397fcae890f%3A0x5c9cc32f67869cf9!2s277%20Chatham%20St%20S%2C%20Blenheim%2C%20ON%20N0P%201A0!5e0!3m2!1sen!2sca!4v1603321006348!5m2!1sen!2sca" 
         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
         </div>
 
-        `
-    }
-
-]
+        `,
+  },
+];
 
 const backDyn = [
-    {
-        btn:'pkg',
-        code:`
+  {
+    btn: "pkg",
+    code: `
         $('.pkg-page').fadeIn()
         $('.pkg-nav').fadeIn()
         $('.pkg-dyn-out').hide()
@@ -678,11 +945,11 @@ const backDyn = [
         $('html, body').animate({
             scrollTop: ($('.main-back').first().offset().top)
         },700);
-        `
-    },
-    {
-        btn:'srv',
-        code:`
+        `,
+  },
+  {
+    btn: "srv",
+    code: `
         $('.srv-page').fadeIn()
         $('.srv-nav').fadeIn()
         $('.srv-dyn-out').hide()
@@ -690,13 +957,8 @@ const backDyn = [
         $('html, body').animate({
             scrollTop: ($('.main-back2').first().offset().top)
         },700);
-        `
-    }
-]
+        `,
+  },
+];
 
-const mainNav = [
-    'home','abt','srv','pkg','stf','ct','faq'
-]
-
-
-
+const mainNav = ["home", "abt", "srv", "pkg", "stf", "ct", "faq", "mmc"];

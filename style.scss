@@ -1,711 +1,919 @@
-$green : #8CC63F;
-$orange:#F7931E;
+$green: #8cc63f;
+$orange: #f7931e;
+$red: #dd4713;
 $h1: 1.5rem;
 
+//breakpoints
+$screen-sm-min: 688px;
+$screen-md-min: 768px;
+$screen-lg-min: 900px;
+
+//landscape
+$screen-mobile-landscape: 400px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+//mobile landscape
+@mixin ls {
+  @media (max-height: #{$screen-mobile-landscape}) {
+    @content;
+  }
+}
+
 html {
-    
-    margin: 0;
-    padding: 0;
-  }
-  ::-webkit-scrollbar {
-      width: 0px;
-      background: transparent; /* make scrollbar transparent */
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 
-    img{
-        cursor: pointer;
+  img {
+    cursor: pointer;
+  }
+
+  .slogan {
+    display: inline;
+    font-size: 1.2rem;
+    color: $green;
+    font-weight: 600;
+    clear: both;
+
+    span {
+      color: $orange;
     }
+  }
 
-    .slogan{
-        display: inline;
-        font-size: 1.2rem;
-        color: $green;
-        font-weight: 600;
-        clear: both;
+  .slogan2 {
+    font-weight: 500;
+    display: block;
+    color: $green;
+  }
 
-        span {
-            color: $orange;
-        }
+  a {
+    color: $orange !important;
+  }
 
-    }
+  a:hover {
+    color: $green !important;
+  }
 
-    .slogan2 {
-        font-weight: 500;
-        display: block;
-        color: $green;
-       
-    }
+  .contact-phone {
+    border: 2px solid $green;
+    border-radius: 1rem;
 
-    a {
-        color: $orange!important;
+    p {
+      color: $green;
     }
 
     a:hover {
-        color: $green!important;
+      text-decoration: none;
     }
+  }
 
-    .contact-phone {
-        
-        border: 2px solid $green;
-        border-radius: 1rem;
+  .phone-btn {
+    width: 50px;
+    height: 50px;
+    background-color: $green;
+    border: none;
 
-        p{
-            color:$green;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-        
+    i {
+      font-size: 2rem;
     }
+  }
 
-    .phone-btn {
-        width:50px;
-        height: 50px;
-        background-color: $green;
-        border: none;
-
-        i{
-            font-size: 2rem;
-           
-        }
-    }
-
-    .phone-btn:hover{
-        background-color: $orange;
-    }
+  .phone-btn:hover {
+    background-color: $orange;
+  }
 }
-
-
 
 .vertical-alignment-helper {
-    display:table;
-    height: 100%;
-    width: 100%;
-    pointer-events:none;
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
 }
 .vertical-align-center {
-    /* To center vertically */
-    display: table-cell;
-    vertical-align: middle;
-    pointer-events:none;
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
 }
 .modal-content {
-    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
-    width:inherit;
-    max-width:200px; /* For Bootstrap 4 - to avoid the modal window stretching full width */
-    height:inherit;
-    /* To center horizontally */
-    margin: 0 auto;
-    pointer-events:all;
-    border: 2px solid $orange!important;
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  max-width: 200px; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
+  border: 2px solid $orange !important;
 
-    .modal-header{
-        border-bottom: 2px solid $orange;
-        
-        h4{
-            color:$green;
-            font-size: 1.2rem;
-        }
+  .modal-header {
+    border-bottom: 2px solid $orange;
+
+    h4 {
+      color: $green;
+      font-size: 1.2rem;
     }
+  }
 
-    .modal-body{
-        width:300px;
+  .modal-body {
+    width: 300px;
 
+    p {
+      color: $green;
+      display: inline-block;
 
-        p{
-            color: $green;
-            display: inline-block;
+      a {
+        color: $orange;
+      }
 
-            a{
-                color: $orange;
-            }
-
-            a:hover{
-                text-decoration: none;
-            }
-        }
+      a:hover {
+        text-decoration: none;
+      }
     }
-
-    
+  }
 }
 
 .hero {
-   position: relative;
-   height: 30rem;
+  position: relative;
+  height: 30rem;
 
-    img {
-        position:absolute;
-        margin:0 auto;
-        padding-top: 180px;
-        left:0;
-        right: 0;
-        bottom:0;
-        top:0;
-        -webkit-animation-name: fade;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration: 16s;
-        animation-name: fade;
-        animation-iteration-count: infinite;
-        animation-duration: 16s;
-    }
-    
-    
-    #i1{
-        animation-delay: -4s;
-    }
-    #i2 {
-        animation-delay: -8s;
-    }
-    #i3 {
-        animation-delay: -12s;
-    }
-    #i4 {
-        animation-delay: -16s;
-    }
+  img {
+    position: absolute;
+    margin: 0 auto;
+    padding-top: 180px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+  }
+
+  #i1 {
+    animation-delay: -4s;
+  }
+  #i2 {
+    animation-delay: -8s;
+  }
+  #i3 {
+    animation-delay: -12s;
+  }
+  #i4 {
+    animation-delay: -16s;
+  }
 }
 
-.hero2{
-    position: relative;
-    height: 28rem;
+.hero2 {
+  position: relative;
+  height: 28rem;
 
-    img {
-        position:absolute;
-        padding-top: 180px;
-        margin:0 auto;
-        left:0;
-        right: 0;
-        bottom:0;
-        top:0;
-        -webkit-animation-name: fade;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration: 16s;
-        animation-name: fade;
-        animation-iteration-count: infinite;
-        animation-duration: 16s;
-    }
+  img {
+    position: absolute;
+    padding-top: 180px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+  }
 
-
-    #i5 {
-        animation-delay: -4s;
-    }
-    #i6 {
-        animation-delay: -8s;
-    }
-    #i7 {
-        animation-delay: -12s;
-    }
-    #i8{
-        animation-delay: -16s;
-    }
-
+  #i5 {
+    animation-delay: -4s;
+  }
+  #i6 {
+    animation-delay: -8s;
+  }
+  #i7 {
+    animation-delay: -12s;
+  }
+  #i8 {
+    animation-delay: -16s;
+  }
 }
 
 .home-page {
-    padding-bottom: 10rem;
+  padding-bottom: 10rem;
 
-    h1{
-        font-size: $h1;
-        color: $orange;
-    }
-    
+  h1 {
+    font-size: $h1;
+    color: $orange;
+  }
 }
 
 .abt-page {
-    display: none;
-    padding-top: 180px;
-    margin-bottom: 20rem;
+  display: none;
+  padding-top: 180px;
+  margin-bottom: 20rem;
 
-        
-    
-    h1 {
-            color: $orange;
-            font-size: $h1;
+  h1 {
+    color: $orange;
+    font-size: $h1;
+  }
+
+  button {
+    background-color: $green;
+    color: whitesmoke;
+    border: none;
+  }
+
+  button:hover {
+    background-color: $orange;
+    color: whitesmoke;
+  }
+
+  .vision {
+    @extend .abt-page;
+  }
+
+  .cmt {
+    @extend .abt-page;
+  }
+
+  .mgmt {
+    @extend .abt-page;
+  }
+
+  .abt-dyn-out {
+    padding-top: 5rem;
+
+    .cmt-dyn {
+      li {
+        padding-bottom: 1rem;
+      }
     }
-
-    button {
-        background-color: $green;
-        color: whitesmoke;
-        border: none;
-    }
-
-    button:hover {
-        background-color: $orange;
-        color: whitesmoke;
-        
-    }
-
-
-   
-    
-    .vision {
-        @extend .abt-page;
-    }
-    
-    .cmt {
-        @extend .abt-page;
-    }
-    
-    .mgmt {
-        @extend .abt-page;
-    }
-
-    .abt-dyn-out{
-        padding-top: 5rem;
-        
-
-        .cmt-dyn{
-
-            li{
-                padding-bottom: 1rem;
-            }
-        }
-
-
-    }
-
-
-
+  }
 }
 
 .srv-page {
-    @extend .abt-page;
-    margin-bottom: 10rem;
+  @extend .abt-page;
+  margin-bottom: 10rem;
 
-    .hero{
-        height: 18rem;
+  .hero {
+    height: 18rem;
 
-        img{
-            padding-top: 0;
-        }
-        
+    img {
+      padding-top: 0;
+    }
+  }
+
+  .hero2 {
+    @extend .hero;
+  }
+
+  .scroll-container {
+    height: 1rem;
+
+    .scroll-below {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: $green;
+    }
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    margin: 0 0.5rem !important;
+    padding: 0 !important;
+
+    img {
+      margin-bottom: 0.7rem;
     }
 
-    .hero2{
-        @extend .hero
+    span {
+      color: black;
+      font-weight: 400;
     }
+  }
 
-    .scroll-container {
-        height: 1rem;
+  button:hover {
+    background-color: white;
 
-        .scroll-below {
-            font-weight: 600;
-            font-size: 1.2rem;
-            color: $green;
-        }
+    span {
+      color: $orange;
     }
+  }
 
+  .srv-dyn {
     button {
-        background-color: white;
-        border: none;
-        margin: 0 0.5rem!important;
-        padding: 0!important;
+      width: 270px;
+      height: 190px;
+      margin: 1rem;
 
-        img{
-            margin-bottom: 0.7rem;
-        }
+      img {
+        width: 200px;
+        border-radius: 0.5rem;
+      }
+    }
+
+    .hmss-dyn {
+      img {
+        margin-bottom: 2rem;
+        height: 250px;
+        width: 260px;
+        border-radius: 0.5rem;
+      }
+
+      div:nth-child(2) {
+        border: 2px solid $orange;
+        border-radius: 0.5rem;
+        padding: 1rem;
 
         span {
-            color: black;
-            font-weight: 400;
+          color: $orange;
         }
-        
+      }
     }
 
-    button:hover {
-        background-color: white;
+    .ncss-dyn,
+    .pcss-dyn,
+    .gnss-dyn,
+    .crc-dyn,
+    .pvss-dyn,
+    .mcss-dyn {
+      @extend .hmss-dyn;
 
-        span {
-            color: $orange;
-        }
-    }
-
-    .srv-dyn {
-        
-        button {
-            width: 270px;
-            height: 190px;
-            margin: 1rem;
-
-            img{
-                width: 200px;
-                border-radius: 0.5rem;
-            }
-        }
-
-
-        .hmss-dyn{
-            img{
-                margin-bottom: 2rem;
-                height: 250px;
-                width: 260px;
-                border-radius: 0.5rem;
-            }
-
-            div:nth-child(2) {
-                border: 2px solid $orange;
-                border-radius: 0.5rem;
-                padding: 1rem;
-
-                span{
-                    color: $orange;
-                }
-                
-            }
-        }
-
-        .ncss-dyn, .pcss-dyn, .gnss-dyn, .crc-dyn, .pvss-dyn, .mcss-dyn{
-            @extend .hmss-dyn;
-
-            h4{
-                font-size:1rem;
-                color: $green;
-            }
-        }
-
-    }
-
-    .go-back {
-        display: none;
-        font-weight: 600;
+      h4 {
+        font-size: 1rem;
         color: $green;
-        font-size: 1.2rem;
-        cursor: pointer;
+      }
     }
+  }
 
-    .go-back:hover {
-        color: $orange;
-    }
+  .go-back {
+    display: none;
+    font-weight: 600;
+    color: $green;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
 
-
+  .go-back:hover {
+    color: $orange;
+  }
 }
 
 .pkg-page {
-    @extend .srv-page;
+  @extend .srv-page;
 
-    button {
-        width: 270px;
-        height: 190px;
-        margin: 1rem;
+  button {
+    width: 270px;
+    height: 190px;
+    margin: 1rem;
 
+    img {
+      width: 200px;
+      border-radius: 0.5rem;
+    }
+  }
 
-        img{
-            width: 200px;
-            border-radius: 0.5rem;
-        }
+  .hsp-dyn {
+    img {
+      margin-bottom: 2rem;
+      height: 250px;
+      width: 260px;
+      border-radius: 0.5rem;
     }
 
-
-
-    .hsp-dyn{
-        img{
-            margin-bottom: 2rem;
-            height: 250px;
-            width: 260px;
-            border-radius: 0.5rem;
-        }
-
-        h4 {
-            font-size:1rem;
-            color: $green;
-        }
-
-        div:nth-child(2) {
-            border: 2px solid $orange;
-            border-radius: 0.5rem;
-            padding: 1rem;
-
-            span{
-                color: $orange;
-            }
-            
-        }
+    h4 {
+      font-size: 1rem;
+      color: $green;
     }
 
-    .pcs-dyn, .scs-dyn, .crs-dyn, .rhs-dyn, .nhs-dyn, .gcs-dyn {
-        @extend .hsp-dyn;
-    }
+    div:nth-child(2) {
+      border: 2px solid $orange;
+      border-radius: 0.5rem;
+      padding: 1rem;
 
-    .rhs-dyn {
-        h3 {
-            font-size:1rem;
-            color: $green;
-        }
-    }
-
-    .go-back {
-        display: none;
-        font-weight: 600;
-        color: $green;
-        font-size: 1.2rem;
-        cursor: pointer;
-    }
-
-    .go-back:hover {
+      span {
         color: $orange;
+      }
     }
+  }
 
+  .pcs-dyn,
+  .scs-dyn,
+  .crs-dyn,
+  .rhs-dyn,
+  .nhs-dyn,
+  .gcs-dyn {
+    @extend .hsp-dyn;
+  }
 
+  .rhs-dyn {
+    h3 {
+      font-size: 1rem;
+      color: $green;
+    }
+  }
+
+  .go-back {
+    display: none;
+    font-weight: 600;
+    color: $green;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .go-back:hover {
+    color: $orange;
+  }
 }
 
 .stf-page {
-    @extend .abt-page;
-    padding-bottom: 20rem;
+  @extend .abt-page;
+  padding-bottom: 20rem;
 
-    img {  
-        height: 15rem;
-    }
+  img {
+    height: 15rem;
+  }
 
-    h2 {
-        font-size: 1.2rem;
-        color: $green;
-    }
+  h2 {
+    font-size: 1.2rem;
+    color: $green;
+  }
 
-    a {
-        color:$orange;
-        text-decoration: none;
-        font-weight: 600;
-    }
+  a {
+    color: $orange;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
-    a:hover {
-        text-decoration: none;
-        color: $green;
-    }
+  a:hover {
+    text-decoration: none;
+    color: $green;
+  }
 }
 
 .ct-page {
-    @extend .stf-page;
-    padding-bottom: 0!important;
-    margin-bottom: 0!important;
+  @extend .stf-page;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 
-    .address {
-        width:30%;
+  .address {
+    width: 30%;
+  }
+
+  .phone {
+    p {
+      font-weight: 500;
     }
 
-    .phone {
-
-        p{
-            font-weight: 500;
-        }
-
-
-        a{
-            color: $orange;
-            font-weight: 300;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: $green;
-        }
+    a {
+      color: $orange;
+      font-weight: 300;
+      text-decoration: none;
     }
 
-    .our-locations {
+    a:hover {
+      color: $green;
+    }
+  }
 
-        .callout {
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .map-nav {
-
-            .map1 {
-                border-right: 10px solid $orange;
-            }
-    
-            p{
-                font-weight: 600;
-                cursor: pointer;
-            }
-    
-            p:hover {
-                color: $orange;
-    
-                
-            }
-        }
-    
-
+  .our-locations {
+    .callout {
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
     }
 
+    .map-nav {
+      .map1 {
+        border-right: 10px solid $orange;
+      }
 
+      p {
+        font-weight: 600;
+        cursor: pointer;
+      }
 
+      p:hover {
+        color: $orange;
+      }
+    }
+  }
 
-    .map {
-        overflow:hidden;
-        padding-bottom:300px;
-        position:relative;
-        height:0;        
+  .map {
+    overflow: hidden;
+    padding-bottom: 300px;
+    position: relative;
+    height: 0;
 
+    iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      max-height: 300px !important;
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
 
+// mmc page styling - dont get lost lol
+.mmc-page {
+  @extend .ct-page;
+  margin-bottom: 10rem !important;
+  text-align: center;
+  height: 100%;
 
-        iframe{
-            left:0;
-            top:0;
-            height:100%;
-            max-height: 300px!important;
-            width:100%;
-            position:absolute;
-        }
+  button {
+    background-color: $red;
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  h1,
+  a,
+  b {
+    color: $red;
+  }
+
+  .logo-container {
+    img {
+      height: 225px;
     }
 
+    h2 {
+      letter-spacing: 1px;
+      font-weight: 200;
+      font-style: italic;
+    }
+  }
 
+  .img-container {
+    margin-top: 4em;
+    .pic-container {
+      width: auto;
+      height: auto;
+      max-height: 125px;
+      overflow: hidden;
+      padding: 0 1em;
+
+      .mmc-flower {
+        opacity: 0.8;
+      }
+    }
+
+    p {
+      margin-top: 0.5em;
+      font-weight: 200;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+    }
+  }
+
+  .mmc-story-section {
+    .mmc-story-header {
+      text-align: center;
+    }
+
+    .mmc-story-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 1.2em;
+      width: 100%;
+
+      @include lg {
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+      }
+
+      img {
+        width: 250px;
+        height: 300px;
+        opacity: 0.8;
+        margin: 0 auto 2em auto;
+      }
+
+      .story-para {
+        text-align: left;
+
+        i {
+          color: $red;
+        }
+      }
+    }
+
+    .mmc-story-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 2em;
+
+      @include lg {
+        flex-direction: row;
+      }
+
+      .footer-item {
+        margin: 1em 0;
+
+        @include lg {
+          margin: 0;
+        }
+      }
+
+      p {
+        margin-top: 1em;
+      }
+    }
+
+    .mmc-contact {
+      border: 2px solid $green;
+      border-radius: 1em;
+
+      .contact-container {
+        margin: 0 auto;
+        padding: 2rem;
+
+        p {
+          display: inline;
+          font-size: 1em;
+
+          @include lg {
+            font-size: 1.5em;
+          }
+        }
+
+        button {
+          letter-spacing: 0.2px;
+          padding: 0.5em;
+          border-radius: 0.3em;
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+
+  .mmc-reach-us {
+    @extend .mmc-story-section;
+    overflow: hidden;
+
+    .mmc-reachus-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 1.2em;
+
+      @include lg {
+        flex-direction: row;
+        align-content: center;
+      }
+
+      .mmc-body-section {
+        text-align: left;
+        margin-bottom: 2em;
+
+        @include lg {
+          padding-left: 2em;
+        }
+      }
+
+      h1 {
+        font-size: 1.2em;
+        letter-spacing: 0.2px;
+      }
+
+      img {
+        max-width: 350px;
+        max-height: 200px;
+        opacity: 0.8;
+        margin: 0 auto 2em auto;
+
+        @include lg {
+          max-width: 450px;
+          max-height: 300px;
+        }
+      }
+    }
+  }
+
+  .register-page {
+    margin-top: 2em;
+
+    h1 {
+      &:first-child {
+        margin-bottom: 2em;
+        font-size: 1.5em;
+
+        @include lg {
+          font-size: 2.5em;
+        }
+      }
+    }
+
+    .register-body {
+      text-align: left;
+    }
+
+    .register-form-container {
+      text-align: left;
+      font-weight: 200;
+
+      b {
+        font-weight: 300;
+      }
+
+      //   p {
+      //     &:last-child {
+      //       text-align: center;
+      //     }
+      //   }
+    }
+  }
 }
 
 .faq-page {
-    @extend .ct-page;
-    margin-bottom: 10rem!important;
+  @extend .ct-page;
+  margin-bottom: 10rem !important;
 
-    h3 {
-        cursor: pointer;
-        display:block;
-        color: $green;
-        font-size: 1rem;
-        margin: 1rem 0;
-    }
+  h3 {
+    cursor: pointer;
+    display: block;
+    color: $green;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
 
-    h3:hover {
+  h3:hover {
+    color: $orange;
+  }
+
+  #questions {
+    p {
+      display: none;
+
+      a {
         color: $orange;
+      }
+
+      a:hover {
+        color: $green;
+        text-decoration: none;
+      }
     }
+  }
 
-    #questions {
-
-        p{  
-            display: none;
-
-            a {
-                color: $orange;
-            }
-
-            a:hover {
-                color: $green;
-                text-decoration: none;
-            }
-        }
-        
-    }
-
-    .p-show{
-        display:block!important;
-        opacity: 1;
-        animation-name: fadeIn;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: 1s;
-    }
-  
+  .p-show {
+    display: block !important;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
 }
 .footer-contact {
-   
+  margin-top: auto;
+  .contactme {
+    text-align: center;
 
-    .contactme {
-        text-align: center;
-
-        .address-row {
-            max-width: 350px;
-            margin: 0 auto;
-        }
-
-        .contact{
-            h1 {
-                color: $orange;
-                font-size: 1rem;
-    
-                a {
-                    color: $green;
-                    text-decoration: none;
-                    
-                }
-    
-                a:hover {
-                    color: $orange;
-                }
-            };
-        }
-
-     
-
-        .questions {
-            font-size: 1rem;
-            color: $green;
-
-            h1{
-                font-size: 1rem;
-            }
-
-            a {
-                color:$orange;
-                text-decoration: none;
-                font-weight: 500;
-            }
-    
-            a:hover {
-                color: $green;
-            }
-        }
-
-
-
-
-     
+    .address-row {
+      max-width: 350px;
+      margin: 0 auto;
     }
 
-
-}
-
-
-
-
-
-footer {
-    border-top: 2px solid $orange;
-
-    p{
-        color: $green;
+    .contact {
+      h1 {
+        color: $orange;
+        font-size: 1rem;
 
         a {
-            color: $green;
-            text-decoration: none;
+          color: $green;
+          text-decoration: none;
         }
 
         a:hover {
-            color: $orange;
-            text-decoration: none;
+          color: $orange;
         }
+      }
     }
 
+    .questions {
+      font-size: 1rem;
+      color: $green;
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      a {
+        color: $orange;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      a:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 2px solid $orange;
+  text-align: center;
+
+  p {
+    color: $green;
+
+    a {
+      color: $green;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
