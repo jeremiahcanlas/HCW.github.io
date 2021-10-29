@@ -579,8 +579,9 @@ body {
 
     h2 {
       letter-spacing: 1px;
-      font-weight: 200;
+      font-weight: 500;
       font-style: italic;
+      color: $red;
     }
   }
 
@@ -749,6 +750,8 @@ body {
 
     .register-body {
       text-align: left;
+      border-bottom: 3px solid $red;
+      margin-bottom: 3em;
 
       .date-dyn {
         margin: 2em 0;
@@ -757,10 +760,10 @@ body {
 
     .register-form-container {
       text-align: left;
-      font-weight: 200;
+      font-weight: 400;
 
       b {
-        font-weight: 300;
+        font-weight: 500;
       }
 
       //   p {

@@ -473,8 +473,9 @@ body {
 }
 .mmc-page .logo-container h2 {
   letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: 500;
   font-style: italic;
+  color: #dd4713;
 }
 .mmc-page .img-container {
   margin-top: 4em;
@@ -623,16 +624,18 @@ body {
 }
 .mmc-page .register-page .register-body {
   text-align: left;
+  border-bottom: 3px solid #dd4713;
+  margin-bottom: 3em;
 }
 .mmc-page .register-page .register-body .date-dyn {
   margin: 2em 0;
 }
 .mmc-page .register-page .register-form-container {
   text-align: left;
-  font-weight: 200;
+  font-weight: 400;
 }
 .mmc-page .register-page .register-form-container b {
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .faq-page {

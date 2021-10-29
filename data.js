@@ -434,7 +434,7 @@ const mmcBtn = [
                     <h1>We schedule and platform:</h1>
                     <ul>
                         <li>Individual Clients</li>
-                        <li>Group reatreats</li>
+                        <li>Group retreat</li>
                         <li>Online Coaching via Zoom</li>
                     </ul>
                     <h1>What Platform best suits you: Individual, Group one on-one zoom coaching?</h1>
@@ -479,15 +479,15 @@ const mmcBtn = [
             <h1 class='date-dyn'></h1>
             <p>The purpose of this online coaching/counselling is to make a difference in the lives of men and
                 women
-                around the world by transforming Self love as you age, as you work or engage in a relationship.
+                around the world by transforming Self love as you age, work or engage in a relationship.
                 This
-                coaching plan will not only benefit men and women in their personal lives, it will benefit you
+                coaching plan will not only benefit men and women in your personal lives, it will benefit you
                 in
-                your professional lives. It will help women or men to do soul searching, find your voice and
+                your professional lives. It will help you to do soul searching, find your voice and
                 learn
                 how to self love by knowing that you are good enough. The vision of this evolutionary miracle
                 minded
-                coaching technique of self love as you age, as work, as you engage in a relationship is to train
+                coaching technique of self love as you age, as work, engage in a relationship is to train
                 men
                 and women to grow in their spirit of love and health. In general, women are seen as a beautiful
                 flower that blooms and fades as they age, this puts a great deal of stress on women to always
@@ -531,10 +531,10 @@ const mmcBtn = [
             <p><b>Relationship Risk:</b> Relationship explains the role other people play in our path to God.
                 Every relationship a person encounters is an assignment. We get out of a relationship what we
                 put in it because all minds are joined. The concept of forgiveness plays a critical role in
-                relationships we encounter. It is important for women to experience the innocence in others and
+                relationships we encounter. It is important for men and women to experience the innocence in others and
                 in themselves. Our coaching technique will demonstrate the shift in perception from fear to love
                 in every relationship. For example, forgiveness of others who offended us and send them love
-                instead of anger. This willingness to see the oneness in every relationship encounter is the key
+                instead of anger help to free you of burden of hate. This willingness to see the oneness in every relationship encounter is the key
                 to self love. Relationships can be healthy or unhealthy. Relationships should not be
                 detrimental.</p>
         </div>
