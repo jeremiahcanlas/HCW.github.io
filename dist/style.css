@@ -624,6 +624,9 @@ body {
 .mmc-page .register-page .register-body {
   text-align: left;
 }
+.mmc-page .register-page .register-body .date-dyn {
+  margin: 2em 0;
+}
 .mmc-page .register-page .register-form-container {
   text-align: left;
   font-weight: 200;

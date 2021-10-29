@@ -137,6 +137,12 @@ $(".abt-page").on("click", function (event) {
 });
 $(".mmc-page").on("click", function (event) {
   var target = $(event.target);
+  var date = new Date();
+  var options = {
+    month: "long",
+    day: "numeric",
+    year: "numeric"
+  };
   var _iteratorNormalCompletion4 = true;
   var _didIteratorError4 = false;
   var _iteratorError4 = undefined;
@@ -150,6 +156,7 @@ $(".mmc-page").on("click", function (event) {
         $("html, body").animate({
           scrollTop: $(".anchor-dyn3").first().offset().top - 200
         }, 700);
+        $(".date-dyn").html("<span>Date: ".concat(date.toLocaleString("en-US", options), "</span>"));
       }
     }
   } catch (err) {

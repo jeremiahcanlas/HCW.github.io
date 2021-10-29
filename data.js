@@ -476,7 +476,7 @@ const mmcBtn = [
             FOR PROFESSIONALS</h1>
         <div class="container register-body">
             <p>This Coaching is running on the following dates from 10:00 am to 12:00 pm</p>
-            <h1>Date:</h1>
+            <h1 class='date-dyn'></h1>
             <p>The purpose of this online coaching/counselling is to make a difference in the lives of men and
                 women
                 around the world by transforming Self love as you age, as you work or engage in a relationship.

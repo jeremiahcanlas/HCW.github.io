@@ -92,7 +92,8 @@ $(".abt-page").on("click", function (event) {
 
 $(".mmc-page").on("click", function (event) {
   var target = $(event.target);
-
+  const date = new Date();
+  let options = { month: "long", day: "numeric", year: "numeric" };
   for (let data of mmcBtn) {
     if (target.hasClass(data.btn)) {
       $(".mmc-dyn-out").hide().fadeIn().html(data.html);
@@ -102,6 +103,9 @@ $(".mmc-page").on("click", function (event) {
           scrollTop: $(".anchor-dyn3").first().offset().top - 200,
         },
         700
+      );
+      $(".date-dyn").html(
+        `<span>Date: ${date.toLocaleString("en-US", options)}</span>`
       );
     }
   }
