@@ -205,7 +205,7 @@ $(".srv-nav").on("click", function (event) {
         // $(".footer-contact").fadeIn();
 
         $("html, body").animate({
-          scrollTop: $(".mmc-story-section").first().offset().top
+          scrollTop: $(".container").first().offset().top - 400
         }, 700);
       }
     }
