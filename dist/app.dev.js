@@ -242,6 +242,21 @@ $(".pkg-nav").on("click", function (event) {
         $("html, body").animate({
           scrollTop: $(".anchor-dyn2").first().offset().top - 200
         }, 700);
+      } else if (target.parent().hasClass("mmc-btn")) {
+        current.hide();
+        current = $(".mmc-page"); // $(`.${data}`).fadeIn();
+
+        $(".mmc-page").fadeIn(); // $(`.${data}-dynamic`).fadeIn();
+        // $(`.${data}-nav`).fadeIn();
+
+        $(".mmc-dyn-out").hide(); // $(".go-back").hide();
+        // $(".map-dyn").hide();
+        // $(".answer").removeClass("p-show");
+        // $(".footer-contact").fadeIn();
+
+        $("html, body").animate({
+          scrollTop: $(".container").first().offset().top - 400
+        }, 700);
       }
     }
   } catch (err) {
