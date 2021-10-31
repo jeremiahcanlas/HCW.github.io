@@ -2,11 +2,12 @@
 
 Official Website for Homecare on Wheels
 
-To create an additional page...
+please clone the repository
 
-1.  Create a section in index.html
-2.  Add the section in the data.js file
+>git clone https://github.com/jeremiahcanlas/HCW.github.io
 
-For the back end dev
+For back end developer:
 
-Form is on data
+Please find the form code block in the data.js file
+
+The website is made with legacy jquery code and vanilla js, sorry.
